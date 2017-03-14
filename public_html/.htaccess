@@ -1,1 +1,2 @@
+addtype text/css .css
 ErrorDocument 404 http://www.ase.uc.edu/~spacerobotics/custom404.html

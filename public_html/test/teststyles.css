@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*
+body {background-color: #ffffff;}
+h1 {color: #e00122;}
+p {color: #000000;}
+*/
+
+body {background-color: powderblue;}
+h1 {color: blue;}
+p {color: red;}
+
+/* CSS navbar heavily modified from: http://www.w3schools.com/css/css_navbar.asp */
+/* another example, having to do with class="navbar": https://www.w3.org/Style/Examples/011/firstcss.en.html */
+
+td {
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 100%; /* full height */
+    position: fixed; /* make it stick, even on scroll */
+    overflow: auto; /* enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* change the link color on mouse pointer hover */
+li a:hover:not(.active) {
+    background-color: #4caf50;
+    color: white;
+}
+
+.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #1f1f1f;
+    height: 100%; /* full height */
+    position: fixed; /* make it stick, even on scroll */
+    overflow: auto; /* enable scrolling if the sidenav has too much content */
+}
+
+li.navbar a {
+    display: block;
+    color: #aaa;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
