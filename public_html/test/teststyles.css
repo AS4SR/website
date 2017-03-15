@@ -36,14 +36,11 @@ https://www.sitepoint.com/community/t/multiple-level-unordered-list-styling/2128
     margin-left: 15px;
     width: -15px;
 }*/
-ul, ol {
-    padding: 0px 25px;
-}
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px 25px;
     width: 200px;
     background-color: #f1f1f1;
     height: 100%; /* full height */
