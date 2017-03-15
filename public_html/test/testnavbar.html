@@ -1,0 +1,31 @@
+<html>
+<body>
+<!-- modified heavily from: http://stackoverflow.com/questions/7055024/how-to-store-nav-bar-in-one-file -->
+  <div id='menu'>
+    <ul style="list-style-type: none;
+               margin: 0;
+               padding: 0;
+               width: 100%;
+               background-color: #f1f100;
+               height: 100%;
+               position: fixed;
+               overflow: auto;"> <!--"height: 100%" doesn't seem to work here, needs to be handled above / in table that iframe sticks in -->
+      <li><a href='index.html' target="_top">Home</a></li>
+      <li><a href='about.html' target="_top">About Us</a></li>
+      <li><a href='http://www.ase.uc.edu/~spacerobotics/resources.html' target="_blank">Resources</a></li>
+      <li><a href='robots.html' target="_top">Robots</a>
+        <ul>
+          <li><a href='robots.html' target="_top">Current Robots</a></li>
+          <li><a href='archived/robots.html' target="_top">Old Robots</a></li>
+        </ul>
+      </li>
+      <li><a href='archived.html' target="_top">Archived Projects</a>
+        <ul>
+          <li><a href='test-1.html' target="_top">Test-1</a></li>
+          <li><a href='test-2.html' target="_top">Test-2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
