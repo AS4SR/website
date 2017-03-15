@@ -87,8 +87,8 @@ li.navbar a {
     position: fixed;
     top: 20px;
     left: 20px;
-    width: 250px;
-    height: 500px;
+    width: 200px;
+    height: 900px;
     border: none;
     background-color: pink;
 }
