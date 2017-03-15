@@ -24,8 +24,8 @@ ul.level1 {
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
-    /*height: 100%; /* full height */
-    position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */
+    height: 100%; /* full height */
+    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
@@ -35,8 +35,8 @@ ul.level2 {
     padding: 0px 25px;
     width: 200px;
     background-color: #f1f1f1;
-    /*height: 100%; /* full height */
-    position: relative; /*position: fixed; /* make it stick, even on scroll */
+    height: 100%; /* full height */
+    /*position: relative; /*position: fixed; /* make it stick, even on scroll */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
