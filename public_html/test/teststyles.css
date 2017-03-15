@@ -17,6 +17,10 @@ td {
     vertical-align: top;
 }
 
+#menu {
+    position: fixed; /* maybe this will keep the entire thing fixed in place? */
+}
+
 /* need to override padding apparently?: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
 ul.level1 {
     list-style-type: none;
@@ -24,8 +28,8 @@ ul.level1 {
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
-    height: 100%; /* full height */
-    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */
+    /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
+    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
@@ -35,8 +39,8 @@ ul.level2 {
     padding: 0px 25px;
     width: 200px;
     background-color: #f1f1f1;
-    height: 100%; /* full height */
-    /*position: relative; /*position: fixed; /* make it stick, even on scroll */
+    /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
+    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
