@@ -17,26 +17,7 @@ td {
     vertical-align: top;
 }
 
-/* trying out levels from:
-https://www.sitepoint.com/community/t/multiple-level-unordered-list-styling/2128/2
-*/
-/*
-.level1 {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.level2 {
-    margin-left: 0;
-    padding-left: 2em;
-}
-*/
-/* from: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
-/*ul > li {
-    margin-left: 15px;
-    width: -15px;
-}*/
-
+/* need to override padding apparently: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
 ul {
     list-style-type: none;
     margin: 0;
@@ -83,4 +64,3 @@ li.navbar a {
     text-decoration: none;
 }
 */
-
