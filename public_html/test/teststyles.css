@@ -81,6 +81,7 @@ li.navbar a {
     /*width: 730px;
     margin: auto;*/
     width: auto;
+    margin-left: 225px;
     left: 225px;
     border: none;
     padding: 0;
@@ -91,8 +92,8 @@ li.navbar a {
     left: 5px;
     bottom: 0px; /* should force override by ul above? */
     width: 225px;
-    /*height: 500px;*/
-    height: auto;
+    height: 500px;
+    /*height: auto; -- will cover entire page/height */
     border: none;
     background-color: pink; /* should get overridden by ul above? */
 }
