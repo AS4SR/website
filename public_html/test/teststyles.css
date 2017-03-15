@@ -17,18 +17,7 @@ td {
     vertical-align: top;
 }
 
-/* need to override padding apparently: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px 25px;
-    width: 200px;
-    background-color: #f1f1f1;
-    /*height: 100%; /* full height */
-    /*position: relative; fixed; /* make it stick, even on scroll */
-    overflow: auto; /* enable scrolling if the sidenav has too much content */
-}
-
+/* need to override padding apparently?: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
 ul.level1 {
     list-style-type: none;
     margin: 0;
@@ -36,7 +25,7 @@ ul.level1 {
     width: 200px;
     background-color: #f1f1f1;
     /*height: 100%; /* full height */
-    /*position: relative; fixed; /* make it stick, even on scroll */
+    position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
@@ -47,7 +36,7 @@ ul.level2 {
     width: 200px;
     background-color: #f1f1f1;
     /*height: 100%; /* full height */
-    /*position: relative; fixed; /* make it stick, even on scroll */
+    position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
