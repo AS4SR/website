@@ -17,6 +17,19 @@ td {
     vertical-align: top;
 }
 
+/* trying out levels from:
+https://www.sitepoint.com/community/t/multiple-level-unordered-list-styling/2128/2
+*/
+.level1 {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.level2 {
+    margin-left: 0;
+    padding-left: 2em;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,17 +57,6 @@ li a:hover:not(.active) {
 .active {
     background-color: #4caf50;
     color: white;
-}
-
-ul li ul { /* attempt specificity for multi-indent level 2 */
-    list-style-type: none;
-    margin: 0;
-    padding: 2em;
-    width: 200px;
-    background-color: #1f1f1f;
-    height: 100%; /* full height */
-    position: fixed; /* make it stick, even on scroll */
-    overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
 /*
