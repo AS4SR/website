@@ -34,7 +34,7 @@ https://www.sitepoint.com/community/t/multiple-level-unordered-list-styling/2128
 /* from: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
 ul > li {
     margin-left: 20px;
-    padding-right: -20px
+    margin-right: -20px
 }
 
 ul {
