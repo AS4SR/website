@@ -89,7 +89,8 @@ li.navbar a {
     position: fixed;
     top: 20px;
     left: 20px;
-    width: 200px;
+    bottom: 0px; /* should force override by ul above? */
+    width: 250px;
     /*height: 500px;*/
     height: auto;
     border: none;
