@@ -77,11 +77,11 @@ li.navbar a {
 */
 
 /* some div id and div class stuff modified from: ? */
-.mainbodypage {
+#mainbodypage {
     /*width: 730px;
     margin: auto;*/
     width: auto;
-    left: 230px;
+    left: 225px;
     border: none;
     padding: 0;
 }
