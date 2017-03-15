@@ -78,8 +78,10 @@ li.navbar a {
 
 /* some div id and div class stuff modified from: ? */
 .mainbodypage {
-    width: 730px;
-    margin: auto;
+    /*width: 730px;
+    margin: auto;*/
+    width: auto;
+    margin-left: 220px;
     border: none;
     padding: 0;
 }
@@ -88,9 +90,10 @@ li.navbar a {
     top: 20px;
     left: 20px;
     width: 200px;
-    height: 900px;
+    /*height: 500px;*/
+    height: auto;
     border: none;
-    background-color: pink;
+    background-color: pink; /* should get overridden by ul above? */
 }
 h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
     display: block; 
