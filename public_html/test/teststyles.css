@@ -87,8 +87,9 @@ li.navbar a {
     position: fixed;
     top: 20px;
     left: 20px;
-    width: 200px;
-    height: 900px;
+    width: 250px;
+    height: 500px;
+    border: none;
     background-color: pink;
 }
 h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
