@@ -17,10 +17,6 @@ td {
     vertical-align: top;
 }
 
-#menu {
-    position: fixed; /* maybe this will keep the entire thing fixed in place? */
-}
-
 /* need to override padding apparently?: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
 ul.level1 {
     list-style-type: none;
@@ -79,3 +75,19 @@ li.navbar a {
     text-decoration: none;
 }
 */
+
+/* some div id and div class stuff modified from: ? */
+.mainbodypage {
+    width: 730px;
+    margin: auto;
+    border: none;
+    padding: 0;
+}
+#menufixed1 {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 900px;
+    background-color: pink;
+}
