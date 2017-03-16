@@ -5,7 +5,11 @@
 /* p {color: #000000;} /* "university black" */
 
 /*body {background-color: powderblue;}*/
-body {background-color: #ffffff;}
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
 h1 {color: blue;}
 p {color: red;}
 
