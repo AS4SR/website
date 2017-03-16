@@ -20,9 +20,9 @@ p {color: #000000;} /* "university black" */
 /* CSS navbar heavily modified from: http://www.w3schools.com/css/css_navbar.asp */
 /* another example, having to do with class="navbar": https://www.w3.org/Style/Examples/011/firstcss.en.html */
 
-td {
+/*td {
     vertical-align: top;
-}
+}*/
 
 /* need to override padding apparently?: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
 ul.level1 {
