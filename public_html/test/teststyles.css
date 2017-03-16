@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, 
     background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
 }
 #mainbodypagerelative { /* modded from mainbodypage */
+    position: relative;
     /*margin-top: 110px; /* should be same as menufixed1 */
     /*margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
     margin-top: -19px; /* not sure why this is necessary, or where the extra approx. line of space is coming from... */
