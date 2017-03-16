@@ -8,6 +8,7 @@
 body {
     /* background-color: #ffffff; */
     background-color: #e00122;
+    margin: 0;
     /* margin: 0 auto; /* should align everything horizontally (left-right as auto) */
     padding: 0;
 }
