@@ -107,10 +107,6 @@ li.navbar a {
     background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
 }
 #mainbodypage {
-    /*width: 730px;
-    margin: auto;
-    width: auto;*/
-    /*padding: 0;*/
     margin-top: 110px; /* should be same as menufixed1 */
     margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
     padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
@@ -122,29 +118,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, 
     display: block;
     font: "Open Sans";
 }
-/*#topabsolute1 { /* modded from topfixed1 */
-/*    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    width: 960px; /* requested UC standard width */
-/*    height: 100px;
-    border: none;
-    background-color: #000000; /* "university black" */
-/*}*/
-/*#menuabsolute1 { /* modded from menufixed1 */
-/*    position: absolute;
-    top: 110px; /* should be same as height+(top+bottom)/2 of topfixed1 */
-/*    left: 10px; /* should be same as left of topfixed1 */
-/*    bottom: 0px; /* should force override by ul above? */
-/*    right: 0px;
-    width: 225px;
-    height: 500px;
-    /*height: auto; -- will cover entire page/height */
-/*    border: none;
-    background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
-/*}*/
 #toprelative1 { /* modded from topfixed1 */
     position: relative;
     top: 10px;
@@ -168,4 +141,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, 
     /*height: auto; -- will cover entire page/height */
     border: none;
     background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+}
+#mainbodypagerelative { /* modded from mainbodypage */
+    /*margin-top: 110px; /* should be same as menufixed1 */
+    /*margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
+    padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
+    width: 715px; /* 960px-235px (menufixed1 width+left) = 725px - (padding left+right/2) = 715px for requested UC standard width */
+    border: none;
+    background-color: #ffffff; /* "university white" */
 }
