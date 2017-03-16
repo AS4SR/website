@@ -14,7 +14,8 @@ body {
     font-family: "Open Sans","Gentium Book Basic",Myriad,Minion;
 }
 h1 {color: blue;}
-p {color: red;}
+/*p {color: red;}*/
+p {color: #000000;} /* "university black" */
 
 /* CSS navbar heavily modified from: http://www.w3schools.com/css/css_navbar.asp */
 /* another example, having to do with class="navbar": https://www.w3.org/Style/Examples/011/firstcss.en.html */
