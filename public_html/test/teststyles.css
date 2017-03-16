@@ -6,7 +6,8 @@ h1 {color: #e00122;}
 p {color: #000000;}
 */
 
-body {background-color: powderblue;}
+/*body {background-color: powderblue;}*/
+body {background-color: #ffffff;}
 h1 {color: blue;}
 p {color: red;}
 
@@ -76,15 +77,17 @@ li.navbar a {
 }
 */
 
-/* some div id and div class stuff modified from: ? */
-#mainbodypage {
-    /*width: 730px;
-    margin: auto;*/
-    width: auto;
-    margin-left: 225px;
-    left: 225px;
-    border: none;
-    padding: 0;
+/* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
+#topfixed1 {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: 960px; /* requested UC standard width */
+    height: 100px;
+    /*border: none;*/
+    background-color: #000000; /* "university black" */
 }
 #menufixed1 {
     position: fixed;
@@ -95,8 +98,20 @@ li.navbar a {
     height: 500px;
     /*height: auto; -- will cover entire page/height */
     border: none;
-    background-color: pink; /* should get overridden by ul above? */
+    background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+}
+#mainbodypage {
+    /*width: 730px;
+    margin: auto;
+    width: auto;*/
+    width: 735px; /* 960px-225px = 735px for requested UC standard width */
+    margin-left: 225px;
+    /*left: 225px;*/
+    border: none;
+    padding: 0;
+    background-color: #ffffff; /* "university white" */
 }
 h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
-    display: block; 
+    display: block;
+    font: "Open Sans";
 }
