@@ -111,11 +111,8 @@ li.navbar a {
     width: 735px; /* 960px-225px = 735px for requested UC standard width */
     /*padding: 0;*/
     margin-top: 110px; /* should be same as menufixed1 */
-    top: 10px; /* spacing in addition to margin-top offset */
-    bottom: 10px;
     margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
-    left: 10px; /* spacing in addition to margin-left offset */
-    right: 10px;
+    padding: 10px 10px; /* spacing in addition to margin-top and margin-left offset */
     border: none;
     background-color: #ffffff; /* "university white" */
 }
