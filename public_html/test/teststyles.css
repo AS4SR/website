@@ -25,7 +25,7 @@ ul.level1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 225px;
     background-color: #000000; /* "university black" */
     /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
     /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
@@ -36,7 +36,7 @@ ul.level2 {
     list-style-type: none;
     margin: 0;
     padding: 0px 25px;
-    width: 200px;
+    width: 225px;
     background-color: #000000; /* "university black" */
     /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
     /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
@@ -111,7 +111,7 @@ li.navbar a {
     /*padding: 0;*/
     margin-top: 110px; /* should be same as menufixed1 */
     top: 10px; /* spacing in addition to margin-top offset */
-    margin-left: 230px; /* should be same as width+(left+right)/2 of menufixed1 */
+    margin-left: 250px; /* should be same as width+(left+right)/2 of menufixed1 + (levelX and li a left_right padding pixels/2) */ /* 225 + (10+0)/2 + (16+25)/2 */
     /*margin-left: 225px; /* should be same as width of menufixed1 */
     left: 0px; /* spacing in addition to margin-left offset */
     /*left: 225px;*/
