@@ -121,8 +121,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, 
 }
 #toprelative1 { /* modded from topfixed1 */
     position: relative;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     right: 10px;
     bottom: 10px;
     width: 960px; /* requested UC standard width */
