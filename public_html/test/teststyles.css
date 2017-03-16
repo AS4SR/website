@@ -96,7 +96,7 @@ li.navbar a {
     top: 110px; /* should be same as height+(top+bottom)/2 of topfixed1 */
     left: 10px; /* should be same as left of topfixed1 */
     bottom: 0px; /* should force override by ul above? */
-    right: 10px; /* make same as left for consistency */
+    right: 0px;
     width: 225px;
     height: 500px;
     /*height: auto; -- will cover entire page/height */
@@ -111,8 +111,8 @@ li.navbar a {
     /*padding: 0;*/
     margin-top: 110px; /* should be same as menufixed1 */
     top: 10px; /* spacing in addition to margin-top offset */
-    /*margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
-    margin-left: 225px; /* should be same as width of menufixed1 */
+    margin-left: 230px; /* should be same as width+(left+right)/2 of menufixed1 */
+    /*margin-left: 225px; /* should be same as width of menufixed1 */
     left: 0px; /* spacing in addition to margin-left offset */
     /*left: 225px;*/
     border: none;
