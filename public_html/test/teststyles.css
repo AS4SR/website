@@ -103,6 +103,7 @@ li.navbar a {
     margin: auto;
     width: auto;*/
     width: 735px; /* 960px-225px = 735px for requested UC standard width */
+    top: 120px; /* should be same as menufixed1 */
     margin-left: 225px;
     /*left: 225px;*/
     border: none;
