@@ -24,7 +24,7 @@ ul.level1 {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #000000; /* "university black" */
     /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
     /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
@@ -35,7 +35,7 @@ ul.level2 {
     margin: 0;
     padding: 0px 25px;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #000000; /* "university black" */
     /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
     /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
@@ -50,12 +50,12 @@ li a {
 
 /* change the link color on mouse pointer hover */
 li a:hover:not(.active) {
-    background-color: #4caf50;
+    background-color: #cd0e2b; /* "university red" */
     color: white;
 }
 
 .active {
-    background-color: #4caf50;
+    background-color: #cd0e2b; /* "university red" */
     color: white;
 }
 
@@ -91,7 +91,7 @@ li.navbar a {
 }
 #menufixed1 {
     position: fixed;
-    top: 5px;
+    top: 100px; /* should be same as height of topfixed1 */
     left: 5px;
     bottom: 0px; /* should force override by ul above? */
     width: 225px;
