@@ -105,7 +105,8 @@ li.navbar a {
     height: 500px;
     /*height: auto; -- will cover entire page/height */
     border: none;
-    background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
 }
 #mainbodypage {
     margin-top: 110px; /* should be same as menufixed1 */
@@ -145,7 +146,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, 
     height: 500px;
     /*height: auto; -- will cover entire page/height */
     border: none;
-    background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
 }
 #mainbodypagerelative { /* modded from mainbodypage */
     position: relative;
