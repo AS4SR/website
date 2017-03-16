@@ -11,6 +11,7 @@ body {
     margin: 0 0;
     /* margin: 0 auto; /* should align everything horizontally (left-right as auto) */
     padding: 0;
+    font-family: "Open Sans","Gentium Book Basic",Myriad,Minion;
 }
 h1 {color: blue;}
 p {color: red;}
