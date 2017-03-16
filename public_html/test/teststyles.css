@@ -108,11 +108,11 @@ li.navbar a {
     /*width: 730px;
     margin: auto;
     width: auto;*/
-    width: 735px; /* 960px-225px = 735px for requested UC standard width */
     /*padding: 0;*/
     margin-top: 110px; /* should be same as menufixed1 */
     margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
-    padding: 10px 10px; /* spacing in addition to margin-top and margin-left offset */
+    padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
+    width: 715px; /* 960px-235px (menufixed1 width+left) = 725px - (padding left+right/2) = 715px for requested UC standard width */
     border: none;
     background-color: #ffffff; /* "university white" */
 }
