@@ -78,18 +78,18 @@ li.navbar a {
 /* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
 #topfixed1 {
     position: fixed;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
     width: 960px; /* requested UC standard width */
     height: 100px;
-    /*border: none;*/
+    border: none;
     background-color: #000000; /* "university black" */
 }
 #menufixed1 {
     position: fixed;
-    top: 110px; /* should be same as height+top+bottom of topfixed1 */
+    top: 120px; /* should be same as height+top+bottom of topfixed1 */
     left: 5px;
     bottom: 0px; /* should force override by ul above? */
     width: 225px;
