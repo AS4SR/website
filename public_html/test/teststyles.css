@@ -93,7 +93,8 @@ li.navbar a {
 }
 #menufixed1 {
     position: fixed;
-    top: 110px; /* should be same as height+(top+bottom)/2 of topfixed1 */
+    top: 120px; /* should be same as height+top+bottom of topfixed1 */
+    /*top: 110px; /* should be same as height+(top+bottom)/2 of topfixed1 */
     left: 10px;
     bottom: 0px; /* should force override by ul above? */
     width: 225px;
