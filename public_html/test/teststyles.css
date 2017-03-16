@@ -111,7 +111,8 @@ li.navbar a {
     /*padding: 0;*/
     margin-top: 110px; /* should be same as menufixed1 */
     top: 10px; /* spacing in addition to margin-top offset */
-    margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
+    /*margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
+    margin-left: 225px; /* should be same as width of menufixed1 */
     left: 0px; /* spacing in addition to margin-left offset */
     /*left: 225px;*/
     border: none;
