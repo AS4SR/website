@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* body {background-color: #cd0e2b;} /* "university banner red" */
+/* h1 {color: #e00122;} /* "university red" main color */
+/* p {color: #000000;} /* "university black" */
+
+/*body {background-color: powderblue;}*/
+body {
+    /* background-color: #ffffff; */
+    background-color: #e00122; /* "university red" main color */
+    margin: 0 0;
+    /* margin: 0 auto; /* should align everything horizontally (left-right as auto) */
+    padding: 0;
+    font-family: "Open Sans","Gentium Book Basic",Myriad,Minion;
+}
+h1 {color: blue;}
+/*p {color: red;}*/
+p {color: #000000;} /* "university black" */
+
+/* layout example, div no tables: http://www.htmlgoodies.com/beyond/css/article.php/3642151/CSS-Layouts-Without-Tables.htm */
+
+#bodywrapper { /* for centering and specifying width/height of the entire page */
+    width: 960px; /* requested UC standard width */
+    border: none;
+    margin: 0px auto; /* auto here should center the page left-right */
+    padding: 0px;
+}
+#topofpage {
+		vertical-align:top;
+    width: 960px; /* requested UC standard width */
+    height: 200px;
+    border: none;
+    margin: 0;
+    padding: 0; /* 0px? */
+    background-color: #000000; /* "university black" */
+}
+#middleofpage {
+    /*margin-top:10px;*/
+    /*padding-bottom:10px;*/
+    margin: 0;
+    padding: 0;
+}
+#middleofpage div {
+    padding: 0px;
+    border: none;
+    float: left;
+}
+#verticalmenubar {
+    vertical-align:top;
+    width: 225px;
+    height: 500px;
+    /*height: auto; -- will cover entire page/height(?) */
+    border: none;
+    /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
+    margin: 0;
+    padding: 0;
+}
+#mainbody {
+    /*margin-top: 110px; /* should be same as menufixed1 */
+    /*margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
+    /*margin-top: -19px; /* not sure why this is necessary, or where the extra approx. line of space is coming from... */
+    /*margin-left: 7px; /* not sure why this is necessary... */
+    margin-top: -22px; /* not sure why this is necessary, or where the extra approx. line of space is coming from... */
+    margin-left: 4px; /* not sure why this is necessary... */
+    padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
+    width: 715px; /* 960px-235px (menufixed1 width+left) = 725px - (padding left+right/2) = 715px for requested UC standard width */
+    border: none;
+    background-color: #ffffff; /* "university white" */
+    vertical-align:top;
+    border:none;
+    /*margin:0;
+    padding:0;*/
+}
+#footer { /* ??? */
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #bbb;
+    width:948px;
+}
+#bottomofpage { /* ??? */
+    clear:both;
+    text-align:right;
+}
+  
+/* end layout example */
+
+
+/* CSS navbar heavily modified from: http://www.w3schools.com/css/css_navbar.asp */
+/* another example, having to do with class="navbar": https://www.w3.org/Style/Examples/011/firstcss.en.html */
+
+/*td {
+    vertical-align: top;
+}*/
+
+/* need to override padding apparently?: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
+ul.level1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 225px;
+    background-color: #000000; /* "university black" */
+    /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
+    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
+    overflow: auto; /* enable scrolling if the sidenav has too much content */
+}
+
+ul.level2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 25px;
+    width: 225px;
+    background-color: #000000; /* "university black" */
+    /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
+    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
+    overflow: auto; /* enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* change the link color on mouse pointer hover */
+li a:hover:not(.active) {
+    background-color: #e00122; /* "university red" main color */
+    color: #ffffff;
+}
+
+.active {
+    background-color: #e00122; /* "university red" main color */
+    color: #ffffff;
+}
+
+/* end CSS navbar example */
+
+
+/* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
+    display: block;
+    font: "Open Sans";
+}
