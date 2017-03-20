@@ -149,5 +149,5 @@ li a:hover:not(.active) {
 h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
     display: block;
     /*font: "Open Sans";*/
-    font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;
+    /*font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;*/
 }
