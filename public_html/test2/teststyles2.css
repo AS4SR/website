@@ -34,6 +34,43 @@ p {color: #000000;} /* "university black" */
     padding: 0; /* 0px? */
     background-color: #000000; /* "university black" */
 }
+
+#topbarwrapper {
+    /*margin-top:10px;*/
+    /*padding-bottom:10px;*/
+    width= 960px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#topbarwrapper div {
+    /*padding: 0px;
+    border: none;*/
+    float: left;
+}
+#UClogo-left {
+    text-align: left;
+    padding-left: 20px;
+    vertical-align: middle;
+    width: 225px;
+    height: auto; /*-- will cover entire page/height(?) */
+    border: none;
+    /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    margin: 0;
+    padding: 0;
+}
+#labname-right {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 36px;
+    padding-right: 10px;
+    /*padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
+    width: 735px; /* 960px-225px (topofpage width - UClogo-left width) = 735px */
+    border:none;
+    /*margin:0;
+    padding:0;*/
+}
+
 #middleofpage {
     /*margin-top:10px;*/
     /*padding-bottom:10px;*/
