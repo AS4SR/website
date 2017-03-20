@@ -53,7 +53,7 @@ p {color: #000000;} /* "university black" */
     padding-left: 20px;
     vertical-align: middle;
     width: 225px;
-    height: auto; /*-- will cover entire page/height(?) */
+    height: 200px; /*auto; /*-- will cover entire page/height(?) */
     border: none;
     /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
     margin: 0;
