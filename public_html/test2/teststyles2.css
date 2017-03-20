@@ -26,7 +26,7 @@ p {color: #000000;} /* "university black" */
     padding: 0px;
 }
 #topofpage {
-    vertical-align: middle;
+    vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
     height: 175px;
     border: none;
@@ -43,8 +43,8 @@ p {color: #000000;} /* "university black" */
     height: 175px; /* centers it if same as height of containing div? */
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
 }
 #topbarwrapper div {
     /*padding: 0px;
@@ -55,7 +55,7 @@ p {color: #000000;} /* "university black" */
     text-align: left;
     padding-left: 20px;
     /*padding: auto 20px;*/
-    /*vertical-align: middle;*/
+    vertical-align: middle;
     width: 225px;
     margin: 0;
     /*line-height: 175px; /* centers it if same as height of containing div? */
@@ -67,7 +67,7 @@ p {color: #000000;} /* "university black" */
 }
 #labname-right {
     text-align: right;
-    /*vertical-align: middle;*/
+    vertical-align: middle;
     font-size: 36px;
     /*padding: auto 10px;*/
     padding-right: 10px;
