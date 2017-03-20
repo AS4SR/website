@@ -40,6 +40,7 @@ p {color: #000000;} /* "university black" */
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px;
+    height: 200px; /* centers it if same as height of containing div? */
     line-height: 200px; /* centers it if same as height of containing div? */
     border: none;
     margin: 0;
