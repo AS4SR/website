@@ -146,7 +146,7 @@ li a:hover:not(.active) {
 
 
 /* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
-h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
+h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl, a {
     display: block;
     /*font: "Open Sans";*/
     font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;
