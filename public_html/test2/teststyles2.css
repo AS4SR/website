@@ -57,6 +57,7 @@ p {color: #000000;} /* "university black" */
     /*padding: auto 20px;*/
     /*vertical-align: middle;*/
     width: 225px;
+    margin: 0;
     /*line-height: 175px; /* centers it if same as height of containing div? */
     /*height: 200px; /*auto; /*-- will cover entire page/height(?) */
     /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
@@ -70,6 +71,7 @@ p {color: #000000;} /* "university black" */
     font-size: 36px;
     /*padding: auto 10px;*/
     padding-right: 10px;
+    margin: 0;
     /*padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
     width: 735px; /* 960px-225px (topofpage width - UClogo-left width) = 735px */
     /*line-height: 175px; /* centers it if same as height of containing div? */
