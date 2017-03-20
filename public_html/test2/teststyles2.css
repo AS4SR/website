@@ -38,7 +38,7 @@ p {color: #000000;} /* "university black" */
 #topbarwrapper {
     /*margin-top:10px;*/
     /*padding-bottom:10px;*/
-    vertical-align: middle;
+    /*vertical-align: middle; /* not working!!! */
     width: 960px;
     border: none;
     margin: 0;
@@ -54,6 +54,7 @@ p {color: #000000;} /* "university black" */
     padding-left: 20px;
     /*vertical-align: middle;*/
     width: 225px;
+    line-height: 200px; /* centers it if same as height of containing div? */
     /*height: 200px; /*auto; /*-- will cover entire page/height(?) */
     /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
     /*border: none;
@@ -67,6 +68,7 @@ p {color: #000000;} /* "university black" */
     padding-right: 10px;
     /*padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
     width: 735px; /* 960px-225px (topofpage width - UClogo-left width) = 735px */
+    line-height: 200px; /* centers it if same as height of containing div? */
     /*border:none;
     /*margin:0;
     padding:0;*/
