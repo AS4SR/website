@@ -39,7 +39,7 @@ p {color: #000000;} /* "university black" */
     /*margin-top:20px;*/
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
-    /*width: 960px;*/
+    width: 960px; /* width = topofpage width (so that everything ends up on the same "level" */
     /*height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
