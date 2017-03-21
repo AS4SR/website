@@ -28,7 +28,7 @@ p {color: #000000;} /* "university black" */
 #topofpage {
     vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
-    height: 155px;
+    height: 125px;
     border: none;
     margin: 0;
     /*padding: 0; /* 0px? */ /* does this contradict vertical-align?? */
@@ -55,8 +55,8 @@ p {color: #000000;} /* "university black" */
 }
 #UClogo-left { /* (150 x 65) */
     text-align: left;
-    padding-top: 45px; /* 65 + 45 + 45 = 65 + 90 = 155 */
-    padding-bottom: 45px;
+    padding-top: 30px; /* 65 (image height) + 30 (this) + 30 (padding-bottom) = 65 + 60 = 125 (topofpage height) */
+    padding-bottom: 30px;
     /*vertical-align: middle;*/
     padding-left: 25px;
     padding-right: 0px;
@@ -76,7 +76,7 @@ p {color: #000000;} /* "university black" */
     font-size: 36px;
     padding-right: 10px;
     /*margin: 0;*/
-    /*width: 750px; /* 960px-225px (topofpage width - UClogo-left width) = 735px - (20 + 10)/2 = 720 */
+    width: 725px; /* 960px-225px-10px (topofpage width - UClogo-left width - padding-right) = 735px-10px = 725px */
     /*height: 175px;*/
     /*line-height: 175px; /* centers it if same as height of containing div? */
     /*border:none;*/
