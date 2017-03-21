@@ -154,22 +154,6 @@ li a:hover:not(.active) {
 
 /* end CSS navbar example */
 
-/* getting .active link to work... */
-/* see example at: ?? */
-/*#sub-header ul li a,*/
-#sub-header ul li a,
-body.index li.testcssdiv a,
-body.about li.testcssdiv_clone a,
-body.testcssdiv li.testcssdiv a,
-body.testcssdiv_clone li.testcssdiv_clone a,
-body.testnavbar2 li.testnavbar2 a,
-body.testtopbar2div li.testtopbar2div a {
-    background-color: #e00122; /* "university red" main color */
-    color: #ffffff;
-}
-
-/* end getting .active link to work */
-
 
 /* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
 h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
