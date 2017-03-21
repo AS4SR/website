@@ -26,12 +26,12 @@ p {color: #000000;} /* "university black" */
     padding: 0px;
 }
 #topofpage {
-    vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
+    /*vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
     height: 115px;
     border: none;
     margin: 0;
-    /*padding: 0; /* 0px? */ /* does this contradict vertical-align?? */
+    padding: 0; /* 0px? */ /* does this contradict vertical-align?? */
     background-color: #000000; /* "university black" */
 }
 
