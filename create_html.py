@@ -1,6 +1,7 @@
 #!/usr/local/bin/python
 
-import osos.mkdir(html_site_dir)
+import os
+os.mkdir(html_site_dir)
 os.mkdir(html_site_dir)
 
 gitdir = "/home/spacerobotics/git_pulls/website-master/"
