@@ -26,7 +26,7 @@ p {color: #000000;} /* "university black" */
     padding: 0px;
 }
 #topofpage {
-    /*vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
+    vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
     height: 115px; /* 65 (UClogo-left pic height) + 25 + 25 (min safe distance, same as UClogo-left padding-left) = 65 + 50 = 115 */
     border: none;
