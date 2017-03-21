@@ -80,7 +80,7 @@ p {color: #000000;} /* "university black" */
     background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
     vertical-align:top;
     width: 225px;
-    height: 700px; /* need to make sure this is taller than the menu bar (will not show up below it no matter what, though (flashes in-and-away once pageload completes) */
+    height: 550px; /* need to make sure this is taller than the menu bar (will not show up below it no matter what, though (flashes in-and-away once pageload completes) */
     border: none;
     margin: 0;
     padding: 0;
