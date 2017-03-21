@@ -40,6 +40,7 @@ p {color: #000000;} /* "university black" */
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px;
+    background-color: green;
     /*height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
@@ -48,7 +49,6 @@ p {color: #000000;} /* "university black" */
     padding: 0;
 }
 #topbarwrapper div {
-    height: 115px; /* need to reiterate this here for below? */
     /*padding: 0px;*/
     border: none;
     /*margin: 0;*/
@@ -56,7 +56,9 @@ p {color: #000000;} /* "university black" */
 }
 #UClogo-left { /* (150 x 65) */
     text-align: left;
-    padding-top: 25px; /* 65 (image height) + 25 (this) + 25 (padding-bottom) = 65 + 50 = 115 (topofpage height) */
+    height: 115px;
+    vertical-align: middle; /* need height with this or will auto-crunch to smallest around image? */
+    /*padding-top: 25px; /* 65 (image height) + 25 (this) + 25 (padding-bottom) = 65 + 50 = 115 (topofpage height) */
     /*padding-bottom: 25px;
     /*vertical-align: middle;*/
     padding-left: 25px;
