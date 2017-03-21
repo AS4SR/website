@@ -1,0 +1,24 @@
+<!-- modified heavily from: http://stackoverflow.com/questions/7055024/how-to-store-nav-bar-in-one-file -->
+  <!-- <div id="menu"> -->
+    <ul class="level1">
+      <!-- ul style "height: 100%" doesn't seem to work here, needs to be handled above / in table that iframe sticks in -->
+      <li class="index"><a href='index.html'>Home</a></li>
+      <li class="about"><a href='about.html'>About Us</a></li>
+      <li class="resources"><a href='http://www.ase.uc.edu/~spacerobotics/resources.html' target="_blank">Resources</a></li>
+      <li class="robots"><a href='robots.html'>Robots</a>
+        <ul class="level2">
+          <li class="robots"><a href='robots.html'>Current Robots</a></li>
+          <li class="archived_robots"><a href='archived/robots.html'>Old Robots</a></li>
+        </ul>
+      </li>
+      <li class="archived"><a href='archived.html'>Archived Projects</a>
+        <ul class="level2">
+          <li class="testcssdiv"><a href='testcssdiv.html'>Test-1</a></li>
+          <li class="testcssdiv_clone"><a href='testcssdiv_clone.html'>Test-2</a></li>
+          <li class="testnavbar2"><a href='testnavbar2.html'>Test-3</a></li>
+          <li class="testtopbar2div"><a href='testtopbar2div.html'>Test-4</a></li>
+          <li class="teststyles2"><a href='teststyles2.css'>Test-5</a></li>
+        </ul>
+      </li>
+    </ul>
+  <!-- </div> -->
