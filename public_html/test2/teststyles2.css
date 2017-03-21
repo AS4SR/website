@@ -72,13 +72,13 @@ p {color: #000000;} /* "university black" */
     padding: 0;
 }
 #middleofpage div {
-    padding: 0px;
-    border: none;
+    /*padding: 0px;
+    border: none;*/
     float: left;
 }
 #middleofpage iframe {
-    padding: 0px;
-    border: none;
+    /*padding: 0px;
+    border: none;*/
     float: left;
 }
 #verticalmenubar {
@@ -98,12 +98,13 @@ p {color: #000000;} /* "university black" */
     /*margin-left: 7px; /* not sure why this is necessary... */
     /*margin-top: -22px; /* not sure why this is necessary, or where the extra approx. line of space is coming from... */
     /*margin-left: 4px; /* not sure why this is necessary... */
+    margin: 0;
     padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
     width: 715px; /* 960px-(225px+0+0)-(10+10) (bodywrapper width - (verticalmenubar width + padding-left + padding-right) - (padding left+right) = 960-225-20 = 715px for requested UC standard width */
-    border: none;
+    /*border: none;*/
     background-color: #ffffff; /* "university white" */
     vertical-align:top;
-    border:none;
+    /*border:none;*/
     /*margin:0;
     padding:0;*/
 }
