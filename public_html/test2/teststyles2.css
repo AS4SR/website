@@ -92,14 +92,13 @@ p {color: #000000;} /* "university black" */
     margin: 0;
     padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
 }
-#footer { /* ??? */
+#footer {
     background-color: #e00122; /* "university red" main color */
     float: left;
-    width: 960px;
+    width: 940px; /* 960px-(10+10) (bodywrapper width - (padding-left + padding-right) = 940px */
     border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding:10px;
+    margin: 0;
+    padding: 10px;
 }
 #bottomofpage { /* ??? */
     clear:both;
