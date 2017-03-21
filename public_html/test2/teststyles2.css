@@ -28,7 +28,7 @@ p {color: #000000;} /* "university black" */
 #topofpage {
     vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
-    height: 175px;
+    height: 155px;
     border: none;
     margin: 0;
     /*padding: 0; /* 0px? */ /* does this contradict vertical-align?? */
@@ -40,7 +40,7 @@ p {color: #000000;} /* "university black" */
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px;
-    height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
+    /*height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
     /*margin: auto 0; /* auto here should center top-bottom? */
