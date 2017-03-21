@@ -10,17 +10,18 @@ html_top = html_sitedir + "public_html/"
 import shutil
 # if the directory exists, remove it for new compilation
 try:
-    os.stat(html_site_dir)
-    shutil.rmtree(html_site_dir, ignore_errors=True) # removes whole directory tree, ignores read-only files (careful, this is dangerous!!!)
+    treetotest = gitdir + html_sitedir
+    os.stat(treetotest)
+    shutil.rmtree(treetotest, ignore_errors=True) # removes whole directory tree, ignores read-only files (careful, this is dangerous!!!)
 except:
     pass
 # thetop fresh directory there 
-os.mkdir(html_site_dir)
+os.mkdir(html_sitedir)
 # Reference: https://docs.python.org/2/library/os.html
 """
 
 # we are going to assume that the directory doesn't exist yet because it's a new wget download-and-unzip
-os.mkdir(gitdir + html_site_dir)
+os.mkdir(gitdir + html_sitedir)
 os.mkdir(html_top)
 
 css_filename = "teststyles3.css"
@@ -68,7 +69,7 @@ try:
     for i in range(len(html_create_list)):
         # first, try and create the directory the file's gonna reside in, in case it doesn't exist already
         try:
-            os.mkdir(html_site_dir+html_create_list[1])
+            os.mkdir(html_sitedir+html_create_list[1])
         except:
             pass
     
