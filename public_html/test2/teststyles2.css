@@ -38,10 +38,11 @@ p {color: #000000;} /* "university black" */
 /* table-cell method for centering (example): http://vanseodesign.com/css/vertical-centering/ */
 #topbarwrapper {
     width: 960px; /* width = topofpage width (so that everything ends up on the same "level" */
-    height: 115px;
+    height: 115px; /* 65 + 25 + 25 = 65 + 50 = 115 */
     border: none;
     margin: 0;
     padding: 0;
+    background-color: green;
     display: table; /* parent div */
 }
 #topbarwrapper div {
