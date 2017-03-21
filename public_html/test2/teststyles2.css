@@ -56,11 +56,8 @@ p {color: #000000;} /* "university black" */
 }
 #UClogo-left { /* (150 x 65) */
     text-align: left;
-    height: 115px;
-    vertical-align: middle; /* need height with this or will auto-crunch to smallest around image? */
-    /*padding-top: 25px; /* 65 (image height) + 25 (this) + 25 (padding-bottom) = 65 + 50 = 115 (topofpage height) */
-    /*padding-bottom: 25px;
-    /*vertical-align: middle;*/
+    padding-top: 25px; /* 65 (image height) + 25 (this) + 25 (padding-bottom) = 65 + 50 = 115 (topofpage height) */
+    padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 0px;
     width: 200px; /* 225px - 25 (verticalmenubarwidth - (padding-left)/2) = 200px */
@@ -79,7 +76,8 @@ p {color: #000000;} /* "university black" */
     font-size: 36px;
     padding-right: 10px;
     /*margin: 0;*/
-    width: 700px; /* 960px-225px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 735px-35px = 700px */
+    width: 600px;
+    /*width: 700px; /* 960px-225px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 735px-35px = 700px */
     height: 115px;
     /*height: 175px;*/
     /*line-height: 175px; /* centers it if same as height of containing div? */
