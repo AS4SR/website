@@ -40,7 +40,7 @@ p {color: #000000;} /* "university black" */
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px;
-    height: 175px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
+    height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
     /*margin: auto 0; /* auto here should center top-bottom? */
@@ -55,11 +55,12 @@ p {color: #000000;} /* "university black" */
 }
 #UClogo-left { /* (150 x 65) */
     text-align: left;
-    padding-top: 55px; /* 65 + 55 + 55 = 65 + 110 = 175 */
-    padding-bottom: 55px;
+    padding-top: 45px; /* 65 + 45 + 45 = 65 + 90 = 155 */
+    padding-bottom: 45px;
     /*vertical-align: middle;*/
-    padding-left: 30px;
-    width: 210px; /* 225px - 30/2 (verticalmenubarwidth - (padding-left)/2) = 210px
+    padding-left: 25px;
+    padding-right: 0px;
+    width: 200px; /* 225px - 25 (verticalmenubarwidth - (padding-left)/2) = 200px
     /*height: 175px;*/
     /*margin: 0;*/
     /*line-height: 175px; /* centers it if same as height of containing div? */
