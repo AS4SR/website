@@ -80,7 +80,8 @@ p {color: #000000;} /* "university black" */
     background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
     vertical-align:top;
     width: 225px;
-    height: 500px;
+    /*height: 500px;*/
+    height: 100%;
     border: none;
     margin: 0;
     padding: 0;
