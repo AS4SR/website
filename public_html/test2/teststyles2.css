@@ -1,20 +1,19 @@
 @charset "UTF-8";
 
-/* body {background-color: #cd0e2b;} /* "university banner red" */
-/* h1 {color: #e00122;} /* "university red" main color */
-/* p {color: #000000;} /* "university black" */
+/* UC colors, from style guide and elsewhere: */
+/* background-color: #cd0e2b; /* "university banner red" */
+/* background-color: #e00122; /* "university red" main color */
+/* background-color: #000000; /* "university black" */
+/* background-color: #eee; /* UC color, from body{} in http://ceas.uc.edu/etc/designs/uc/baseresponsive/br.css */
+/* background-color: #ffffff; /* "university white" */
 
-/*body {background-color: powderblue;}*/
 body {
-    /* background-color: #ffffff; */
-    background-color: #e00122; /* "university red" main color */
+    background-color: #eee; /* UC color, from body{} in http://ceas.uc.edu/etc/designs/uc/baseresponsive/br.css */
     margin: 0 0;
-    /* margin: 0 auto; /* should align everything horizontally (left-right as auto) */
     padding: 0;
     font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;
 }
 h1 {color: blue;}
-/*p {color: red;}*/
 p {color: #000000;} /* "university black" */
 
 /* layout example, div no tables: http://www.htmlgoodies.com/beyond/css/article.php/3642151/CSS-Layouts-Without-Tables.htm */
@@ -22,99 +21,85 @@ p {color: #000000;} /* "university black" */
 #bodywrapper { /* for centering and specifying width/height of the entire page */
     width: 960px; /* requested UC standard width */
     border: none;
-    margin: 0px auto; /* auto here should center the page left-right */
+    margin: 0px auto; /* auto here should align evrything horizontally / center the page left-right */
     padding: 0px;
 }
 #topofpage {
+    background-color: #000000; /* "university black" */
     vertical-align: middle; /* gets rid of "red space" between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
     height: 115px; /* 65 (UClogo-left pic height) + 25 + 25 (min safe distance, same as UClogo-left padding-left) = 65 + 50 = 115 */
     border: none;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* "university black" */
 }
 
 /* table-cell method for centering is used here for vertical-align to work (example: http://vanseodesign.com/css/vertical-centering/ ) */
 #topbarwrapper {
+    display: table; /* parent div */
     width: 960px; /* width = topofpage width (so that everything ends up on the same "level" */
     height: 115px; /* topofpage height */
     border: none;
     margin: 0;
     padding: 0;
-    display: table; /* parent div */
 }
 #topbarwrapper div {
     display: table-cell; /* child div */
 }
 #UClogo-left { /* (150 x 65) */
+    /*background-color: pink; /* overrides topofpage above, covers if overlaps properly */
     text-align: left;
     vertical-align: middle;
+    width: 200px; /* 225px - 25 (verticalmenubar width - padding-left = 200px */
     padding-left: 25px;
     padding-right: 0px;
-    width: 200px; /* 225px - 25 (verticalmenubar width - padding-left = 200px */
-    /*background-color: pink; /* overrides topofpage above, covers if overlaps properly */
 }
 #labname-right {
+    /*background-color: blue; /* overrides topofpage above, covers if overlaps properly */
     text-align: right;
     vertical-align: middle;
+    width: 725px; /* 960px-200px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 760px-35px = 725px */
     padding-right: 10px;
     font-size: 36px;
-    width: 725px; /* 960px-200px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 760px-35px = 725px */
-    /*background-color: blue; /* overrides topofpage above, covers if overlaps properly */
 }
+/* end table-cell method for centering use */
 
 #middleofpage {
-    /*margin-top:10px;*/
-    /*padding-bottom:10px;*/
     border: none;
     margin: 0;
     padding: 0;
 }
 #middleofpage div {
-    /*padding: 0px;
-    border: none;*/
     float: left;
 }
 #middleofpage iframe {
-    /*padding: 0px;
-    border: none;*/
     float: left;
 }
 #verticalmenubar {
+    /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
     vertical-align:top;
     width: 225px;
     height: 500px;
     border: none;
-    /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
-    background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
     margin: 0;
     padding: 0;
 }
 #mainbody {
-    /*margin-top: 110px; /* should be same as menufixed1 */
-    /*margin-left: 235px; /* should be same as width+(left+right)/2 of menufixed1 */
-    /*margin-top: -19px; /* not sure why this is necessary, or where the extra approx. line of space is coming from... */
-    /*margin-left: 7px; /* not sure why this is necessary... */
-    /*margin-top: -22px; /* not sure why this is necessary, or where the extra approx. line of space is coming from... */
-    /*margin-left: 4px; /* not sure why this is necessary... */
-    margin: 0;
-    padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
-    width: 715px; /* 960px-(225px+0+0)-(10+10) (bodywrapper width - (verticalmenubar width + padding-left + padding-right) - (padding left+right) = 960-225-20 = 715px for requested UC standard width */
-    /*border: none;*/
     background-color: #ffffff; /* "university white" */
     vertical-align:top;
-    /*border:none;*/
-    /*margin:0;
-    padding:0;*/
+    width: 715px; /* 960px-(225px+0+0)-(10+10) (bodywrapper width - (verticalmenubar width + padding-left + padding-right) - (padding left+right) = 960-225-20 = 715px for requested UC standard width */
+    margin: 0;
+    padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
 }
 #footer { /* ??? */
-    float:left;
-    margin-top:10px;
-    margin-bottom:10px;
+    background-color: #e00122; /* "university red" main color */
+    float: left;
+    width: 960px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding:10px;
-    border:1px solid #bbb;
-    width:948px;
 }
 #bottomofpage { /* ??? */
     clear:both;
@@ -133,24 +118,20 @@ p {color: #000000;} /* "university black" */
 
 /* need to override padding apparently?: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
 ul.level1 {
+    background-color: #000000; /* "university black" */
     list-style-type: none;
+    width: 225px;
     margin: 0;
     padding: 0;
-    width: 225px;
-    background-color: #000000; /* "university black" */
-    /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
-    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
 ul.level2 {
+    background-color: #000000; /* "university black" */
     list-style-type: none;
+    width: 225px;
     margin: 0;
     padding: 0px 25px;
-    width: 225px;
-    background-color: #000000; /* "university black" */
-    /*height: 100%; /* full height */ /* this causes issues with multi-level list but does show everything *?
-    /*position: fixed; /*position: relative; fixed; /* make it stick, even on scroll */ /* this makes strange problems with multi-level list */
     overflow: auto; /* enable scrolling if the sidenav has too much content */
 }
 
