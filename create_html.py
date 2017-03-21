@@ -1,8 +1,6 @@
 #!/usr/bin/python
 
 import os
-os.mkdir(html_site_dir)
-os.mkdir(html_site_dir)
 
 gitdir = "/home/spacerobotics/git_pulls/website-master/"
 html_sitedir = "html_site/"
@@ -22,7 +20,7 @@ os.mkdir(html_site_dir)
 """
 
 # we are going to assume that the directory doesn't exist yet because it's a new wget download-and-unzip
-os.mkdir(html_site_dir)
+os.mkdir(gitdir + html_site_dir)
 os.mkdir(html_top)
 
 css_filename = "teststyles3.css"
