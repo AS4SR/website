@@ -28,7 +28,7 @@ p {color: #000000;} /* "university black" */
 #topofpage {
     /*vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
-    /*height: 115px; /* 65 (UClogo-left pic height) + 25 + 25 (min safe distance, same as UClogo-left padding-left) = 65 + 50 = 115 */
+    height: 115px; /* 65 (UClogo-left pic height) + 25 + 25 (min safe distance, same as UClogo-left padding-left) = 65 + 50 = 115 */
     border: none;
     margin: 0;
     padding: 0; /* 0px? */ /* does this contradict vertical-align?? */
@@ -38,7 +38,7 @@ p {color: #000000;} /* "university black" */
 /* table-cell method for centering (example): http://vanseodesign.com/css/vertical-centering/ */
 #topbarwrapper {
     width: 960px; /* width = topofpage width (so that everything ends up on the same "level" */
-    height: 115px; /* 65 (UClogo-left pic height) + 25 + 25 (min safe distance, same as UClogo-left padding-left) = 65 + 50 = 115 */
+    height: 115px; /* topofpage height */
     border: none;
     margin: 0;
     padding: 0;
