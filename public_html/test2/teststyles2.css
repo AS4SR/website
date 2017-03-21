@@ -40,7 +40,6 @@ p {color: #000000;} /* "university black" */
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px;
-    background-color: green;
     /*height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
@@ -74,10 +73,11 @@ p {color: #000000;} /* "university black" */
     text-align: right;
     vertical-align: middle;
     font-size: 36px;
+    padding-top: 0; /* force to use vertical-align within larger space? */
+    padding-bottom: 0; /* force to use vertical-align within larger space? */
     padding-right: 10px;
     /*margin: 0;*/
-    width: 600px;
-    /*width: 700px; /* 960px-225px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 735px-35px = 700px */
+    width: 725px; /* 960px-200px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 760px-35px = 725px */
     height: 115px;
     /*height: 175px;*/
     /*line-height: 175px; /* centers it if same as height of containing div? */
