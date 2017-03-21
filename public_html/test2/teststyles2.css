@@ -73,7 +73,7 @@ p {color: #000000;} /* "university black" */
     font-size: 36px;
     padding-right: 10px;
     /*margin: 0;*/
-    width: 720px; /* 960px-225px (topofpage width - UClogo-left width) = 735px - (20 + 10)/2 = 720 */
+    /*width: 750px; /* 960px-225px (topofpage width - UClogo-left width) = 735px - (20 + 10)/2 = 720 */
     /*height: 175px;*/
     /*line-height: 175px; /* centers it if same as height of containing div? */
     /*border:none;*/
