@@ -40,7 +40,6 @@ p {color: #000000;} /* "university black" */
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px;
-    height: 115px; /* need to reiterate this here for below? */
     /*height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
@@ -49,6 +48,7 @@ p {color: #000000;} /* "university black" */
     padding: 0;
 }
 #topbarwrapper div {
+    height: 115px; /* need to reiterate this here for below? */
     /*padding: 0px;*/
     border: none;
     /*margin: 0;*/
