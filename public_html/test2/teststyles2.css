@@ -47,7 +47,7 @@ p {color: #000000;} /* "university black" */
     padding: 0;*/
 }
 #topbarwrapper div {
-    padding: 0px;
+    /*padding: 0px;*/
     border: none;
     float: left;
 }
