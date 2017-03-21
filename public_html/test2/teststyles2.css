@@ -119,7 +119,7 @@ p {color: #000000;} /* "university black" */
 ul.level1 {
     background-color: #000000; /* "university black" */
     list-style-type: none;
-    width: 225px;
+    width: 225px; /* verticalmenubar width */
     margin: 0;
     padding: 0;
     overflow: auto; /* enable scrolling if the sidenav has too much content */
@@ -128,7 +128,7 @@ ul.level1 {
 ul.level2 {
     background-color: #000000; /* "university black" */
     list-style-type: none;
-    width: 225px;
+    width: 175px; /* 225-(25+25) = verticalmenubar width - (padding-left + padding-right) = 225-50 = 175 */
     margin: 0;
     padding: 0px 25px;
     overflow: auto; /* enable scrolling if the sidenav has too much content */
