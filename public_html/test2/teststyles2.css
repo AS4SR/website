@@ -26,23 +26,22 @@ p {color: #000000;} /* "university black" */
     padding: 0px;
 }
 #topofpage {
-    vertical-align: middle; /* gets rid of space between topofpage and middleofpage!?! */
+    vertical-align: middle; /* gets rid of "red space" between topofpage and middleofpage!?! */
     width: 960px; /* requested UC standard width */
     height: 115px; /* 65 (UClogo-left pic height) + 25 + 25 (min safe distance, same as UClogo-left padding-left) = 65 + 50 = 115 */
     border: none;
     margin: 0;
-    padding: 0; /* 0px? */ /* does this contradict vertical-align?? */
+    padding: 0;
     background-color: #000000; /* "university black" */
 }
 
-/* table-cell method for centering (example): http://vanseodesign.com/css/vertical-centering/ */
+/* table-cell method for centering is used here for vertical-align to work (example: http://vanseodesign.com/css/vertical-centering/ ) */
 #topbarwrapper {
     width: 960px; /* width = topofpage width (so that everything ends up on the same "level" */
     height: 115px; /* topofpage height */
     border: none;
     margin: 0;
     padding: 0;
-    background-color: green;
     display: table; /* parent div */
 }
 #topbarwrapper div {
@@ -54,7 +53,7 @@ p {color: #000000;} /* "university black" */
     padding-left: 25px;
     padding-right: 0px;
     width: 200px; /* 225px - 25 (verticalmenubar width - padding-left = 200px */
-    background-color: pink; /* should get "overridden" by topofpage above, covered if overlaps properly */
+    /*background-color: pink; /* overrides topofpage above, covers if overlaps properly */
 }
 #labname-right {
     text-align: right;
@@ -62,7 +61,7 @@ p {color: #000000;} /* "university black" */
     padding-right: 10px;
     font-size: 36px;
     width: 725px; /* 960px-200px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 760px-35px = 725px */
-    background-color: blue; /* should get "overridden" by topofpage above, covered if overlaps properly */
+    /*background-color: blue; /* overrides topofpage above, covers if overlaps properly */
 }
 
 #middleofpage {
@@ -86,7 +85,6 @@ p {color: #000000;} /* "university black" */
     vertical-align:top;
     width: 225px;
     height: 500px;
-    /*height: auto; -- will cover entire page/height(?) */
     border: none;
     /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
     background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul above, covered if overlaps properly */
@@ -101,7 +99,7 @@ p {color: #000000;} /* "university black" */
     /*margin-top: -22px; /* not sure why this is necessary, or where the extra approx. line of space is coming from... */
     /*margin-left: 4px; /* not sure why this is necessary... */
     padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
-    width: 715px; /* 960px-235px (menufixed1 width+left) = 725px - (padding left+right/2) = 715px for requested UC standard width */
+    width: 715px; /* 960px-(225px+0+0)-(10+10) (bodywrapper width - (verticalmenubar width + padding-left + padding-right) - (padding left+right) = 960-225-20 = 715px for requested UC standard width */
     border: none;
     background-color: #ffffff; /* "university white" */
     vertical-align:top;
