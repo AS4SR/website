@@ -154,6 +154,24 @@ li a:hover:not(.active) {
 
 /* end CSS navbar example */
 
+/* getting ".active" link type stuff to work, see: http://stackoverflow.com/questions/10646775/active-menu-highlight-css */
+/* also see example at: http://www.apaddedcell.com/highlight-links-current-page-css */
+/*#sub-header ul li a,*/
+body.index li.index a,
+body.about li.about a,
+body.resources li. a,
+body.robots li. a,
+body.archived_robots li. a,
+body.testcssdiv li.testcssdiv a,
+body.testcssdiv_clone li.testcssdiv_clone a,
+body.testnavbar2 li.testnavbar2 a,
+body.testtopbar2div li.testtopbar2div a,
+body.teststyles2 li.teststyles2 a {
+    background-color: #e00122; /* "university red" main color */
+    color: #ffffff;
+}
+/* end getting ".active" link type stuff to work */
+
 a {
     target="_top"; /* since in pieces in some place-links, always push/overwrite/open in the _top
 }
