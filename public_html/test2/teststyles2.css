@@ -40,23 +40,27 @@ p {color: #000000;} /* "university black" */
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px; /* width = topofpage width (so that everything ends up on the same "level" */
+    height: 115px;
     /*height: 155px; /* centers it if same as height of containing div? */ /* 65+30+30 = 125, but the font text requires (how much?) more height...
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
     /*margin: auto 0; /* auto here should center top-bottom? */
     margin: 0;
     padding: 0;
+    display: table;
 }
 #topbarwrapper div {
     /*padding: 0px;*/
     /*border: none;*/
     /*margin: 0;*/
-    float: left;
+    display: table-cell;
+    /*float: left;*/
 }
 #UClogo-left { /* (150 x 65) */
     text-align: left;
-    padding-top: 25px; /* 65 (image height) + 25 (this) + 25 (padding-bottom) = 65 + 50 = 115 (topofpage height) */
-    padding-bottom: 25px;
+    /*padding-top: 25px; /* 65 (image height) + 25 (this) + 25 (padding-bottom) = 65 + 50 = 115 (topofpage height) */
+    /*padding-bottom: 25px;*/
+    vertical-align: middle;
     padding-left: 25px;
     padding-right: 0px;
     width: 200px; /* 225px - 25 (verticalmenubarwidth - (padding-left)/2) = 200px */
@@ -73,12 +77,12 @@ p {color: #000000;} /* "university black" */
     text-align: right;
     vertical-align: middle;
     font-size: 36px;
-    padding-top: 0; /* force to use vertical-align within larger space? */
-    padding-bottom: 0; /* force to use vertical-align within larger space? */
+    /*padding-top: 0; /* force to use vertical-align within larger space? */
+    /*padding-bottom: 0; /* force to use vertical-align within larger space? */
     padding-right: 10px;
     /*margin: 0;*/
     width: 725px; /* 960px-200px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 760px-35px = 725px */
-    height: 115px;
+    /*height: 115px;*/
     /*height: 175px;*/
     /*line-height: 175px; /* centers it if same as height of containing div? */
     background-color: blue; /* should get "overridden" by topofpage above, covered if overlaps properly */
