@@ -36,15 +36,15 @@ p {color: #000000;} /* "university black" */
 }
 
 #topbarwrapper {
-    margin-top:20px;
+    /*margin-top:20px;*/
     /*padding-bottom:10px;*/
     /*vertical-align: middle; /* not working!!! */
     width: 960px;
     height: 175px; /* centers it if same as height of containing div? */
     /*line-height: 175px; /* centers it if same as height of containing div? */
     border: none;
-    /*margin: 0;
-    padding: 0;*/
+    margin: auto 0;
+    padding: 0;
 }
 #topbarwrapper div {
     /*padding: 0px;*/
