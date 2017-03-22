@@ -7,7 +7,7 @@ http://www.ase.uc.edu/~spacerobotics/
 ## Usage notes for AS4SR website authors
 
 ### To add new content
-Follow the below, replacing MYCONTENT with the base name of the page that you want to create:
+Follow the below, replacing `MYCONTENT` with the base name of the page that you want to create:
 1. Create a file called MYCONTENT.part at https://github.com/AS4SR/website/public_html/_template_parts
 1. Add your html content to the file MYCONTENT.part
 1. Edit https://github.com/AS4SR/website/public_html/_templates/verticalmenubar.part to link to your file
@@ -24,7 +24,7 @@ Follow the below, replacing MYCONTENT with the base name of the page that you wa
 
 ### To update what's on the webserver
 1. Log in to the webserver
-1. Copy the pulldown_instructions2.sh file to /home/spacerobotics if it isn't already there, via:  
+1. Copy the `pulldown_instructions2.sh` file to `/home/spacerobotics` if it isn't already there, via:  
 `cd /home/spacerobotics && wget https://github.com/AS4SR/website/raw/master/pulldown_instructions2.sh`
 1. Run at the prompt:  
 `cd /home/spacerobotics && ./pulldown_instructions2.sh`
