@@ -37,13 +37,17 @@ os.mkdir(html_top)
 print("initial top-level compilation directory created...")
 """
 
-css_filename = "teststyles3.css"
-css_filedir = "test2/"
+#css_filename = "teststyles3.css"
+#css_filedir = "test2/"
+#css_to_use = gitdir + "public_html/" + css_filedir + css_filename
+css_filename = "styles.css"
+css_filedir = "./"
 css_to_use = gitdir + "public_html/" + css_filedir + css_filename
 
 full_templatedir = gitdir + "public_html/" + "_templates/"
 html_full_template_pieces = \
-['html_full_template.top.0', # then add CSS file name, href="-->THISHERE<--"
+['html_full_template.top.0a', # then add title of webpage, <title>--THISHERE--</title>
+ 'html_full_template.top.0b', # then add CSS file name, href="-->THISHERE<--"
  'html_full_template.top.1', # then add body class="-->THISHERE<--"
  'html_full_template.top.2', # then add topofpage stuff (from testtopbar2div.html)
  'html_full_template.top.3', # then add verticalmenubar stuff (from testnavbar2.html)
@@ -67,8 +71,9 @@ html_create_list = \
 """
 
 html_create_list = \
-[['index','./','index.html','_template_parts/index.part'],
-['about','./','about.html','_template_parts/about.part']]
+[['index','./','index.html','_template_parts/index.part','Home'],
+['about','./','about.html','_template_parts/about.part','About']]
+titlerider = " - AS4SR Lab, University of Cincinnati"
 
 try:
     """ unnecessary, going to copy that over in the largr grab...
@@ -98,6 +103,9 @@ try:
         # grab the other file pieces you need on this run:
         print("grabbing pieces...")
         piece = []
+        #print(piece)
+        # then add title of webpage, <title>--THISHERE--</title>
+        piece.append(html_create_list[i][4] + titlerider)
         #print(piece)
         # add CSS file name, href="-->THISHERE<--"
         piece.append(css_filedir + css_filename)
