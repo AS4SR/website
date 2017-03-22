@@ -66,6 +66,7 @@ p {color: #000000;} /* "university black" */
 /* end table-cell method for centering use */
 
 #middleofpage {
+    background-color: #ffffff; /* "university white" */
     border: none;
     margin: 0;
     padding: 0;
