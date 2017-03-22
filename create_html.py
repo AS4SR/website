@@ -123,10 +123,12 @@ try:
         piece.append(tempholdtext)
         #print(piece)
         # add footer stuff
-        piece.append("testfooter (placeholder text)")
+        filename_temp = gitdir + "public_html/" + "_templates/footer.part"
+        f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
+        piece.append(tempholdtext)
         #print(piece)
         # add bottomofpage stuff
-        piece.append("testbottomofpage (placeholder text)")
+        piece.append("") #("testbottomofpage (placeholder text)")
         #print(piece)
         print("all pieces grabbed!")
         
