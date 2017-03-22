@@ -66,7 +66,6 @@ p {color: #000000;} /* "university black" */
 /* end table-cell method for centering use */
 
 #middleofpage {
-    background-color: #ffffff; /* "university white" */
     border: none;
     margin: 0;
     padding: 0;
@@ -91,6 +90,7 @@ p {color: #000000;} /* "university black" */
     background-color: #ffffff; /* "university white" */
     vertical-align:top;
     width: 715px; /* 960px-(225px+0+0)-(10+10) (bodywrapper width - (verticalmenubar width + padding-left + padding-right) - (padding left+right) = 960-225-20 = 715px for requested UC standard width */
+    height: 100%;
     margin: 0;
     padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
 }
