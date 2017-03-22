@@ -9,4 +9,7 @@
         <div id="labname-right">
             <a href="http://www.ase.uc.edu/~spacerobotics/index.html" target="_top" style="color:#e00122;text-decoration:none;"><b>Autonomous Systems<br>for S.P.A.C.E. R.O.B.O.T.I.C.S. Lab</b></a>
         </div>
+        <div id="lablogo-farright">
+            <a href="https://www.ase.uc.edu/~spacerobotics/index.html" target="_top"><img src="http://www.ase.uc.edu/~spacerobotics/images/AS4SR_logo.png" height="65px" style="vertical-align:middle;"></a>
+        </div>
     </div>
