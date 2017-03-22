@@ -65,6 +65,8 @@ p {color: #000000;} /* "university black" */
 }
 /* end table-cell method for centering use */
 
+/* table-cell method for height to not need to be specified and for the background color for the entire "cell" to be consistent */
+/* (example: http://vanseodesign.com/css/vertical-centering/ ) */
 #middleofpage {
     display: table; /* parent div */
     border: none;
@@ -73,11 +75,7 @@ p {color: #000000;} /* "university black" */
 }
 #middleofpage div {
     display: table-cell; /* child div */
-    /*float: left;*/
 }
-/*#middleofpage iframe {
-    float: left;
-}*/
 #verticalmenubar {
     /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
     /*background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul's below somewhat, covered if overlaps exactly */
@@ -85,7 +83,6 @@ p {color: #000000;} /* "university black" */
     display: table-cell; /* child div */
     vertical-align:top;
     width: 225px;
-    /*height: 400px; /* need to make sure this is taller than the menu bar (otherwise, get a scrollbar for the menu, bleh) */
     border: none;
     margin: 0;
     padding: 0;
@@ -98,6 +95,8 @@ p {color: #000000;} /* "university black" */
     margin: 0;
     padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
 }
+/* end table-cell method for no-height-spec and consistent background color use */
+
 #footer {
     background-color: #e00122; /* "university red" main color */
     float: left;
