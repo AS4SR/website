@@ -59,6 +59,7 @@ html_create_list = \
 ['about','./','about.html','_template_parts/about.part']]
 
 try:
+    """ unnecessary, going to copy that over in the largr grab...
     print("copying over CSS file...")
     # copy over the CSS file being used to the html_top directory
     f = open(css_to_use,'r')
@@ -68,6 +69,7 @@ try:
     f.write(css_filecontents)
     f.close()
     print("CSS file copied!")
+    """
 
     print("starting html creation...")
     for i in range(len(html_create_list)):
@@ -84,47 +86,47 @@ try:
         # grab the other file pieces you need on this run:
         print("grabbing pieces...")
         piece = []
-        print(piece)
+        #print(piece)
         # add CSS file name, href="-->THISHERE<--"
         piece.append(css_filedir + css_filename)
-        print(piece)
+        #print(piece)
         # add body class="-->THISHERE<--"
         piece.append(html_create_list[i][0])
-        print(piece)
+        #print(piece)
         # add topofpage stuff (from testtopbar2div.html)
         filename_temp = gitdir + "public_html/" + "_templates/topofpage.part"
         f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
         piece.append(tempholdtext)
-        print(piece)
+        #print(piece)
         # add verticalmenubar stuff (from testnavbar2.html)
         filename_temp = gitdir + "public_html/" + "_templates/verticalmenubar.part"
         f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
         piece.append(tempholdtext)
-        print(piece)
+        #print(piece)
         # add mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
         filename_temp = gitdir + "public_html/" + html_create_list[i][3]
         f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
         piece.append(tempholdtext)
-        print(piece)
+        #print(piece)
         # add footer stuff
         piece.append("testfooter (placeholder text)")
-        print(piece)
+        #print(piece)
         # add bottomofpage stuff
         piece.append("testbottomofpage (placeholder text)")
-        print(piece)
+        #print(piece)
         print("all pieces grabbed!")
         
         # then, stitch the file together:
         print("stitching file together...")
         f = open(full_templatedir + html_full_template_pieces[0],'r');
         filecontents = f.read(); f.close();
-        print("template piece " + str(0) + "stitched...")
+        print("template piece " + str(0) + " stitched...")
         for j in range(len(html_full_template_pieces)-1): # already read 0'th piece of html_full_template_pieces[]
             filecontents += piece[j] # start at 0'th piece
-            print("piece " + str(j) + "stitched...")
+            print("piece " + str(j) + " stitched...")
             f = open(full_templatedir + html_full_template_pieces[j+1],'r');
             filecontents += f.read(); f.close();
-            print("template piece " + str(j+1) + "stitched...")
+            print("template piece " + str(j+1) + " stitched...")
         print("file stitched!")
     
         # now, write everything to the file
