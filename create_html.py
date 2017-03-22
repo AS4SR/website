@@ -1,4 +1,10 @@
 #!/usr/bin/python
+"""
+Copyright 2017 University of Cincinnati
+All rights reserved. See LICENSE file at:
+https://github.com/AS4SR/website
+Additional copyright may be held by others, as reflected in the commit history.
+"""
 
 import os
 
