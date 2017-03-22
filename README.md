@@ -36,4 +36,4 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 Copyright for webpage content: University of Cincinnati, 2017
 
 Copyright for code: BSD 3-clause license, University of Cincinnati, 2017  
-(The code is/will be used to generate the full html webpages.)
+(The code is used to generate the full html webpages from the files in the `_templates` and `_template_parts` directories.)
