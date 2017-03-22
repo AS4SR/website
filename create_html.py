@@ -71,8 +71,14 @@ html_create_list = \
 """
 
 html_create_list = \
-[['index','./','index.html','_template_parts/index.part','Home'],
-['about','./','about.html','_template_parts/about.part','About']]
+[['','./','custom404.html','_template_parts/custom404.part','404 Error'], # note that we don't want to add this to the CSS or menubar list
+ ['index','./','index.html','_template_parts/index.part','Home'],
+ ['about','./','about.html','_template_parts/about.part','About'],
+ ['resources','./','resources.html','_template_parts/coming_soon.part','Resources'],
+ ['robots','./','robots.html','_template_parts/coming_soon.part','Robots'],
+ ['archived_robots','archived/','robots.html','_template_parts/coming_soon.part','Archived Robots'],
+ ['archived','./','archived.html','_template_parts/coming_soon.part','Archived Projects'],
+ ['later','archived_projects/','later.html','_template_parts/coming_soon.part','...']]
 titlerider = " - AS4SR Lab, University of Cincinnati"
 
 try:
