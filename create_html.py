@@ -8,6 +8,8 @@ Additional copyright may be held by others, as reflected in the commit history.
 
 import os
 
+website_top="http://www.ase.uc.edu/~spacerobotics/"
+
 gitdir = "/home/spacerobotics/git_pulls/website-master/"
 """ for debugging, use this instead (otherwise may overwrite currently-existing files under gitdir of public_html):
 html_sitedir = "html_site/"
@@ -114,7 +116,7 @@ try:
         piece.append(html_create_list[i][4] + titlerider)
         #print(piece)
         # add CSS file name, href="-->THISHERE<--"
-        piece.append(css_filedir + css_filename)
+        piece.append(website_top + css_filedir + css_filename)
         #print(piece)
         # add body class="-->THISHERE<--"
         piece.append(html_create_list[i][0])
