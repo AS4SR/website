@@ -66,12 +66,14 @@ p {color: #000000;} /* "university black" */
 /* end table-cell method for centering use */
 
 #middleofpage {
+    display: table; /* parent div */
     border: none;
     margin: 0;
     padding: 0;
 }
 #middleofpage div {
-    float: left;
+    display: table-cell; /* child div */
+    /*float: left;*/
 }
 /*#middleofpage iframe {
     float: left;
