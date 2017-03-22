@@ -59,9 +59,16 @@ p {color: #000000;} /* "university black" */
     /*background-color: blue; /* overrides topofpage above, covers if overlaps properly */
     text-align: right;
     vertical-align: middle;
-    width: 725px; /* 960px-200px-25px-10px (topofpage width - UClogo-left width - UClogo-left padding-left - padding-right) = 760px-35px = 725px */
+    width: 650px; /* 960px-(200px+25px)-(65px+10px)-10px (topofpage width - (UClogo-left width + UClogo-left padding-left) - (lablogo-farright scaledpicwidth + lablogo-farright padding-right) - padding-right) = 960px-225px-75px-10px = 960px-300px-10px = 650px */
     padding-right: 10px;
     font-size: 36px;
+}
+#lablogo-farright {
+    /*background-color: blue; /* overrides topofpage above, covers if overlaps properly */
+    text-align: right;
+    vertical-align: middle;
+    /*width: 65px; /* with height set to 65px AS4SR_logo.png will scale to ~65-66px in width */
+    padding-right: 10px;
 }
 /* end table-cell method for centering use */
 
