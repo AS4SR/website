@@ -58,20 +58,6 @@ html_full_template_pieces = \
  'html_full_template.top.6', # then add bottomof page stuff
  'html_full_template.top.7'] # this ends off the html file
 
-"""
-html_create_list = \
-[['index','./','index.html','_template_parts/index.part'],
-['about','./','about.html','_template_parts/about.part'],
-['resources','./','resources.html','_template_parts/resources.part'],
-['robots','./','robots.html','_template_parts/robots.part'],
-['archived_robots','archived/','robots.html','_template_parts/archived_robots.part'],
-['archived','./','archived.html','_template_parts/archived.part'],
-['testcssdiv','test2/','testcssdiv.html','_template_parts/testcssdiv.part'],
-[testcssdiv_clone','test2/','testcssdiv_clone.html','_template_parts/testcssdiv_clone.part'],
-['testnavbar2','test2/','testnavbar2.html','_template_parts/testnavbar2.part'],
-['testtopbar2div','test2/','testtopbar2div.html','_template_parts/testtopbar2div.part']]*/
-"""
-
 html_create_list = \
 [['','./','custom404.html','_template_parts/custom404.part','404 Error'], # note that we don't want to add this to the CSS or menubar list
  ['index','./','index.html','_template_parts/index.part','Home'],
