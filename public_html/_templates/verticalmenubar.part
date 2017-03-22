@@ -1,18 +1,18 @@
 <!-- modified heavily from: http://stackoverflow.com/questions/7055024/how-to-store-nav-bar-in-one-file -->
   <!-- <div id="menu"> -->
     <ul class="level1">
-      <li class="index"><a href='index.html'>Home</a></li>
-      <li class="about"><a href='about.html'>About Us</a></li>
+      <li class="index"><a href='http://www.ase.uc.edu/~spacerobotics/index.html'>Home</a></li>
+      <li class="about"><a href='http://www.ase.uc.edu/~spacerobotics/about.html'>About Us</a></li>
       <li class="resources"><a href='http://www.ase.uc.edu/~spacerobotics/resources.html' target="_blank">Resources</a></li>
-      <li class="robots"><a href='robots.html'>Robots</a>
+      <li class="robots"><a href='http://www.ase.uc.edu/~spacerobotics/robots.html'>Robots</a>
         <ul class="level2">
-          <li class="robots"><a href='robots.html'>Current Robots</a></li>
-          <li class="archived_robots"><a href='archived/robots.html'>Old Robots</a></li>
+          <li class="robots"><a href='http://www.ase.uc.edu/~spacerobotics/robots.html'>Current Robots</a></li>
+          <li class="archived_robots"><a href='http://www.ase.uc.edu/~spacerobotics/archived/robots.html'>Old Robots</a></li>
         </ul>
       </li>
-      <li class="archived"><a href='archived.html'>Archived Projects</a>
+      <li class="archived"><a href='http://www.ase.uc.edu/~spacerobotics/archived.html'>Archived Projects</a>
         <ul class="level2">
-          <li class="later"><a href='archived_projects/later.html'>...</a></li>
+          <li class="later"><a href='http://www.ase.uc.edu/~spacerobotics/archived_projects/later.html'>...</a></li>
         </ul>
       </li>
     </ul>
