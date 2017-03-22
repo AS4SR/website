@@ -73,15 +73,15 @@ p {color: #000000;} /* "university black" */
 #middleofpage div {
     float: left;
 }
-#middleofpage iframe {
+/*#middleofpage iframe {
     float: left;
-}
+}*/
 #verticalmenubar {
     /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
     /*background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul's below somewhat, covered if overlaps exactly */
     vertical-align:top;
     width: 225px;
-    height: 550px; /* need to make sure this is taller than the menu bar (otherwise, get a scrollbar for the menu, bleh) */
+    height: 400px; /* need to make sure this is taller than the menu bar (otherwise, get a scrollbar for the menu, bleh) */
     border: none;
     margin: 0;
     padding: 0;
@@ -138,6 +138,7 @@ ul.level2 {
 li a {
     display: block;
     color: #ffffff;
+    background-color: #000000; /* "university black" */ /* will this force stuff to change back if not otherwise selected or hovering? */
     padding: 8px 16px;
     text-decoration: none;
 }
