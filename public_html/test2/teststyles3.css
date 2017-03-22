@@ -160,8 +160,8 @@ li a:hover:not(.active) {
 /*#sub-header ul li a,*/
 body.index li.index a,
 body.about li.about a,
-body.resources li. a,
-body.robots li. a,
+body.resources li.resources a,
+body.robots li.robots a,
 body.archived_robots li.archived_robots a,
 body.testcssdiv li.testcssdiv a,
 body.testcssdiv_clone li.testcssdiv_clone a,
