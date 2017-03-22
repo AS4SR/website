@@ -3,8 +3,12 @@
 import os
 
 gitdir = "/home/spacerobotics/git_pulls/website-master/"
+""" for debugging, use this instead (otherwise may overwrite currently-existing files under gitdir of public_html):
 html_sitedir = "html_site/"
 html_top = html_sitedir + "public_html/"
+"""
+html_sitedir = "public_html/"
+html_top = html_sitedir + "./"
 
 """
 import shutil
@@ -21,9 +25,11 @@ os.mkdir(html_sitedir)
 """
 
 # we are going to assume that the directory doesn't exist yet because it's a new wget download-and-unzip
+""" as above, already exists...
 os.mkdir(gitdir + html_sitedir)
 os.mkdir(html_top)
 print("initial top-level compilation directory created...")
+"""
 
 css_filename = "teststyles3.css"
 css_filedir = "test2/"
