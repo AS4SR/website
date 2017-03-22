@@ -84,26 +84,34 @@ try:
         # grab the other file pieces you need on this run:
         print("grabbing pieces...")
         piece = []
+        print(piece)
         # add CSS file name, href="-->THISHERE<--"
         piece[0] = css_filedir + css_filename
+        print(piece)
         # add body class="-->THISHERE<--"
         piece[1] = html_create_list[i][0]
+        print(piece)
         # add topofpage stuff (from testtopbar2div.html)
         filename_temp = gitdir + "public_html/" + "_templates/topofpage.part"
         f = open(filename_temp,'r');
         piece[2] = f.read(); f.close();
+        print(piece)
         # add verticalmenubar stuff (from testnavbar2.html)
         filename_temp = gitdir + "public_html/" + "_templates/verticalmenubar.part"
         f = open(filename_temp,'r');
         piece[3] = f.read(); f.close();
+        print(piece)
         # add mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
         filename_temp = gitdir + "public_html/" + html_create_list[i][3]
         f = open(filename_temp,'r');
         piece[4] = f.read(); f.close();
+        print(piece)
         # add footer stuff
         piece[5] = "testfooter"
+        print(piece)
         # add bottomofpage stuff
         piece[6] = "testbottomofpage"
+        print(piece)
         print("all pieces grabbed!")
         
         # then, stitch the file together:
