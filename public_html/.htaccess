@@ -2,3 +2,7 @@ addtype text/css .css
 ErrorDocument 404 http://www.ase.uc.edu/~spacerobotics/custom404.html
 # .git directory leave-out method from: http://serverfault.com/questions/128069/how-do-i-prevent-apache-from-serving-the-git-directory
 RedirectMatch 404 /\.git
+RedirectMatch 404 /\_templates
+RedirectMatch 404 /\_template_parts
+RedirectMatch 404 /\test
+RedirectMatch 404 /\test2
