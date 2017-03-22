@@ -4,7 +4,7 @@
       <li class="index"><a href='http://www.ase.uc.edu/~spacerobotics/index.html'>Home</a></li>
       <li class="about"><a href='http://www.ase.uc.edu/~spacerobotics/about.html'>About Us</a></li>
       <li class="resources"><a href='http://www.ase.uc.edu/~spacerobotics/resources.html' target="_blank">Resources</a></li>
-      <li class="robots"><a href='http://www.ase.uc.edu/~spacerobotics/robots.html'>Robots</a>
+      <li><a href='http://www.ase.uc.edu/~spacerobotics/robots.html'>Robots</a>
         <ul class="level2">
           <li class="robots"><a href='http://www.ase.uc.edu/~spacerobotics/robots.html'>Current Robots</a></li>
           <li class="archived_robots"><a href='http://www.ase.uc.edu/~spacerobotics/archived/robots.html'>Old Robots</a></li>
