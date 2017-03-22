@@ -85,7 +85,7 @@ p {color: #000000;} /* "university black" */
     display: table-cell; /* child div */
     vertical-align:top;
     width: 225px;
-    height: 400px; /* need to make sure this is taller than the menu bar (otherwise, get a scrollbar for the menu, bleh) */
+    /*height: 400px; /* need to make sure this is taller than the menu bar (otherwise, get a scrollbar for the menu, bleh) */
     border: none;
     margin: 0;
     padding: 0;
