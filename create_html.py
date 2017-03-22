@@ -120,12 +120,14 @@ try:
         print("stitching file together...")
         f = open(full_templatedir + html_full_template_pieces[0],'r');
         filecontents = f.read(); f.close();
+        filecontents = filecontents[0:(len(filecontents)-1)]# remove '\n' at end of filecontents fileread
         print("template piece " + str(0) + " stitched...")
         for j in range(len(html_full_template_pieces)-1): # already read 0'th piece of html_full_template_pieces[]
             filecontents += piece[j] # start at 0'th piece
             print("piece " + str(j) + " stitched...")
             f = open(full_templatedir + html_full_template_pieces[j+1],'r');
             filecontents += f.read(); f.close();
+            filecontents = filecontents[0:(len(filecontents)-1)]# remove '\n' at end of filecontents fileread
             print("template piece " + str(j+1) + " stitched...")
         print("file stitched!")
     
