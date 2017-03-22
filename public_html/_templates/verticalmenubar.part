@@ -10,7 +10,8 @@
           <li class="archived_robots"><a href='http://www.ase.uc.edu/~spacerobotics/archived/robots.html'>Old Robots</a></li>
         </ul>
       </li>
-      <li class="archived"><a href='http://www.ase.uc.edu/~spacerobotics/archived.html'>Archived Projects</a>
+      <li class="archived"><a href='http://www.ase.uc.edu/~spacerobotics/archived.html'>Archived Projects</a></li>
+      <li>
         <ul class="level2">
           <li class="later"><a href='http://www.ase.uc.edu/~spacerobotics/archived_projects/later.html'>...</a></li>
         </ul>
