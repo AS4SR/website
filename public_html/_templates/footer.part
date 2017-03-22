@@ -1,5 +1,5 @@
-<table align="center">
-    <tr>
+<table width=960px style="font-size:14px;">
+    <tr align="center">
         <td>
             <a href="mailto:cat.mcghan@uc.edu">AS4SR Lab - Victory Parkway</a><br>
             2220 Victory Parkway<br>
@@ -23,8 +23,9 @@
         </td>
     </tr>
 </table>
-<p align=right>
-    <a href="http://www.ipo.uc.edu/index.cfm?fuseaction=home.infringement" style="color:#ffffff">Copyright Information</a> © <a href="http://www.uc.edu">
+<p align="right" style="color:#ffffff;font-size:12px">
+    <a href="http://www.ipo.uc.edu/index.cfm?fuseaction=home.infringement" style="color:#ffffff;">Copyright Information</a> © 
+    <a href="http://www.uc.edu" style="color:#ffffff;"> 
     University of Cincinnati</a>, 
     2017
 </p>
