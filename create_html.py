@@ -29,7 +29,7 @@ css_filename = "teststyles3.css"
 css_filedir = "test2/"
 css_to_use = gitdir + "public_html/" + css_filedir + css_filename
 
-full_templatedir = gitdir + "_templates/"
+full_templatedir = gitdir + "public_html/" + "_templates/"
 html_full_template_pieces = \
 ['html_full_template.top.0', # then add CSS file name, href="-->THISHERE<--"
  'html_full_template.top.1', # then add body class="-->THISHERE<--"
