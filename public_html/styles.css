@@ -163,11 +163,8 @@ body.about li.about a,
 body.resources li.resources a,
 body.robots li.robots a,
 body.archived_robots li.archived_robots a,
-body.testcssdiv li.testcssdiv a,
-body.testcssdiv_clone li.testcssdiv_clone a,
-body.testnavbar2 li.testnavbar2 a,
-body.testtopbar2div li.testtopbar2div a,
-body.teststyles2 li.teststyles2 a {
+body.archived li.archived a,
+body.later li.later a {
     background-color: #e00122; /* "university red" main color */
     color: #ffffff;
 }
