@@ -98,12 +98,14 @@ p {color: #000000;} /* "university black" */
 /* end table-cell method for no-height-spec and consistent background color use */
 
 #footer {
+    color: #ffffff; /* "university white" */
     background-color: #e00122; /* "university red" main color */
     float: left;
     width: 940px; /* 960px-(10+10) (bodywrapper width - (padding-left + padding-right) = 940px */
     border: none;
     margin: 0;
     padding: 10px;
+    font-size: 8px;
 }
 #bottomofpage { /* ??? */
     clear:both;
