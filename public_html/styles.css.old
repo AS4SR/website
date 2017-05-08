@@ -168,6 +168,16 @@ li a:hover:not(.active) {
 
 /* end CSS navbar example */
 
+a {
+    target="_top"; /* since in pieces in some place-links, always push/overwrite/open in the _top
+}
+/* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
+    display: block;
+    /*font: "Open Sans";*/
+    /*font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;*/
+}
+
 /* getting ".active" link type stuff to work, see: http://stackoverflow.com/questions/10646775/active-menu-highlight-css */
 /* also see example at: http://www.apaddedcell.com/highlight-links-current-page-css */
 /*#sub-header ul li a,*/
@@ -182,13 +192,3 @@ body.later li.later a {
     color: #ffffff;
 }
 /* end getting ".active" link type stuff to work */
-
-a {
-    target="_top"; /* since in pieces in some place-links, always push/overwrite/open in the _top
-}
-/* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
-h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
-    display: block;
-    /*font: "Open Sans";*/
-    /*font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;*/
-}

@@ -1,0 +1,22 @@
+My Cool Title for My Research
+Authorfirstname M. I. Lastname, Secondauthor M. I. Person, John D. Doe
+Prof. Mentorperson
+Othermentorfirstname Othermentorlastname, Graduatestudent McHelperson, Undergradstudent Alsoveryhelpful
+
+Here is the abstract for our project. Isn't it nice? Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere magna eleifend turpis blandit, non fringilla risus elementum.
+You can do more than one paragraph, just make sure each paragraph starts on its own line. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+When you are done with the abstract, put a blank line between it and the "Impact of Work and Conclusions" section below.
+
+Here is the impact of work and conclusions! Aren't these so cool? Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere magna eleifend turpis blandit, non fringilla risus elementum.
+You can do more than one paragraph, just make sure each paragraph starts on its own line. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+When you are done with the impact of work and conclusions section here, put a blank line between it and the "Impact of Work and Conclusions" section below.
+
+https://www.youtube.com/watch?v=oHg5SJYRHA0
+
+[1] Referenceauthor, Firstname and Lastname, First. "Primary references." Make sure that you write it in proper AIAA or IEEE format.
+
+firstimage_isrequired.jpg
+secondimageAndMoreAreOptional.jpg
+thirdimage-is-a-jpg-but-could-be-a-png-instead.jpg
+fourthimage-is-a-png-this-time.png
+fifthimage-is-a-png-too-but-dont-put-in-a-sixth-image-okay.png

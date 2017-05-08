@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* UC colors, from style guide and elsewhere: */
+/* background-color: #cd0e2b; /* "university banner red" */
+/* background-color: #e00122; /* "university red" main color */
+/* background-color: #000000; /* "university black" */
+/* background-color: #eee; /* UC color, from body{} in http://ceas.uc.edu/etc/designs/uc/baseresponsive/br.css */
+/* background-color: #ffffff; /* "university white" */
+
+body {
+    background-color: #eee; /* UC color, from body{} in http://ceas.uc.edu/etc/designs/uc/baseresponsive/br.css */
+    margin: 0 0;
+    padding: 0;
+    font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;
+}
+h1 {color: blue;}
+p {color: #000000;} /* "university black" */
+
+/* layout example, div no tables: http://www.htmlgoodies.com/beyond/css/article.php/3642151/CSS-Layouts-Without-Tables.htm */
+
+#bodywrapper { /* for centering and specifying width/height of the entire page */
+    width: 960px; /* requested UC standard width */
+    border: none;
+    margin: 0px auto; /* auto here should align evrything horizontally / center the page left-right */
+    padding: 0px;
+}
+#topofpage {
+    background-color: #000000; /* "university black" */
+    vertical-align: middle; /* gets rid of "red space" between topofpage and middleofpage!?! */
+    width: 960px; /* requested UC standard width */
+    height: 115px; /* 65 (UClogo-left pic height) + 25 + 25 (min safe distance, same as UClogo-left padding-left) = 65 + 50 = 115 */
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* table-cell method for centering is used here for vertical-align to work (example: http://vanseodesign.com/css/vertical-centering/ ) */
+#topbarwrapper {
+    background-color: #000000; /* from testtopbardiv2.html */
+    display: table; /* parent div */
+    width: 960px; /* width = topofpage width (so that everything ends up on the same "level" */
+    height: 115px; /* topofpage height */
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#topbarwrapper div {
+    display: table-cell; /* child div */
+}
+#UClogo-left { /* (150 x 65) */
+    /*background-color: pink; /* overrides topofpage above, covers if overlaps properly */
+    text-align: left;
+    vertical-align: middle;
+    width: 200px; /* 225px - 25 (verticalmenubar width - padding-left = 200px */
+    padding-left: 25px;
+    padding-right: 0px;
+}
+#labname-right {
+    /*background-color: blue; /* overrides topofpage above, covers if overlaps properly */
+    text-align: right;
+    vertical-align: middle;
+    width: 620px; /* 960px-(200px+25px)-(95px+10px)-10px (topofpage width - (UClogo-left width + UClogo-left padding-left) - (lablogo-farright scaledpicwidth + lablogo-farright padding-right) - padding-right) = 960px-225px-105px-10px = 960px-330px-10px = 620px */
+    padding-right: 10px;
+    font-size: 36px;
+}
+#lablogo-farright {
+    /*background-color: blue; /* overrides topofpage above, covers if overlaps properly */
+    text-align: right;
+    vertical-align: middle;
+    /*width: 95px; /* with height set to 95px AS4SR_logo.png will scale to ~95-96px in width */
+    padding-right: 10px;
+}
+/* end table-cell method for centering use */
+
+/* table-cell method for height to not need to be specified and for the background color for the entire "cell" to be consistent */
+/* (example: http://vanseodesign.com/css/vertical-centering/ ) */
+#middleofpage {
+    display: table; /* parent div */
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#middleofpage div {
+    display: table-cell; /* child div */
+}
+#verticalmenubar {
+    /*background-color: pink; /* should get "overridden" by ul above, covered if overlaps properly */
+    /*background-color: #e00122; /* "university red" main color */ /* should get "overridden" by ul's below somewhat, covered if overlaps exactly */
+    background-color: #000000; /* "university black" */ /* should get "overridden" by ul's below somewhat, covered if overlaps exactly */
+    display: table-cell; /* child div */
+    vertical-align:top;
+    width: 225px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#mainbody {
+    background-color: #ffffff; /* "university white" */
+    vertical-align:top;
+    width: 715px; /* 960px-(225px+0+0)-(10+10) (bodywrapper width - (verticalmenubar width + padding-left + padding-right) - (padding left+right) = 960-225-20 = 715px for requested UC standard width */
+    height: 100%;
+    margin: 0;
+    padding: 0px 10px; /* spacing in addition to margin-top and margin-left offset */
+}
+/* end table-cell method for no-height-spec and consistent background color use */
+
+#footer {
+    color: #ffffff; /* "university white" */
+    background-color: #e00122; /* "university red" main color */
+    float: left;
+    width: 940px; /* 960px-(10+10) (bodywrapper width - (padding-left + padding-right) = 940px */
+    border: none;
+    margin: 0;
+    padding: 10px;
+}
+#bottomofpage { /* ??? */
+    clear:both;
+    text-align:right;
+}
+  
+/* end layout example */
+
+
+/* CSS navbar heavily modified from: http://www.w3schools.com/css/css_navbar.asp */
+/* another example, having to do with class="navbar": https://www.w3.org/Style/Examples/011/firstcss.en.html */
+
+/*td {
+    vertical-align: top;
+}*/
+
+/* need to override padding apparently?: http://stackoverflow.com/questions/9473328/indents-in-nested-lists-in-html-css */
+ul.level1 {
+    background-color: #000000; /* "university black" */
+    list-style-type: none;
+    width: 225px; /* verticalmenubar width */
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* enable scrolling if the sidenav has too much content */
+}
+
+ul.level2 {
+    background-color: #000000; /* "university black" */
+    list-style-type: none;
+    width: 175px; /* 225-(25+25) = verticalmenubar width - (padding-left + padding-right) = 225-50 = 175 */
+    margin: 0;
+    padding: 0px 25px;
+    overflow: auto; /* enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    background-color: #000000; /* "university black" */ /* will this force stuff to change back if not otherwise selected or hovering? */
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* change the link color on mouse pointer hover */
+li a:hover:not(.active) {
+    background-color: #e00122; /* "university red" main color */
+    color: #ffffff;
+}
+
+/*.active { /* will only work if the navbar's 'a href' link is set to class="active", so will need overwriting/rewriting inside each individual html page (topbar will need to not be an iframe) */
+/*    background-color: #e00122; /* "university red" main color */
+/*    color: #ffffff;
+}*/
+
+/* end CSS navbar example */
+
+a {
+    target="_top"; /* since in pieces in some place-links, always push/overwrite/open in the _top
+}
+/* some div id and div class stuff modified from: http://www.wickham43.net/divboxes.php */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dir, menu, div, dt, dd, address, blockquote, pre, br, hr, form, dl {
+    display: block;
+    /*font: "Open Sans";*/
+    /*font-family: "Open Sans", "Gentium Book Basic", Myriad, Minion;*/
+}
+
+/* getting ".active" link type stuff to work, see: http://stackoverflow.com/questions/10646775/active-menu-highlight-css */
+/* also see example at: http://www.apaddedcell.com/highlight-links-current-page-css */
+/*#sub-header ul li a,*/
