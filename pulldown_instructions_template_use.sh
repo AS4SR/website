@@ -11,8 +11,8 @@ rm -rf website-master
 wget https://github.com/AS4SR/website/archive/master.zip
 unzip master
 cd website-master
-chmod +x create_html.py
-./create_html.py
+chmod +x create_html_from_pytemplate.py
+./create_html_from_pytemplate.py
 cd /home/spacerobotics
 #cp -R public_html public_html_old
 #cd public_html
