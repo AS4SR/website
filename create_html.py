@@ -8,7 +8,7 @@ Additional copyright may be held by others, as reflected in the commit history.
 
 import os
 import sys
-from string import Template
+#from string import Template # www.ase.uc.edu doesn't have "string" installed...(?!)
 # see the tutorial for examples of using templating:
 # -- https://wiki.python.org/moin/Templating
 
@@ -90,7 +90,8 @@ def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_l
     # read in CSS file template for fill-in
     filename_temp = gitdir + "_templates/styles.css.template"
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    csstemplate = Template(tempholdtext)
+    #csstemplate = Template(tempholdtext) # Template
+    csstemplate = str(tempholdtext)
     
     # prepare mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
     holdstr = "" # don't put this in unless it's not the first one
@@ -106,10 +107,13 @@ def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_l
     # then, stitch the file together:
     print("stitching file together...")
     # do string substitution:
-    filecontents = csstemplate.safe_substitute({"CSSLICLASSTAGS": "".join(piece)})
+    #filecontents = csstemplate.safe_substitute({"CSSLICLASSTAGS": "".join(piece)}) # Template
+    filecontents = csstemplate.replace("$CSSLICLASSTAGS","".join(piece)})
     print("file stitched!")
     
+    #
     # update location on links for things if testing locally-only, not compiling for live-website
+    #
     if (local_compile_check == "no"): # for live website, use this
         pass # is already set up for this
     else: #if (local_compile_check == "yes"): # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
@@ -145,50 +149,102 @@ def create_html_file_and_write_to_disk(html_top,html_create_list_piece,full_temp
     #filename_temp = gitdir + "_templates/html_full.template"
     filename_temp = full_templatedir + html_full_template
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    htmltemplate = Template(tempholdtext)
+    #htmltemplate = Template(tempholdtext) # Template
+    htmltemplate = str(tempholdtext)
     
+    #
+    # Template version:
+    #
+
+#    # grab the other file pieces you need on this run:
+#    print("grabbing pieces...")
+#    html_replace_dict = dict()
+#    # $PAGETITLE = title of webpage, <title>--THISHERE--</title>
+#    html_replace_dict.update( {"PAGETITLE": name_in_vertical_menubar_and_htmlpage_title + titlerider} )
+#    # $CSSFILE = CSS file name, href="-->THISHERE<--"
+#    html_replace_dict.update( {"CSSFILE": website_top + css_filedir + css_filename} ) # for live website, use this
+#    # $BODYCLASS =  body class="-->THISHERE<--"
+#    html_replace_dict.update( {"BODYCLASS": name_in_css_file} )
+#    # $TOPOFPAGE = topofpage stuff (from testtopbar2div.html)
+#    filename_temp = gitdir + "_templates/topofpage.part"
+#    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
+#    tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
+#    html_replace_dict.update( {"TOPOFPAGE": tempholdtext} )
+#    # $VERTICALMENUBAR = verticalmenubar stuff (from testnavbar2.html)
+#    #filename_temp = gitdir + "_templates/verticalmenubar.part"
+#    #f = open(filename_temp,'r'); verticalmenubar_part_str = f.read(); f.close();
+#    verticalmenubar_part_str = create_and_return_verticalmenubar(html_create_list,website_top) # already offset
+#    html_replace_dict.update( {"VERTICALMENUBAR": verticalmenubar_part_str} )
+#    # $MAINBODY = mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
+#    filename_temp = gitdir + part_filename_plus_location
+#    print("filenametemp = " + filename_temp)
+#    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
+#    tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
+#    html_replace_dict.update( {"MAINBODY": tempholdtext} )
+#    # $FOOTER = footer stuff
+#    filename_temp = gitdir + "_templates/footer.part"
+#    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
+#    tempholdtext = tempholdtext.replace("\n","\n"+" "*8) # offset each line by 8 spaces from left side of html file
+#    html_replace_dict.update( {"FOOTER": tempholdtext} )
+#    # $BOTTOMOFPAGE = bottomof page stuff
+#    html_replace_dict.update( {"BOTTOMOFPAGE": ""} ) #("testbottomofpage (placeholder text)")
+#    # this ends off the html file
+#    print("all pieces grabbed!")
+#    
+#    # then, stitch the file together:
+#    print("stitching file together...")
+#    # do string substitution:
+#    filecontents = htmltemplate.safe_substitute(html_replace_dict)
+#    print("file stitched!")
+
+    #
+    # non-Template version:
+    #
+
     # grab the other file pieces you need on this run:
     print("grabbing pieces...")
-    html_replace_dict = dict()
+    html_data = str(html_template)
     # $PAGETITLE = title of webpage, <title>--THISHERE--</title>
-    html_replace_dict.update( {"PAGETITLE": name_in_vertical_menubar_and_htmlpage_title + titlerider} )
+    html_data = html_data.replace( "$PAGETITLE", name_in_vertical_menubar_and_htmlpage_title + titlerider )
     # $CSSFILE = CSS file name, href="-->THISHERE<--"
-    html_replace_dict.update( {"CSSFILE": website_top + css_filedir + css_filename} ) # for live website, use this
+    html_data = html_data.replace( "$CSSFILE", website_top + css_filedir + css_filename ) # for live website, use this
     # $BODYCLASS =  body class="-->THISHERE<--"
-    html_replace_dict.update( {"BODYCLASS": name_in_css_file} )
+    html_data = html_data.replace( "$BODYCLASS", name_in_css_file )
     # $TOPOFPAGE = topofpage stuff (from testtopbar2div.html)
     filename_temp = gitdir + "_templates/topofpage.part"
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
     tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
-    html_replace_dict.update( {"TOPOFPAGE": tempholdtext} )
+    html_data = html_data.replace( "$TOPOFPAGE", tempholdtext )
     # $VERTICALMENUBAR = verticalmenubar stuff (from testnavbar2.html)
     #filename_temp = gitdir + "_templates/verticalmenubar.part"
     #f = open(filename_temp,'r'); verticalmenubar_part_str = f.read(); f.close();
     verticalmenubar_part_str = create_and_return_verticalmenubar(html_create_list,website_top) # already offset
-    html_replace_dict.update( {"VERTICALMENUBAR": verticalmenubar_part_str} )
+    html_data = html_data.replace( "$VERTICALMENUBAR", verticalmenubar_part_str )
     # $MAINBODY = mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
     filename_temp = gitdir + part_filename_plus_location
     print("filenametemp = " + filename_temp)
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
     tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
-    html_replace_dict.update( {"MAINBODY": tempholdtext} )
+    html_data = html_data.replace( "$MAINBODY", tempholdtext )
     # $FOOTER = footer stuff
     filename_temp = gitdir + "_templates/footer.part"
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
     tempholdtext = tempholdtext.replace("\n","\n"+" "*8) # offset each line by 8 spaces from left side of html file
-    html_replace_dict.update( {"FOOTER": tempholdtext} )
+    html_data = html_data.replace( "$FOOTER", tempholdtext )
     # $BOTTOMOFPAGE = bottomof page stuff
-    html_replace_dict.update( {"BOTTOMOFPAGE": ""} ) #("testbottomofpage (placeholder text)")
+    html_data = html_data.replace( "$BOTTOMOFPAGE", "" ) #("testbottomofpage (placeholder text)")
     # this ends off the html file
     print("all pieces grabbed!")
     
     # then, stitch the file together:
     print("stitching file together...")
     # do string substitution:
-    filecontents = htmltemplate.safe_substitute(html_replace_dict)
+    filecontents = str(html_data) # already stitched above
     print("file stitched!")
-    
+
+    #
     # update location on links for things if testing locally-only, not compiling for live-website
+    #
     if (local_compile_check == "no"): # for live website, use this
         pass # is already set up for this
     else: #if (local_compile_check == "yes"): # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
