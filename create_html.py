@@ -108,7 +108,7 @@ def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_l
     print("stitching file together...")
     # do string substitution:
     #filecontents = csstemplate.safe_substitute({"CSSLICLASSTAGS": "".join(piece)}) # Template
-    filecontents = csstemplate.replace("$CSSLICLASSTAGS","".join(piece)})
+    filecontents = csstemplate.replace( "$CSSLICLASSTAGS", "".join(piece) )
     print("file stitched!")
     
     #
