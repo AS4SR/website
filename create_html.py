@@ -8,9 +8,6 @@ Additional copyright may be held by others, as reflected in the commit history.
 
 import os
 import sys
-#from string import Template # www.ase.uc.edu doesn't have "string" installed...(?!)
-# see the tutorial for examples of using templating:
-# -- https://wiki.python.org/moin/Templating
 
 #
 # create "verticalmenubar.part" as verticalmenubar_str for use!!
@@ -67,7 +64,7 @@ def create_and_return_verticalmenubar(html_create_list,website_top):
         prevlevel = level
         level = 0
     verticalmenubar_part.append(verticalmenubar_part_2)
-    # then print verticalmenubar_part to file named "vertical_menubar.part"? or just concatenate all strings?
+    # then concatenate all strings (and print string to screen, not to file "vertical_menubar.part")
     verticalmenubar_part_str = "".join(verticalmenubar_part)
     #print(verticalmenubar_part_str)
     return verticalmenubar_part_str
@@ -90,7 +87,6 @@ def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_l
     # read in CSS file template for fill-in
     filename_temp = gitdir + "_templates/styles.css.template"
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    #csstemplate = Template(tempholdtext) # Template
     csstemplate = str(tempholdtext)
     
     # prepare mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
@@ -107,7 +103,6 @@ def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_l
     # then, stitch the file together:
     print("stitching file together...")
     # do string substitution:
-    #filecontents = csstemplate.safe_substitute({"CSSLICLASSTAGS": "".join(piece)}) # Template
     filecontents = csstemplate.replace( "$CSSLICLASSTAGS", "".join(piece) )
     print("file stitched!")
     
@@ -149,58 +144,8 @@ def create_html_file_and_write_to_disk(html_top,html_create_list_piece,full_temp
     #filename_temp = gitdir + "_templates/html_full.template"
     filename_temp = full_templatedir + html_full_template
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    #htmltemplate = Template(tempholdtext) # Template
     htmltemplate = str(tempholdtext)
     
-    #
-    # Template version:
-    #
-
-#    # grab the other file pieces you need on this run:
-#    print("grabbing pieces...")
-#    html_replace_dict = dict()
-#    # $PAGETITLE = title of webpage, <title>--THISHERE--</title>
-#    html_replace_dict.update( {"PAGETITLE": name_in_vertical_menubar_and_htmlpage_title + titlerider} )
-#    # $CSSFILE = CSS file name, href="-->THISHERE<--"
-#    html_replace_dict.update( {"CSSFILE": website_top + css_filedir + css_filename} ) # for live website, use this
-#    # $BODYCLASS =  body class="-->THISHERE<--"
-#    html_replace_dict.update( {"BODYCLASS": name_in_css_file} )
-#    # $TOPOFPAGE = topofpage stuff (from testtopbar2div.html)
-#    filename_temp = gitdir + "_templates/topofpage.part"
-#    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-#    tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
-#    html_replace_dict.update( {"TOPOFPAGE": tempholdtext} )
-#    # $VERTICALMENUBAR = verticalmenubar stuff (from testnavbar2.html)
-#    #filename_temp = gitdir + "_templates/verticalmenubar.part"
-#    #f = open(filename_temp,'r'); verticalmenubar_part_str = f.read(); f.close();
-#    verticalmenubar_part_str = create_and_return_verticalmenubar(html_create_list,website_top) # already offset
-#    html_replace_dict.update( {"VERTICALMENUBAR": verticalmenubar_part_str} )
-#    # $MAINBODY = mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
-#    filename_temp = gitdir + part_filename_plus_location
-#    print("filenametemp = " + filename_temp)
-#    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-#    tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
-#    html_replace_dict.update( {"MAINBODY": tempholdtext} )
-#    # $FOOTER = footer stuff
-#    filename_temp = gitdir + "_templates/footer.part"
-#    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-#    tempholdtext = tempholdtext.replace("\n","\n"+" "*8) # offset each line by 8 spaces from left side of html file
-#    html_replace_dict.update( {"FOOTER": tempholdtext} )
-#    # $BOTTOMOFPAGE = bottomof page stuff
-#    html_replace_dict.update( {"BOTTOMOFPAGE": ""} ) #("testbottomofpage (placeholder text)")
-#    # this ends off the html file
-#    print("all pieces grabbed!")
-#    
-#    # then, stitch the file together:
-#    print("stitching file together...")
-#    # do string substitution:
-#    filecontents = htmltemplate.safe_substitute(html_replace_dict)
-#    print("file stitched!")
-
-    #
-    # non-Template version:
-    #
-
     # grab the other file pieces you need on this run:
     print("grabbing pieces...")
     html_data = str(htmltemplate)
@@ -259,9 +204,29 @@ def create_html_file_and_write_to_disk(html_top,html_create_list_piece,full_temp
     print(filelocation_str + " has been written")
 
 if __name__ == '__main__':
-    local_compile_check = "no" # for live website, use this
-    #local_compile_check = "yes" # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
+    """
+    Call from the same directory via:
+        ./create_html.py
+    --or--
+        ./create_html.py local
+    
+    The latter will attempt to perform a local compile of the website in
+    the local computer directory /home/spacerobotics/public_html
+    as per website_top and gitdir. So, if you want this to work,
+    you make have to perform the following at the command prompt first:
+        sudo mkdir -p /home/spacerobotics
+        sudo chown -R $USER:$USER /home/spacerobotics
+    """
+    
+    local_compile_check = "no" # for live website # this is the default compilation option
+    holdargs = sys.argv
+    if len(holdargs)>1:
+        if isinstance(holdargs[1],str):
+            if holdargs[1] == "local": # for local compile, type "local" at the prompt
+                local_compile_check = "yes" # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
+    print("*** local_compile_check = %s ***" % local_compile_check)
 
+    # ---- Parameters for html site creation ----
     website_top="http://www.ase.uc.edu/~spacerobotics/"
 
     gitdir = "/home/spacerobotics/git_pulls/website-master/"
@@ -304,7 +269,10 @@ if __name__ == '__main__':
      ['level2','archived_robots','archived/','robots.html','_template_parts/coming_soon.part','Archived Robots'],
      ['level1','archived','','archived.html','_template_parts/coming_soon.part','Archived Projects'],
      ['level2','later','archived_projects/','later.html','_template_parts/coming_soon.part','...']]
+    
     titlerider = " - AS4SR Lab, University of Cincinnati"
+
+    # ---- end parameters for html site creation ----
 
     #try:
     if (True):
