@@ -23,8 +23,8 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
     ` ['level1','archived','','archived.html','_template_parts/coming_soon.part','Archived Projects'],`
     ` ['level2','later','archived_projects/','later.html','_template_parts/coming_soon.part','...']]`
     Note that if you don't start your listing with a 'level1' or 'level2' then the webpage is created but it isn't added to the CSS or menubar list.
-1. Add images you need to reference to https://github.com/AS4SR/website/public_html/images
-1. Add publications you need to link to to https://github.com/AS4SR/website/public_html/publications
+1. Add images you need to reference to `./public_html/images`
+1. Add publications you need to link to to `./public_html/publications`
 
 ### To update what's on the webserver
 1. Log in to the webserver
