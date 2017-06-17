@@ -12,21 +12,26 @@
 
 <div id="bodywrapper">
     <div id="topofpage">
+    
         $TOPOFPAGE
     </div>
     <div id="middleofpage">
         <div id="verticalmenubar">
+        
             $VERTICALMENUBAR
         </div>
         <div id="mainbody">
+        
             $MAINBODY
         </div>
         <!-- <div id="content-right"></div> -->
     </div>
     <div id="footer">
+    
         $FOOTER
     </div>
     <div id="bottomofpage">
+    
         $BOTTOMOFPAGE
     </div>
 </div>
