@@ -203,7 +203,7 @@ def create_html_file_and_write_to_disk(html_top,html_create_list_piece,full_temp
 
     # grab the other file pieces you need on this run:
     print("grabbing pieces...")
-    html_data = str(html_template)
+    html_data = str(htmltemplate)
     # $PAGETITLE = title of webpage, <title>--THISHERE--</title>
     html_data = html_data.replace( "$PAGETITLE", name_in_vertical_menubar_and_htmlpage_title + titlerider )
     # $CSSFILE = CSS file name, href="-->THISHERE<--"
