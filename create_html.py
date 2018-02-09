@@ -206,29 +206,49 @@ def create_html_file_and_write_to_disk(html_top,html_create_list_piece,full_temp
 if __name__ == '__main__':
     """
     Call from the same directory via:
-        ./create_html.py
+    1$  ./create_html.py
     --or--
-        ./create_html.py local
+    2$  ./create_html.py local
+    --or--
+    3$  ./create_html.py local [gitdir] [html_sitedir]
+    --or--
+    4$  ./create_html.py [website_top] [gitdir] [html_sitedir]
     
-    The latter will attempt to perform a local compile of the website in
+    The 1st ($1) is the vanilla run that is used for getting the AS4SR
+    website (http://www.ase.uc.edu/~spacerobotics/) compiled using the
+    pulldown_instructions.sh script.
+    
+    The 2nd ($2) will attempt to perform a local compile of the website in
     the local computer directory /home/spacerobotics/public_html
     as per website_top and gitdir. So, if you want this to work,
     you make have to perform the following at the command prompt first:
         sudo mkdir -p /home/spacerobotics
         sudo chown -R $USER:$USER /home/spacerobotics
+
+    The 3rd ($3) will attempt to perform a compile of the website in a
+    different location, assuming that gitdir may not be in spacerobotics
+    as per the usual pulldown_instructions.sh script. Example usage:
+        ./create_html.py local /home/$USER/git_pulls/website /home/$USER/test_website/html_here
+    This will put the files in /home/$USER/test_website/html_here/public_html and
+    create all internal links as "file:///home/$USER/test_website/html_here/public_html"
+    So, if you want this to work,
+    you make have to perform the following at the command prompt first:
+        mkdir -p /home/$USER/test_website/html_here/public_html
+    
+    The 4th ($4) will attempt to perform a compile of the website in a
+    different location, assuming that gitdir may not be in spacerobotics
+    as per the usual pulldown_instructions.sh script. Example usage:
+        ./create_html.py https://www.test.edu/~$USER/ /home/$USER/git_pulls/website/ public_html/
+    This will put the files in /home/$USER/git_pulls/website/public_html and
+    create all internal links as "https://www.test.edu/~$USER/public_html"
+    So, if you want this to work,
+    you make have to perform the following at the command prompt first:
+        mkdir -p /home/$USER/public_html
     """
     
-    local_compile_check = "no" # for live website # this is the default compilation option
-    holdargs = sys.argv
-    if len(holdargs)>1:
-        if isinstance(holdargs[1],str):
-            if holdargs[1] == "local": # for local compile, type "local" at the prompt
-                local_compile_check = "yes" # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
-    print("*** local_compile_check = %s ***" % local_compile_check)
-
     # ---- Parameters for html site creation ----
     website_top="http://www.ase.uc.edu/~spacerobotics/"
-
+    # website_top will be find-replaced with gitdir if local_compile_check = "yes" below
     gitdir = "/home/spacerobotics/git_pulls/website-master/"
     """ for debugging, use this instead (otherwise may overwrite currently-existing files under gitdir of public_html):
     html_sitedir = "html_site/"
@@ -236,6 +256,26 @@ if __name__ == '__main__':
     """
     html_sitedir = "public_html/"
     html_top = html_sitedir + "./"
+
+    # ---- Get commandline variables (some can overwrite the above) ----
+    local_compile_check = "no" # for live website # this is the default compilation option
+    holdargs = sys.argv
+    if len(holdargs)>1:
+        if isinstance(holdargs[1],str):
+            if holdargs[1] == "local": # for local compile, type "local" at the prompt
+                local_compile_check = "yes" # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
+            else: # is not a local compile, have other vars
+                website_top = holdargs[1]
+    print("*** local_compile_check = %s ***" % local_compile_check)
+    if len(holdargs)>3:
+        if isinstance(holdargs[2],str) and isinstance(holdargs[3],str) and isinstance(holdargs[4],str):
+            gitdir = holdargs[2]
+            html_sitedir = holdargs[3]
+            html_top = html_sitedir + "./"
+    print("*** html_sitedir = %s ***" % html_sitedir)
+    print("*** website_top = %s ***" % website_top)
+
+
 
     # we are going to assume that the directory doesn't exist yet because it's a new wget download-and-unzip
 
