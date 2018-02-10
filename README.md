@@ -26,7 +26,7 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 1. Add images you need to reference to `./public_html/images`
 1. Add publications you need to link to to `./public_html/publications`
 
-### To update what's on the webserver
+### To update what's on the AS4SR webserver
 1. Log in to the webserver
 1. Copy the `pulldown_instructions.sh` file to `/home/spacerobotics` if it isn't already there, via:  
 `cd /home/spacerobotics && wget https://github.com/AS4SR/website/raw/master/pulldown_instructions.sh`
@@ -35,9 +35,21 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 1. If you see no errors, everything should have copied just fine!
 1. Check the website at http://www.ase.uc.edu/~spacerobotics/ to make sure everything looks right.
 
+### To compile a local copy of the AS4SR webserver on your local machine for testing
+1. Get a local copy of this repository, via:  
+`mkdir -p /home/$USER/git_pulls && cd /home/$USER/git_pulls`  
+`git clone https://github.com/AS4SR/website.git`  
+`cd website`
+1. Remove any previously-existing local-website compilation, via:  
+`rm -rf /home/$USER/test_website/html_here/`
+1. Run at the prompt:  
+`./create_html.py local /home/$USER/git_pulls/website/ /home/$USER/test_website/html_here/`
+1. If you see no errors, everything should have copied just fine!
+1. Check the website at file:///home/$USER/test_website/html_here/ to make sure everything looks right, via:
+`firefox "file:///home/$USER/test_website/html_here/" &`
 
 ## Copyright
-Copyright for webpage content: University of Cincinnati, 2017
+Copyright for webpage content: University of Cincinnati, 2017-2018
 
-Copyright for code: BSD 3-clause license, University of Cincinnati, 2017  
+Copyright for code: BSD 3-clause license, University of Cincinnati, 2017-2018  
 (The code is used to generate the full html webpages from the files in the `./_templates` and `./_template_parts` directories.)

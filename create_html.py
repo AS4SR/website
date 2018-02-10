@@ -8,6 +8,7 @@ Additional copyright may be held by others, as reflected in the commit history.
 
 import os
 import sys
+import shutil
 
 #
 # create "verticalmenubar.part" as verticalmenubar_str for use!!
@@ -69,17 +70,17 @@ def create_and_return_verticalmenubar(html_create_list,website_top):
     #print(verticalmenubar_part_str)
     return verticalmenubar_part_str
 
-def create_css_file_and_write_to_disk(html_sitedir,gitdir,html_create_list,website_top,css_to_use):
+def create_css_file_and_write_to_disk(html_sitedir,gitdir,html_create_list,website_top,css_filename):
     print("starting CSS file creation...")
 
     print("creating directory (" + html_sitedir + ") that it goes within...")
     # first, try and create the directory the file's gonna reside in, in case it doesn't exist already
     try:
     #    os.mkdir(html_top + html_sitedir)
-        os.mkdir(html_sitedir)
+        os.makedirs(html_sitedir) # will make intermediate directories if needed
+        print("directory created")
     except:
         pass
-    print("directory created")
     
     # grab the other file pieces you need on this run:
     print("grabbing pieces...")
@@ -108,7 +109,7 @@ def create_css_file_and_write_to_disk(html_sitedir,gitdir,html_create_list,websi
     print("file stitched!")
     
     # now, write everything to the file
-    filelocation_str = css_to_use
+    filelocation_str = html_sitedir + css_filename
     print("writing "+ filelocation_str + "...")
     f = open(filelocation_str,'w');
     f.write(filecontents); f.close();
@@ -150,13 +151,14 @@ def create_html_file_and_write_to_disk(html_sitedir,html_create_list_piece,full_
     print("creating directory (" + html_sitedir + outfile_location_rel_to_public_html + ") that it goes within...")
     # first, try and create the directory the file's gonna reside in, in case it doesn't exist already
     try:
-        os.mkdir(html_sitedir + outfile_location_rel_to_public_html)
+        #os.mkdir(html_sitedir + outfile_location_rel_to_public_html)
+        os.makedirs(html_sitedir + outfile_location_rel_to_public_html) # will make intermediate directories if needed
+        print("directory created")
     except:
         pass
-    print("directory created")
 
     # read in html file template for fill-in
-    htmldata = str(filereadin_replace_returnstr(full_templatedir + html_full_template,None,None,None))
+    html_data = str(filereadin_replace_returnstr(full_templatedir + html_full_template,None,None,None))
     
     # grab the other file pieces you need on this run:
     print("grabbing pieces...")
@@ -172,11 +174,11 @@ def create_html_file_and_write_to_disk(html_sitedir,html_create_list_piece,full_
     html_data = html_data.replace( "$PAGETITLE", name_in_vertical_menubar_and_htmlpage_title + titlerider )
     html_data = html_data.replace( "$CSSFILE", css_to_use ) # for live website, use this
     html_data = html_data.replace( "$BODYCLASS", name_in_css_file )
-    html_data = filereadin_replace_return_str(gitdir + "_templates/topofpage.part",4,"$TOPOFPAGE",html_data)
+    html_data = filereadin_replace_returnstr(gitdir + "_templates/topofpage.part",4,"$TOPOFPAGE",html_data)
     verticalmenubar_part_str = create_and_return_verticalmenubar(html_create_list,website_top) # already offset
     html_data = html_data.replace( "$VERTICALMENUBAR", verticalmenubar_part_str )
-    html_data = filereadin_replace_return_str(gitdir + part_filename_plus_location,4,"$MAINBODY",html_data)
-    html_data = filereadin_replace_return_str(gitdir + "_templates/footer.part",8,"$FOOTER",html_data)
+    html_data = filereadin_replace_returnstr(gitdir + part_filename_plus_location,4,"$MAINBODY",html_data)
+    html_data = filereadin_replace_returnstr(gitdir + "_templates/footer.part",8,"$FOOTER",html_data)
     html_data = html_data.replace( "$BOTTOMOFPAGE", "" ) #("testbottomofpage (placeholder text)")
     print("all pieces grabbed!")
     
@@ -187,7 +189,7 @@ def create_html_file_and_write_to_disk(html_sitedir,html_create_list_piece,full_
     print("file stitched!")
 
     # now, write everything to the file
-    filelocation_str = html_top + outfile_location_rel_to_public_html + outfilename
+    filelocation_str = html_sitedir + outfile_location_rel_to_public_html + outfilename
     print("writing "+ filelocation_str + "...")
     f = open(filelocation_str,'w');
     f.write(filecontents); f.close();
@@ -221,9 +223,9 @@ if __name__ == '__main__':
         ./create_html.py local /home/$USER/git_pulls/website/ /home/$USER/test_website/html_here/
     This will put the files in /home/$USER/test_website/html_here/ and
     create all internal links as "file:///home/$USER/test_website/html_here/"
-    So, if you want this to work,
+    Due to the way shutil.copy works, if you want this to work,
     you make have to perform the following at the command prompt first:
-        mkdir -p /home/$USER/test_website/html_here/
+        rm -rf /home/$USER/test_website/html_here/
     
     The 4th ($4) will attempt to perform a compile of the website in a
     different location, assuming that gitdir may not be in spacerobotics
@@ -231,9 +233,9 @@ if __name__ == '__main__':
         ./create_html.py https://www.spacerobotics.uc.edu/~$USER/ /home/$USER/git_pulls/website/ /home/$USER/my_website/public_html/
     This will put the files in /home/$USER/my_website/public_html/ and
     create all internal links as "https://www.spacerobotics.uc.edu/~$USER/"
-    So, if you want this to work,
+    Due to the way shutil.copy works, if you want this to work,
     you make have to perform the following at the command prompt first:
-        mkdir -p /home/$USER/my_website/public_html
+        rm -rf /home/$USER/my_website/public_html
     """
     
     # ---- Parameters for html site creation ----
@@ -267,9 +269,9 @@ if __name__ == '__main__':
     # we are going to assume that the directory doesn't exist yet because it's a new wget download-and-unzip
 
     css_filename = "styles.css"
-    css_filedir = "" # "./"
+    #css_dir is html_sitedir
     #css_to_use = gitdir + "public_html/" + css_filedir + css_filename
-    css_to_use = website_top + css_filedir + css_filename
+    css_to_use = website_top + css_filename
 
     full_templatedir = gitdir + "_templates/"
     html_full_template = 'html_full.template'
@@ -304,9 +306,18 @@ if __name__ == '__main__':
     #try:
     if (True):
         #
+        # move all stuff in current gitdir public_html directory over, just in case (for the overwrite)
+        #
+        print("copying contents of " + gitdir + "public_html to " + html_sitedir + " -- will fail if dir already exists...")
+        try:
+            shutil.copytree(gitdir + "public_html/./", html_sitedir) # copy src to dst, must not already exist
+        except:
+            print("directory already exists, stopping script run")
+            sys.exit(1)
+        #
         # create styles.css file
         #
-        create_css_file_and_write_to_disk(html_sitedir,gitdir,html_create_list,website_top,css_to_use)
+        create_css_file_and_write_to_disk(html_sitedir,gitdir,html_create_list,website_top,css_filename)
 
         #
         # now, get the majority of html files stitched together
