@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Copyright 2017 University of Cincinnati
+Copyright 2017-2018 University of Cincinnati
 All rights reserved. See LICENSE file at:
 https://github.com/AS4SR/website
 Additional copyright may be held by others, as reflected in the commit history.
@@ -69,13 +69,14 @@ def create_and_return_verticalmenubar(html_create_list,website_top):
     #print(verticalmenubar_part_str)
     return verticalmenubar_part_str
 
-def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_list,local_compile_check,website_top,css_to_use):
+def create_css_file_and_write_to_disk(html_sitedir,gitdir,html_create_list,website_top,css_to_use):
     print("starting CSS file creation...")
 
-    print("creating directory (" + html_top + html_sitedir + ") that it goes within...")
+    print("creating directory (" + html_sitedir + ") that it goes within...")
     # first, try and create the directory the file's gonna reside in, in case it doesn't exist already
     try:
-        os.mkdir(html_top + html_sitedir)
+    #    os.mkdir(html_top + html_sitedir)
+        os.mkdir(html_sitedir)
     except:
         pass
     print("directory created")
@@ -106,15 +107,6 @@ def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_l
     filecontents = csstemplate.replace( "$CSSLICLASSTAGS", "".join(piece) )
     print("file stitched!")
     
-    #
-    # update location on links for things if testing locally-only, not compiling for live-website
-    #
-    if (local_compile_check == "no"): # for live website, use this
-        pass # is already set up for this
-    else: #if (local_compile_check == "yes"): # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
-        replace_website_top_with_this = "file://" + gitdir + "public_html/"
-        filecontents = filecontents.replace(website_top,replace_website_top_with_this)
-
     # now, write everything to the file
     filelocation_str = css_to_use
     print("writing "+ filelocation_str + "...")
@@ -125,60 +117,67 @@ def create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_l
     # we're done!
     print("done with CSS file compilation")
 
-def create_html_file_and_write_to_disk(html_top,html_create_list_piece,full_templatedir,html_full_template,titlerider,website_top,css_filedir,css_filename,gitdir,local_compile_check):
+def filereadin_replace_returnstr(filename_temp,lineoffsetbyXspaces,replacestr,html_data):
+    """
+    Inputs:
+        filename_temp = gitdir + "_templates/SOMETHING.part"
+        lineoffsetbyXspaces is None or an integer number
+        replacestr = "$NAMEOFREPLACESTR"
+        html_data is current string getting stuff replaced in it (assumed None if replacestr is None)
+    
+    Algorithm:
+        if replacestr is None (html_data assumed None), then tempholdtext (the string read in from file) is returned
+        else, an updated html_data string (that had replacestr replaced with tempholdtext, with proper offsetting) is returned
+    
+    Usage:
+        html_data = filereadin_replace_returnstr(filename_temp,lineoffsetbyXspaces,replacestr,html_data)
+    """
+    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
+    if (lineoffsetbyXspaces is not None) and (lineoffsetbyXspaces != 0):
+        tempholdtext = tempholdtext.replace("\n","\n"+" "*lineoffsetbyXspaces) # offset each line by X spaces from left side of html file
+    if replacestr is None: # html_data should be None as well
+        return tempholdtext
+    else:
+        return html_data.replace( replacestr, tempholdtext )
+    
+def create_html_file_and_write_to_disk(html_sitedir,html_create_list_piece,full_templatedir,html_full_template,titlerider,website_top,css_to_use,gitdir):
 
     [ul_class_level_in_menubar, name_in_css_file , outfile_location_rel_to_public_html , outfilename , \
         part_filename_plus_location , name_in_vertical_menubar_and_htmlpage_title] = html_create_list_piece
 
-    print("starting work on " + html_top + outfile_location_rel_to_public_html + outfilename)
+    print("starting work on " + html_sitedir + outfile_location_rel_to_public_html + outfilename)
 
-    print("creating directory (" + html_top + outfile_location_rel_to_public_html + ") that it goes within...")
+    print("creating directory (" + html_sitedir + outfile_location_rel_to_public_html + ") that it goes within...")
     # first, try and create the directory the file's gonna reside in, in case it doesn't exist already
     try:
-        os.mkdir(html_top + outfile_location_rel_to_public_html)
+        os.mkdir(html_sitedir + outfile_location_rel_to_public_html)
     except:
         pass
     print("directory created")
 
     # read in html file template for fill-in
-    #filename_temp = gitdir + "_templates/html_full.template"
-    filename_temp = full_templatedir + html_full_template
-    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    htmltemplate = str(tempholdtext)
+    htmldata = str(filereadin_replace_returnstr(full_templatedir + html_full_template,None,None,None))
     
     # grab the other file pieces you need on this run:
     print("grabbing pieces...")
-    html_data = str(htmltemplate)
     # $PAGETITLE = title of webpage, <title>--THISHERE--</title>
-    html_data = html_data.replace( "$PAGETITLE", name_in_vertical_menubar_and_htmlpage_title + titlerider )
     # $CSSFILE = CSS file name, href="-->THISHERE<--"
-    html_data = html_data.replace( "$CSSFILE", website_top + css_filedir + css_filename ) # for live website, use this
     # $BODYCLASS =  body class="-->THISHERE<--"
-    html_data = html_data.replace( "$BODYCLASS", name_in_css_file )
     # $TOPOFPAGE = topofpage stuff (from testtopbar2div.html)
-    filename_temp = gitdir + "_templates/topofpage.part"
-    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
-    html_data = html_data.replace( "$TOPOFPAGE", tempholdtext )
     # $VERTICALMENUBAR = verticalmenubar stuff (from testnavbar2.html)
-    #filename_temp = gitdir + "_templates/verticalmenubar.part"
-    #f = open(filename_temp,'r'); verticalmenubar_part_str = f.read(); f.close();
+    # $MAINBODY = mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
+    # $FOOTER = footer stuff
+    # $BOTTOMOFPAGE = bottomof page stuff
+    # this ends off the html file
+    html_data = html_data.replace( "$PAGETITLE", name_in_vertical_menubar_and_htmlpage_title + titlerider )
+    html_data = html_data.replace( "$CSSFILE", css_to_use ) # for live website, use this
+    html_data = html_data.replace( "$BODYCLASS", name_in_css_file )
+    html_data = filereadin_replace_return_str(gitdir + "_templates/topofpage.part",4,"$TOPOFPAGE",html_data)
     verticalmenubar_part_str = create_and_return_verticalmenubar(html_create_list,website_top) # already offset
     html_data = html_data.replace( "$VERTICALMENUBAR", verticalmenubar_part_str )
-    # $MAINBODY = mainbody stuff (from whatever the latest html file fragment is from the html_create_list)
-    filename_temp = gitdir + part_filename_plus_location
-    print("filenametemp = " + filename_temp)
-    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    tempholdtext = tempholdtext.replace("\n","\n"+" "*4) # offset each line by 4 spaces from left side of html file
-    html_data = html_data.replace( "$MAINBODY", tempholdtext )
-    # $FOOTER = footer stuff
-    filename_temp = gitdir + "_templates/footer.part"
-    f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
-    tempholdtext = tempholdtext.replace("\n","\n"+" "*8) # offset each line by 8 spaces from left side of html file
-    html_data = html_data.replace( "$FOOTER", tempholdtext )
-    # $BOTTOMOFPAGE = bottomof page stuff
+    html_data = filereadin_replace_return_str(gitdir + part_filename_plus_location,4,"$MAINBODY",html_data)
+    html_data = filereadin_replace_return_str(gitdir + "_templates/footer.part",8,"$FOOTER",html_data)
     html_data = html_data.replace( "$BOTTOMOFPAGE", "" ) #("testbottomofpage (placeholder text)")
-    # this ends off the html file
     print("all pieces grabbed!")
     
     # then, stitch the file together:
@@ -186,15 +185,6 @@ def create_html_file_and_write_to_disk(html_top,html_create_list_piece,full_temp
     # do string substitution:
     filecontents = str(html_data) # already stitched above
     print("file stitched!")
-
-    #
-    # update location on links for things if testing locally-only, not compiling for live-website
-    #
-    if (local_compile_check == "no"): # for live website, use this
-        pass # is already set up for this
-    else: #if (local_compile_check == "yes"): # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
-        replace_website_top_with_this = "file://" + gitdir + "public_html/"
-        filecontents = filecontents.replace(website_top,replace_website_top_with_this)
 
     # now, write everything to the file
     filelocation_str = html_top + outfile_location_rel_to_public_html + outfilename
@@ -228,34 +218,29 @@ if __name__ == '__main__':
     The 3rd ($3) will attempt to perform a compile of the website in a
     different location, assuming that gitdir may not be in spacerobotics
     as per the usual pulldown_instructions.sh script. Example usage:
-        ./create_html.py local /home/$USER/git_pulls/website /home/$USER/test_website/html_here
-    This will put the files in /home/$USER/test_website/html_here/public_html and
-    create all internal links as "file:///home/$USER/test_website/html_here/public_html"
+        ./create_html.py local /home/$USER/git_pulls/website/ /home/$USER/test_website/html_here/
+    This will put the files in /home/$USER/test_website/html_here/ and
+    create all internal links as "file:///home/$USER/test_website/html_here/"
     So, if you want this to work,
     you make have to perform the following at the command prompt first:
-        mkdir -p /home/$USER/test_website/html_here/public_html
+        mkdir -p /home/$USER/test_website/html_here/
     
     The 4th ($4) will attempt to perform a compile of the website in a
     different location, assuming that gitdir may not be in spacerobotics
     as per the usual pulldown_instructions.sh script. Example usage:
-        ./create_html.py https://www.test.edu/~$USER/ /home/$USER/git_pulls/website/ public_html/
-    This will put the files in /home/$USER/git_pulls/website/public_html and
-    create all internal links as "https://www.test.edu/~$USER/public_html"
+        ./create_html.py https://www.spacerobotics.uc.edu/~$USER/ /home/$USER/git_pulls/website/ /home/$USER/my_website/public_html/
+    This will put the files in /home/$USER/my_website/public_html/ and
+    create all internal links as "https://www.spacerobotics.uc.edu/~$USER/"
     So, if you want this to work,
     you make have to perform the following at the command prompt first:
-        mkdir -p /home/$USER/public_html
+        mkdir -p /home/$USER/my_website/public_html
     """
     
     # ---- Parameters for html site creation ----
     website_top="http://www.ase.uc.edu/~spacerobotics/"
     # website_top will be find-replaced with gitdir if local_compile_check = "yes" below
     gitdir = "/home/spacerobotics/git_pulls/website-master/"
-    """ for debugging, use this instead (otherwise may overwrite currently-existing files under gitdir of public_html):
-    html_sitedir = "html_site/"
-    html_top = html_sitedir + "public_html/"
-    """
-    html_sitedir = "public_html/"
-    html_top = html_sitedir + "./"
+    html_sitedir = "/home/spacerobotics/public_html/"
 
     # ---- Get commandline variables (some can overwrite the above) ----
     local_compile_check = "no" # for live website # this is the default compilation option
@@ -264,25 +249,27 @@ if __name__ == '__main__':
         if isinstance(holdargs[1],str):
             if holdargs[1] == "local": # for local compile, type "local" at the prompt
                 local_compile_check = "yes" # for local directory checks of website, not-live, use this -- note that body images &etc. will not work
+                website_top = "file://" + html_sitedir
             else: # is not a local compile, have other vars
                 website_top = holdargs[1]
     print("*** local_compile_check = %s ***" % local_compile_check)
     if len(holdargs)>3:
-        if isinstance(holdargs[2],str) and isinstance(holdargs[3],str) and isinstance(holdargs[4],str):
+        if isinstance(holdargs[2],str) and isinstance(holdargs[3],str):
             gitdir = holdargs[2]
             html_sitedir = holdargs[3]
-            html_top = html_sitedir + "./"
+            if (local_compile_check == "yes"): # html_sitedir is global directory
+                website_top = "file://" + html_sitedir
+            #else: the new website_top was given earlier
     print("*** html_sitedir = %s ***" % html_sitedir)
     print("*** website_top = %s ***" % website_top)
-
 
 
     # we are going to assume that the directory doesn't exist yet because it's a new wget download-and-unzip
 
     css_filename = "styles.css"
-    #css_filedir = "./"
-    css_filedir = ""
-    css_to_use = gitdir + "public_html/" + css_filedir + css_filename
+    css_filedir = "" # "./"
+    #css_to_use = gitdir + "public_html/" + css_filedir + css_filename
+    css_to_use = website_top + css_filedir + css_filename
 
     full_templatedir = gitdir + "_templates/"
     html_full_template = 'html_full.template'
@@ -319,19 +306,19 @@ if __name__ == '__main__':
         #
         # create styles.css file
         #
-        create_css_file_and_write_to_disk(html_top,html_sitedir,gitdir,html_create_list,local_compile_check,website_top,css_to_use)
+        create_css_file_and_write_to_disk(html_sitedir,gitdir,html_create_list,website_top,css_to_use)
 
         #
         # now, get the majority of html files stitched together
         #
         print("starting html creation...")
         for i in range(len(html_create_list)):
-            create_html_file_and_write_to_disk(html_top, html_create_list[i], \
+            create_html_file_and_write_to_disk(html_sitedir, html_create_list[i], \
                 full_templatedir, html_full_template, \
                 titlerider, \
                 website_top, \
-                css_filedir, css_filename, \
-                gitdir, local_compile_check)
+                css_to_use, \
+                gitdir)
 
         # we're done!
         print("done with html compilation")
