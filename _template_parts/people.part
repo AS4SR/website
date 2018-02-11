@@ -1,1 +1,122 @@
-<p>Coming soon! :)</p>
+<h1>People</h1>
+    <table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
+        <tr>
+            <td width="35%"> <!-- 35% of 715px is approx. 250px -->
+                <!-- <img src="http://www.ase.uc.edu/~spacerobotics/images/cat.mcghan.png" width="150px" height="65px" style="vertical-align:middle;"> -->
+                <img src="images/mcghan.jpg" width="100%" style="vertical-align:middle;"> <!-- 200pxW-by-250pxH -->
+            </td>
+            <td width="65%">
+                <b>Catharine ("Cat") McGhan</b><br>
+                Professor, CEAS-AEEM<br>
+                Director, AS4SR Lab<br>
+                724 Rhodes Hall<br>
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br>
+                Phone: 513-556-3032<br>
+                Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
+                Website: <a href="http://ceas.uc.edu/aerospace/people/people_fac-staff/fac-staff/fac/cat-mcghan.html">AEEM profile</a>,
+                <a href="http://www.ceas3.uc.edu/profiles/mcghancl">CEAS profile</a>,
+                <a href="https://www.linkedin.com/in/catharine-mcghan-a8253a90/">LinkedIn profile</a><br>
+                <a href="people/mcghan.html">local page (AS4SR)</a>,
+                <a href="https://github.com/cmcghan/">github page</a>,
+                <a href="http://homepages.uc.edu/~mcghancl/">personal website</a>
+            </td>
+        </tr>
+        <tr>
+            <td width="35%">
+                <img src="images/verbryke.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="65%">
+                <b>Matthew Verbryke</b><br>
+                M.S. Student, CEAS-AEEM<br>
+                Graduate Assistant, AS4SR Lab<br>
+                436 ERC<br>
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br>
+                Phone: --<br>
+                Email: <a href="mailto:verbrymr@mail.uc.edu">verbrymr@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/matthewverbryke">LinkedIn profile</a><br>
+                <a href="people/mcghan.html">local page (AS4SR)</a>,
+                <a href="https://github.com/MatthewVerbryke/">github page</a>,
+                <!--a href="http://homepages.uc.edu/~verbrymr/"-->personal website<!--/a-->
+            </td>
+        </tr>
+        <tr>
+            <td width="35%">
+                <img src="images/medhi.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="65%">
+                <b>Jishu Medhi</b><br>
+                M.S. Student, CEAS-AEEM<br>
+                Graduate Assistant, AS4SR Lab<br>
+                436 ERC<br>
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br>
+                Phone: --<br>
+                Email: <a href="mailto:medhijk@mail.uc.edu">medhijk@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/jishu-kinkar-medhi-9093aa9b/">LinkedIn profile</a><br>
+                <a href="people/medhi.html">local page (AS4SR)</a>,
+                <a href="https://github.com/medhijk/">github page</a>,
+                <!--a href="http://homepages.uc.edu/~medhijk/"-->personal website<!--/a-->
+            </td>
+        </tr>
+        <tr>
+            <td width="35%">
+                <img src="images/shi.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="65%">
+                <b>Zhenyu ("Nathan") Shi</b><br>
+                Ph.D. Student, CEAS-AEEM<br>
+                Graduate Assistant, AS4SR Lab<br>
+                436 ERC<br>
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br>
+                Phone: --<br>
+                Email: <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/zhenyu-shi-b95535119/">LinkedIn profile</a><br>
+                <a href="people/shi.html">local page (AS4SR)</a>,
+                <a href="https://github.com/zhenyushi/">github page</a>,
+                <!--a href="http://homepages.uc.edu/~shizu/"-->personal website<!--/a-->
+            </td>
+        </tr>
+        <tr>
+            <td width="35%">
+                <img src="images/korte.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="65%">
+                <b>Chris Korte</b><br>
+                Ph.D. Student, CEAS-AEEM<br>
+                Graduate Student, AS4SR Lab<br>
+                695A Rhodes Hall<br>
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br>
+                Phone: --<br>
+                Email: <a href="mailto:kortecm@mail.uc.edu">kortecm@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/christopher-korte-8400a636/">LinkedIn profile</a><br>
+                <a href="people/korte.html">local page (AS4SR)</a>,
+                <!--a href="https://github.com/kortecm/"-->github page<!--/a-->,
+                <!--a href="http://homepages.uc.edu/~kortecm/"-->personal website<!--/a-->
+            </td>
+        </tr>
+<!-- TEMPLATE FOR ADDITIONAL / NEW PERSONNEL
+        <tr>
+            <td width="35%">
+                <img src="images/REPLACETHIS.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="65%">
+                <b>FIRSTNAME LASTNAME</b><br>
+                [[B.S.,M.S.,Ph.D.]] Student, [[CEAS-AEEM]]<br>
+                Graduate Student, AS4SR Lab<br>
+                ROOMNUMBER BUILDINGNAME<br>
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br>
+                Phone: PHONENUMBEROFUCOFFICE<br>
+                Email: <a href="mailto:REPLACETHIS@mail.uc.edu">REPLACETHIS@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/REPLACETHIS/">LinkedIn profile</a><br>
+                <a href="people/REPLACETHIS.html">local page (AS4SR)</a>,
+                <a href="https://github.com/REPLACETHIS/">github page</a>,
+                <a href="http://homepages.uc.edu/~REPLACETHIS/">personal website</a>
+            </td>
+        </tr>
+-->
+    </table>

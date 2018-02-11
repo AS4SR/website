@@ -318,11 +318,11 @@ if __name__ == '__main__':
      #['level2','related','','related.html','_template_parts/related_labs.part','Related Labs'],
 
      ['level1','robots','','robots.html','_template_parts/robots.part','Robots'],
-     ['','','robots/','turtlebots.html','_template_parts/robots/turtlebots.part','Turtlebots'],
-     ['','','robots/','widowx.html','_template_parts/robots/widowx.part','WidowX'],
-     ['','','robots/','inmoov.html','_template_parts/robots/inmoov.part','InMoov'],
-     ['','','robots/','widowx.html','_template_parts/robots/pa-10.part','PA-10 Arm'],
-     ['','','robots/','uavs.html','_template_parts/robots/uavs.part','UAVs'],
+     #['','','robots/','turtlebots.html','_template_parts/robots/turtlebots.part','Turtlebots'],
+     #['','','robots/','widowx.html','_template_parts/robots/widowx.part','WidowX'],
+     #['','','robots/','inmoov.html','_template_parts/robots/inmoov.part','InMoov'],
+     #['','','robots/','pa10.html','_template_parts/robots/pa-10.part','PA-10 Arm'],
+     #['','','robots/','uavs.html','_template_parts/robots/uavs.part','UAVs'],
 
      ['level1','archived','','archived.html','_template_parts/archived.part','Archived Work'],
      #['level2','archived_projects','archived_projects/','projects.html','_template_parts/archived_projects.part','Archived Projects'],
