@@ -29,8 +29,10 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 ### To update what's on the AS4SR webserver
 1. Log in to the webserver
 1. Copy the newest version of the `pulldown_instructions.sh` file to `/home/spacerobotics` properly, via:  
-`cd /home/spacerobotics && rm pulldown_instructions.sh`  
-`wget https://github.com/AS4SR/website/raw/master/pulldown_instructions.sh && chmod +x pulldown_instructions.sh`
+`cd /home/spacerobotics`  
+`rm pulldown_instructions.sh`  
+`wget https://github.com/AS4SR/website/raw/master/pulldown_instructions.sh`  
+`chmod +x pulldown_instructions.sh`
 1. Run at the prompt:  
 `cd /home/spacerobotics && ./pulldown_instructions.sh`
 1. If you see no errors, everything should have copied just fine!
