@@ -45,7 +45,7 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 1. Run at the prompt:  
 `./create_html.py local /home/$USER/git_pulls/website/ /home/$USER/test_website/html_here/`
 1. If you see no errors, everything should have copied just fine!
-1. Check the website at file:///home/$USER/test_website/html_here/ to make sure everything looks right, via:
+1. Check the website at file:///home/$USER/test_website/html_here/ to make sure everything looks right, via:  
 `firefox "file:///home/$USER/test_website/html_here/" &`
 
 ## Copyright

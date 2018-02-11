@@ -135,6 +135,7 @@ def filereadin_replace_returnstr(filename_temp,lineoffsetbyXspaces,replacestr,ht
     """
     f = open(filename_temp,'r'); tempholdtext = f.read(); f.close();
     if (lineoffsetbyXspaces is not None) and (lineoffsetbyXspaces != 0):
+        #print("did tempholdreplace!! lineoffsetbyXspaces = %d" % lineoffsetbyXspaces)
         tempholdtext = tempholdtext.replace("\n","\n"+" "*lineoffsetbyXspaces) # offset each line by X spaces from left side of html file
     if replacestr is None: # html_data should be None as well
         return tempholdtext
@@ -177,7 +178,7 @@ def create_html_file_and_write_to_disk(html_sitedir,html_create_list_piece,full_
     html_data = filereadin_replace_returnstr(gitdir + "_templates/topofpage.part",4,"$TOPOFPAGE",html_data)
     verticalmenubar_part_str = create_and_return_verticalmenubar(html_create_list,website_top) # already offset
     html_data = html_data.replace( "$VERTICALMENUBAR", verticalmenubar_part_str )
-    html_data = filereadin_replace_returnstr(gitdir + part_filename_plus_location,4,"$MAINBODY",html_data)
+    html_data = filereadin_replace_returnstr(gitdir + part_filename_plus_location,12,"$MAINBODY",html_data)
     html_data = filereadin_replace_returnstr(gitdir + "_templates/footer.part",8,"$FOOTER",html_data)
     html_data = html_data.replace( "$BOTTOMOFPAGE", "" ) #("testbottomofpage (placeholder text)")
     print("all pieces grabbed!")
@@ -293,11 +294,41 @@ if __name__ == '__main__':
     [['','','./','custom404.html','_template_parts/custom404.part','404 Error'], # note that this isn't added to the CSS or menubar list
      ['level1','index','','index.html','_template_parts/index.part','Home'],
      ['level1','about','','about.html','_template_parts/about.part','About'],
-     ['level1','resources','','resources.html','_template_parts/coming_soon.part','Resources'],
-     ['level2','robots','','robots.html','_template_parts/coming_soon.part','Robots'],
-     ['level2','archived_robots','archived/','robots.html','_template_parts/coming_soon.part','Archived Robots'],
-     ['level1','archived','','archived.html','_template_parts/coming_soon.part','Archived Projects'],
-     ['level2','later','archived_projects/','later.html','_template_parts/coming_soon.part','...']]
+     ['level1','publications','','publications.html','_template_parts/publications.part','Publications'],
+     
+     ['level1','people','','people.html','_template_parts/people.part','People'],
+     ['','','people/','mcghan.html','_template_parts/people/mcghancl.part','Prof. Cat McGhan'],
+     ['','','people/','verbryke.html','_template_parts/people/verbrymr.part','Matthew Verbryke'],
+     ['','','people/','medhi.html','_template_parts/people/medhijk.part','Jishu Medhi'],
+     ['','','people/','shi.html','_template_parts/people/shizu.part','Zhenyu Shi'],
+     ['','','people/','korte.html','_template_parts/people/kortecm.part','Chris Korte'],
+
+     ['level1','research','','research.html','_template_parts/research.part','Research'],
+     ['level2','dualarm_inmoov','research/','dualarm_inmoov.html','_template_parts/research/dualarm_inmoov.part','Dual-arm Manipulation'],
+     ['level2','aerialmanip','research/','aerialmanip.html','_template_parts/research/aerialmanip.part','Aerial Manipulator'],
+     ['level2','vr_gazebo','research/','vrplusgazebo.html','_template_parts/research/vrplusgazebo.part','VR + ROS Gazebo'],
+     ['level2','medicalmanip','research/','medicalmanip.html','_template_parts/research/medicalmanip.part','Medical Manipulator'],
+     ['level2','rse_cont','research/','rse_cont.html','_template_parts/research/rse2pt0.part','Resilient Spacecraft Executive'],
+     ['level2','tss_cont','research/','tss_cont.html','_template_parts/research/tss2pt0.part','Total System Stability'],
+
+     ['level1','projects','','projects.html','_template_parts/unassigned_projects.part','Unassigned Projects'], # open projects
+     
+     ['level1','links','','links.html','_template_parts/links.part','Links'],
+     #['level2','resources','','resources.html','_template_parts/resources.part','Resources at UC'],
+     #['level2','related','','related.html','_template_parts/related_labs.part','Related Labs'],
+
+     ['level1','robots','','robots.html','_template_parts/robots.part','Robots'],
+     ['','','robots/','turtlebots.html','_template_parts/robots/turtlebots.part','Turtlebots'],
+     ['','','robots/','widowx.html','_template_parts/robots/widowx.part','WidowX'],
+     ['','','robots/','inmoov.html','_template_parts/robots/inmoov.part','InMoov'],
+     ['','','robots/','widowx.html','_template_parts/robots/pa-10.part','PA-10 Arm'],
+     ['','','robots/','uavs.html','_template_parts/robots/uavs.part','UAVs'],
+
+     ['level1','archived','','archived.html','_template_parts/archived.part','Archived Work'],
+     #['level2','archived_projects','archived_projects/','projects.html','_template_parts/archived_projects.part','Archived Projects'],
+     #['level2','archived_robots','archived_robots/','robots.html','_template_parts/archived_robots.part','Archived Robots']]
+     ['','','archived_projects/','projects.html','_template_parts/archived_projects.part','Archived Projects'],
+     ['','','archived_robots/','robots.html','_template_parts/archived_robots.part','Archived Robots']]
     
     titlerider = " - AS4SR Lab, University of Cincinnati"
 
