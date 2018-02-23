@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <td>$PIC$</td>
+        <td>$MAINCONTACT$</td>
+    </tr>
+    <tr>
+        $PUBLICATIONS$<br>
+        <br>
+        $PUBLICATIONS$<br>
+    </tr>
+</table>
+</p>
