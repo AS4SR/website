@@ -1,12 +1,19 @@
-<table>
-    <tr>
-        <td>$PIC$</td>
-        <td>$MAINCONTACT$</td>
-    </tr>
-    <tr>
-        $PUBLICATIONS$<br>
-        <br>
-        $PUBLICATIONS$<br>
-    </tr>
-</table>
-</p>
+<table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
+                <tr>
+                    <td width="35%"> <!-- 35% of 715px is approx. 250px -->
+                        <img src="$PIC$" width="100%" style="vertical-align:middle;"> <!-- 200pxW-by-250pxH -->
+                    </td>
+                    <td width="65%">
+                        $MAINCONTACT$
+                    </td>
+                </tr>
+        </table>
+        <table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
+                <tr>
+                    <td width="100%">
+                        $PUBLICATIONS$<br>
+                        <br>
+                        $PROJECTS$
+                    </td>
+                </tr>
+        </table>

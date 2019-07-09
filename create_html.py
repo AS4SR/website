@@ -141,7 +141,7 @@ def filereadin_replace_returnstr(filename_temp,lineoffsetbyXspaces,replacestr,ht
         return tempholdtext
     else:
         return html_data.replace( replacestr, tempholdtext )
-    
+
 def create_html_file_and_write_to_disk(html_sitedir,html_create_list_piece,full_templatedir,html_full_template,titlerider,website_top,css_to_use,gitdir):
 
     [ul_class_level_in_menubar, name_in_css_file , outfile_location_rel_to_public_html , outfilename , \
@@ -178,7 +178,35 @@ def create_html_file_and_write_to_disk(html_sitedir,html_create_list_piece,full_
     html_data = filereadin_replace_returnstr(gitdir + "_templates/topofpage.part",4,"$TOPOFPAGE",html_data)
     verticalmenubar_part_str = create_and_return_verticalmenubar(html_create_list,website_top) # already offset
     html_data = html_data.replace( "$VERTICALMENUBAR", verticalmenubar_part_str )
-    html_data = filereadin_replace_returnstr(gitdir + part_filename_plus_location,12,"$MAINBODY",html_data)
+    if (part_filename_plus_location[0:23] == '_template_parts/people/'): # then we need to create the .part file first
+        people_full_template = "_template_parts/people/people_piece.part"
+        people_data = str(filereadin_replace_returnstr(gitdir + people_full_template,None,None,None))
+        # then do all the replacements by pulling stuff from the .txt file (& replace in the *_piece.part file)
+        partfile_data = str(filereadin_replace_returnstr(gitdir + part_filename_plus_location,None,None,None))
+        partfile_data_list = partfile_data.split('\n')
+        print("%r\n" % (partfile_data_list,))
+        for i in range(len(partfile_data_list)):
+            if ("$PIC$" == partfile_data_list[i]): # then the next line contains a pic
+                people_data = people_data.replace( "$PIC$", str(partfile_data_list[i+1]))
+            elif (len(partfile_data_list[i])>0) and ("$" == partfile_data_list[i][0]): # then the next lines contain contact info until hit another $ section
+                holdstr = ""
+                for j in range(i+1,len(partfile_data_list)):
+                    if (len(partfile_data_list[j])>0) and (partfile_data_list[j][0] == "$"): # if starts with a $ then done
+                        break
+                    else:
+                        holdstr = holdstr + partfile_data_list[j] + "\n"
+                if ("$MAINCONTACT$" == partfile_data_list[i]):
+                    people_data = people_data.replace( "$MAINCONTACT$", holdstr )
+                elif ("$PUBLICATIONS$" == partfile_data_list[i]):
+                    people_data = people_data.replace( "$PUBLICATIONS$", holdstr )
+                elif ("$PROJECTS$" == partfile_data_list[i]):
+                    people_data = people_data.replace( "$PROJECTS$", holdstr )
+                else:
+                    print("Did not find a match for %s in template" % (partfile_data_list[i],))
+        # now replace the stuff in the file
+        html_data = html_data.replace( "$MAINBODY", people_data )
+    else: # use the pre-existing part file instead
+        html_data = filereadin_replace_returnstr(gitdir + part_filename_plus_location,12,"$MAINBODY",html_data)
     html_data = filereadin_replace_returnstr(gitdir + "_templates/footer.part",8,"$FOOTER",html_data)
     html_data = html_data.replace( "$BOTTOMOFPAGE", "" ) #("testbottomofpage (placeholder text)")
     print("all pieces grabbed!")
@@ -297,11 +325,16 @@ if __name__ == '__main__':
      ['level1','publications','','publications.html','_template_parts/publications.part','Publications'],
      
      ['level1','people','','people.html','_template_parts/people.part','People'],
-     ['','','people/','mcghan.html','_template_parts/people/mcghancl.part','Prof. Cat McGhan'],
-     ['','','people/','verbryke.html','_template_parts/people/verbrymr.part','Matthew Verbryke'],
-     ['','','people/','medhi.html','_template_parts/people/medhijk.part','Jishu Medhi'],
-     ['','','people/','shi.html','_template_parts/people/shizu.part','Zhenyu Shi'],
-     ['','','people/','korte.html','_template_parts/people/kortecm.part','Chris Korte'],
+     #['','','people/','mcghan.html','_template_parts/people/mcghancl.part','Prof. Cat McGhan'],
+     #['','','people/','verbryke.html','_template_parts/people/verbrymr.part','Matthew Verbryke'],
+     #['','','people/','medhi.html','_template_parts/people/medhijk.part','Jishu Medhi'],
+     #['','','people/','shi.html','_template_parts/people/shizu.part','Zhenyu Shi'],
+     #['','','people/','korte.html','_template_parts/people/kortecm.part','Chris Korte'],
+     ['','','people/','mcghan.html','_template_parts/people/mcghancl.txt','Prof. Cat McGhan'],
+     ['','','people/','verbryke.html','_template_parts/people/verbrymr.txt','Matthew Verbryke'],
+     ['','','people/','medhi.html','_template_parts/people/medhijk.txt','Jishu Medhi'],
+     ['','','people/','shi.html','_template_parts/people/shizu.txt','Zhenyu Shi'],
+     ['','','people/','korte.html','_template_parts/people/kortecm.txt','Chris Korte'],
 
      ['level1','research','','research.html','_template_parts/research.part','Research'],
      ['level2','dualarm_inmoov','research/','dualarm_inmoov.html','_template_parts/research/dualarm_inmoov.part','Dual-arm Manipulation'],
@@ -345,6 +378,7 @@ if __name__ == '__main__':
         except:
             print("directory already exists, stopping script run")
             sys.exit(1)
+        
         #
         # create styles.css file
         #

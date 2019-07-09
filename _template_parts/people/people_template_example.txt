@@ -1,0 +1,24 @@
+$PIC$
+../images/REPLACETHIS.jpg
+$MAINCONTACT$
+<b>FIRSTNAME LASTNAME</b><br>
+                [[B.S.,M.S.,Ph.D.]] Student, [[CEAS-AEEM]]<br>
+                Graduate Student, AS4SR Lab<br>
+                ROOMNUMBER BUILDINGNAME<br>
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br>
+                Phone: PHONENUMBEROFUCOFFICE<br>
+                Email: <a href="mailto:REPLACETHIS@mail.uc.edu">REPLACETHIS@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/REPLACETHIS/">LinkedIn profile</a><br>
+                <b><a href="people/REPLACETHIS.html">local page (AS4SR)</a></b>,
+                <a href="https://github.com/REPLACETHIS/">github page</a>,
+                <a href="http://homepages.uc.edu/~REPLACETHIS/">personal website</a>
+$PUBLICATIONS$
+Journal papers:<br>
+-- Coming soon! :)<br>
+<br>
+Conference papers:<br>
+-- Coming soon! :)
+$PROJECTS$
+Projects:<br>
+-- Coming soon! :)
