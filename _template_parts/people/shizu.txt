@@ -5,9 +5,6 @@ $MAINCONTACT$
                 Ph.D. Student, CEAS-AEEM<br>
                 Graduate Assistant, AS4SR Lab<br>
                 436 ERC<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
                 Email: <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br>
                 Website: <a href="https://www.linkedin.com/in/zhenyu-shi-b95535119/">LinkedIn profile</a><br>
                 <b><a href="../people/shi.html">local page (AS4SR)</a></b>,
@@ -21,4 +18,5 @@ Conference papers:<br>
 -- Coming soon! :)
 $PROJECTS$
 Projects:<br>
--- Coming soon! :)
+-- <a href="../research/vrplusgazebo.html">VR + ROS Gazebo</a>
+-- <!--a href="../research/simplex_uav.html"-->Simplex for Dynamic UAV Environments<!--/a-->

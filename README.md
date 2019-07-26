@@ -51,6 +51,14 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 1. Check the website at file:///home/$USER/test_website/html_here/ to make sure everything looks right, via:  
 `firefox "file:///home/$USER/test_website/html_here/" &`
 
+#### Alternate example:
+`mkdir -p /home/$USER/github_pulls && cd /home/$USER/github_pulls`  
+`git clone https://github.com/AS4SR/website.git website_AS4SR`  
+`cd website_AS4SR`  
+`rm -rf /home/$USER/test_website/html_here/`  
+`./create_html.py local /home/$USER/github_pulls/website_AS4SR/ /home/$USER/test_website/html_here/`  
+`firefox "file:///home/$USER/test_website/html_here/" &`
+
 ## Copyright
 Copyright for webpage content: University of Cincinnati, 2017-2019
 

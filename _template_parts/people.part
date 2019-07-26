@@ -1,21 +1,20 @@
 <h1>People</h1>
     <table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
         <tr>
-            <td width="35%"> <!-- 35% of 715px is approx. 250px -->
+            <td width="20%"> <!-- 35% of 715px is approx. 250px (+65%) -->
+                <!-- 20% of 715px is approx. 143px (+80%) -->
                 <!-- <img src="http://www.ase.uc.edu/~spacerobotics/images/cat.mcghan.png" width="150px" height="65px" style="vertical-align:middle;"> -->
                 <img src="images/mcghan.jpg" width="100%" style="vertical-align:middle;"> <!-- 200pxW-by-250pxH -->
             </td>
-            <td width="65%">
+            <td width="80%">
                 <b>Catharine ("Cat") McGhan</b><br>
                 Professor, CEAS-AEEM<br>
                 Director, AS4SR Lab<br>
                 724 Rhodes Hall<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
                 Phone: 513-556-3032<br>
                 Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
-                Website: <a href="http://ceas.uc.edu/aerospace/people/people_fac-staff/fac-staff/fac/cat-mcghan.html">AEEM profile</a>,
-                <a href="http://www.ceas3.uc.edu/profiles/mcghancl">CEAS profile</a>,
+                Website: <a href="https://researchdirectory.uc.edu/p/mcghancl">UC Research Directory profile</a><br>
+                <a href="http://www.ceas3.uc.edu/profiles/mcghancl">CEAS profile</a>, <a href="https://ceas.uc.edu/academics/departments/aerospace-engineering-mechanics/people.html#mcghancl">AEEM profile</a>,
                 <a href="https://www.linkedin.com/in/catharine-mcghan-a8253a90/">LinkedIn profile</a><br>
                 <b><a href="people/mcghan.html">local page (AS4SR)</a></b>,
                 <a href="https://github.com/cmcghan/">github page</a>,
@@ -23,17 +22,14 @@
             </td>
         </tr>
         <tr>
-            <td width="35%">
+            <td width="20%">
                 <img src="images/verbryke.jpg" width="100%" style="vertical-align:middle;">
             </td>
-            <td width="65%">
+            <td width="80%">
                 <b>Matthew Verbryke</b><br>
-                M.S. Student, CEAS-AEEM<br>
-                Graduate Assistant, AS4SR Lab<br>
+                Ph.D. Student, CEAS-AEEM<br>
+                Graduate Student, AS4SR Lab<br>
                 436 ERC<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
                 Email: <a href="mailto:verbrymr@mail.uc.edu">verbrymr@mail.uc.edu</a><br>
                 Website: <a href="https://www.linkedin.com/in/matthewverbryke">LinkedIn profile</a><br>
                 <b><a href="people/verbryke.html">local page (AS4SR)</a></b>,
@@ -42,17 +38,14 @@
             </td>
         </tr>
         <tr>
-            <td width="35%">
+            <td width="20%">
                 <img src="images/medhi.jpg" width="100%" style="vertical-align:middle;">
             </td>
-            <td width="65%">
+            <td width="80%">
                 <b>Jishu Medhi</b><br>
                 M.S. Student, CEAS-AEEM<br>
-                Graduate Assistant, AS4SR Lab<br>
+                Graduate Student, AS4SR Lab<br>
                 436 ERC<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
                 Email: <a href="mailto:medhijk@mail.uc.edu">medhijk@mail.uc.edu</a><br>
                 Website: <a href="https://www.linkedin.com/in/jishu-kinkar-medhi-9093aa9b/">LinkedIn profile</a><br>
                 <b><a href="people/medhi.html">local page (AS4SR)</a></b>,
@@ -61,17 +54,14 @@
             </td>
         </tr>
         <tr>
-            <td width="35%">
+            <td width="20%">
                 <img src="images/shi.jpg" width="100%" style="vertical-align:middle;">
             </td>
-            <td width="65%">
+            <td width="80%">
                 <b>Zhenyu ("Nathan") Shi</b><br>
                 Ph.D. Student, CEAS-AEEM<br>
                 Graduate Assistant, AS4SR Lab<br>
                 436 ERC<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
                 Email: <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br>
                 Website: <a href="https://www.linkedin.com/in/zhenyu-shi-b95535119/">LinkedIn profile</a><br>
                 <b><a href="people/shi.html">local page (AS4SR)</a></b>,
@@ -80,17 +70,14 @@
             </td>
         </tr>
         <tr>
-            <td width="35%">
+            <td width="20%">
                 <img src="images/korte.jpg" width="100%" style="vertical-align:middle;">
             </td>
-            <td width="65%">
+            <td width="80%">
                 <b>Chris Korte</b><br>
                 Ph.D. Student, CEAS-AEEM<br>
                 Graduate Student, AS4SR Lab<br>
                 695A Rhodes Hall<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
                 Email: <a href="mailto:kortecm@mail.uc.edu">kortecm@mail.uc.edu</a><br>
                 Website: <a href="https://www.linkedin.com/in/christopher-korte-8400a636/">LinkedIn profile</a><br>
                 <b><a href="people/korte.html">local page (AS4SR)</a></b>,
@@ -98,19 +85,64 @@
                 <!--a href="http://homepages.uc.edu/~kortecm/"-->personal website<!--/a-->
             </td>
         </tr>
+        <tr>
+            <td width="20%">
+                <img src="images/muthaiah.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="80%">
+                <b>Ponaravind Muthaiah</b><br>
+                M.S. Student, CEAS-AEEM<br>
+                Graduate Student, AS4SR Lab<br>
+                436 ERC<br>
+                Email: <a href="mailto:muthaipd@mail.uc.edu">muthaipd@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/ponaravind-muthaiah-50b17356/">LinkedIn profile</a><br>
+                <b><a href="people/muthaiah.html">local page (AS4SR)</a></b>,
+                <!--a href="https://github.com/muthaipd/"-->github page<!--/a-->,
+                <!--a href="http://homepages.uc.edu/~muthaipd/"-->personal website<!--/a-->
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <img src="images/karra.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="80%">
+                <b>Sailendra Karra</b><br>
+                M.S. Student, CEAS-MECH<br>
+                Graduate Student, AS4SR Lab<br>
+                436 ERC<br>
+                Email: <a href="mailto:karrasa@mail.uc.edu">karrasa@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/karrasailendra/">LinkedIn profile</a><br>
+                <b><a href="people/karra.html">local page (AS4SR)</a></b>,
+                <!--a href="https://github.com/karrasa/"-->github page<!--/a-->,
+                <!--a href="http://homepages.uc.edu/~karrasa/"-->personal website<!--/a-->
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <img src="images/kashid.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="80%">
+                <b>Sujeet Kashid</b><br>
+                M.S. Student, CEAS-AEEM<br>
+                Graduate Student, AS4SR Lab<br>
+                436 ERC<br>
+                Email: <a href="mailto:kashidsv@mail.uc.edu">kashidsv@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/sujeet-kashid-5b824998/">LinkedIn profile</a><br>
+                <b><a href="people/kashid.html">local page (AS4SR)</a></b>,
+                <!--a href="https://github.com/kashidsv/"-->github page<!--/a-->,
+                <!--a href="http://homepages.uc.edu/~kashidsv/"-->personal website<!--/a-->
+            </td>
+        </tr>
 <!-- TEMPLATE FOR ADDITIONAL / NEW PERSONNEL
         <tr>
-            <td width="35%">
+            <td width="20%">
                 <img src="images/REPLACETHIS.jpg" width="100%" style="vertical-align:middle;">
             </td>
-            <td width="65%">
+            <td width="80%">
                 <b>FIRSTNAME LASTNAME</b><br>
                 [[B.S.,M.S.,Ph.D.]] Student, [[CEAS-AEEM]]<br>
                 Graduate Student, AS4SR Lab<br>
                 ROOMNUMBER BUILDINGNAME<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: PHONENUMBEROFUCOFFICE<br>
                 Email: <a href="mailto:REPLACETHIS@mail.uc.edu">REPLACETHIS@mail.uc.edu</a><br>
                 Website: <a href="https://www.linkedin.com/in/REPLACETHIS/">LinkedIn profile</a><br>
                 <b><a href="people/REPLACETHIS.html">local page (AS4SR)</a></b>,
@@ -119,4 +151,35 @@
             </td>
         </tr>
 -->
+    </table>
+<p><b>_________________</b><br></p>
+<h2>Lab Alumni</h2>
+    <table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
+        <tr>
+            <td width="20%">
+                <img src="images/kropveld.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="80%">
+                <b>Jessica Kropveld</b><br>
+                B.S. Student, CEAS-AEEM<br>
+                Undergraduate Research Assistant, AS4SR Lab<br>
+                May 2018 - Aug 2018<br>
+                Email: <a href="mailto:kropvejl@mail.uc.edu">kropvejl@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/jessica-kropveld/">LinkedIn profile</a>, 
+                <a href="https://github.com/JessKropveld/">github page</a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <img src="images/heng.jpg" width="100%" style="vertical-align:middle;">
+            </td>
+            <td width="80%">
+                <b>(Yu-Hsuan) "Sharon" Heng</b><br>
+                MEng Student, CEAS-AEEM<br>
+                Graduate Student, AS4SR Lab<br>
+                Jan 2018 - Aug 2018<br>
+                Email: <a href="mailto:sharon89633@gmail.com">sharon89633@gmail.com</a><br>
+                Website: <a href="https://github.com/sharon50270/">github page</a>
+            </td>
+        </tr>
     </table>

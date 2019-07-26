@@ -7,8 +7,8 @@
             <td width="75%">
                 <b>Dual-arm Manipulation Project</b><br>
                 Contact: Matthew Verbryke<br>
-                Email: <a href="mailto:verbrymr@mail.uc.edu">medhijk@mail.uc.edu</a><br>
-                Project Website: <a href="research/dualarm_inmoov.html">local page (AS4SR)</a>
+                Email: <a href="mailto:verbrymr@mail.uc.edu">verbrymr@mail.uc.edu</a><br>
+                Project Website: <b><a href="research/dualarm_inmoov.html">local page (AS4SR)</a></b>
             </td>
         </tr>
         <tr>
@@ -19,7 +19,7 @@
                 <b>Aerial Manipulator Project</b><br>
                 Contact: Jishu Medhi<br>
                 Email: <a href="mailto:medhijk@mail.uc.edu">medhijk@mail.uc.edu</a><br>
-                Project Website: <a href="research/aerialmanip.html">local page (AS4SR)</a>
+                Project Website: <b><a href="research/aerialmanip.html">local page (AS4SR)</a></b>
             </td>
         </tr>
         <tr>
@@ -30,7 +30,7 @@
                 <b>Commercial VR + ROS Gazebo for Robotics Education and Research</b><br>
                 Contact: Zhenyu ("Nathan") Shi<br>
                 Email: <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br>
-                Project Website: <a href="research/vrplusgazebo.html">local page (AS4SR)</a>
+                Project Website: <b><a href="research/vrplusgazebo.html">local page (AS4SR)</a></b>
             </td>
         </tr>
         <tr>
@@ -41,7 +41,7 @@
                 <b>Medical Manipulator Project</b><br>
                 Contact: Chris Korte<br>
                 Email: <a href="mailto:kortecm@mail.uc.edu">kortecm@mail.uc.edu</a><br>
-                Project Website: <a href="research/medicalmanip.html">local page (AS4SR)</a>
+                Project Website: <b><a href="research/medicalmanip.html">local page (AS4SR)</a></b>
             </td>
         </tr>
         <tr>
@@ -52,7 +52,7 @@
                 <b>Resilient Spacecraft Executive, version 2.0+</b><br>
                 Contact: Catharine ("Cat") McGhan<br>
                 Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
-                Project Website: <a href="research/rse_cont.html">local page (AS4SR)</a>
+                Project Website: <b><a href="research/rse_cont.html">local page (AS4SR)</a></b>
             </td>
         </tr>
         <tr>
@@ -63,7 +63,7 @@
                 <b>Total System Stability for Architecture-Wide Analysis and V&amp;V</b><br>
                 Contact: Catharine ("Cat") McGhan<br>
                 Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
-                Project Website: <a href="research/tss_cont.html">local page (AS4SR)</a>
+                Project Website: <b><a href="research/tss_cont.html">local page (AS4SR)</a></b>
             </td>
         </tr>
 <!-- TEMPLATE FOR ADDITIONAL / NEW PROJECTS
@@ -75,7 +75,7 @@
                 <b>NAME OF PROJECT</b><br>
                 Contact: FIRSTNAME LASTNAME<br>
                 Email: <a href="mailto:REPLACETHIS@mail.uc.edu">REPLACETHIS@mail.uc.edu</a><br>
-                Project Website: <a href="research/REPLACETHIS.html">local page (AS4SR)</a>
+                Project Website: <b><a href="research/REPLACETHIS.html">local page (AS4SR)</a></b>
             </td>
         </tr>
 -->

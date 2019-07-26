@@ -5,9 +5,6 @@ $MAINCONTACT$
                 Ph.D. Student, CEAS-AEEM<br>
                 Graduate Student, AS4SR Lab<br>
                 695A Rhodes Hall<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
                 Email: <a href="mailto:kortecm@mail.uc.edu">kortecm@mail.uc.edu</a><br>
                 Website: <a href="https://www.linkedin.com/in/christopher-korte-8400a636/">LinkedIn profile</a><br>
                 <b><a href="../people/korte.html">local page (AS4SR)</a></b>,
@@ -21,4 +18,4 @@ Conference papers:<br>
 -- Coming soon! :)
 $PROJECTS$
 Projects:<br>
--- Coming soon! :)
+-- <a href="../research/medicalmanip.html">Medical Manipulator</a>
