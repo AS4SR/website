@@ -11,12 +11,18 @@ $MAINCONTACT$
                 <a href="https://github.com/zhenyushi/">github page</a>,
                 <!--a href="http://homepages.uc.edu/~shizu/"-->personal website<!--/a-->
 $PUBLICATIONS$
-Journal papers:<br>
--- Coming soon! :)<br>
-<br>
-Conference papers:<br>
--- Coming soon! :)
+<b>Journal papers:</b><br>
+    Z. Shi and C. McGhan, “An Affordable Virtual Reality Setup for Educational Aerospace Robotics Simulation and Testing,” <i>Journal of Aerospace Information Systems</i>, AIAA (accepted as of 2019-03-15, minor revisions pending).
+    <br><br>
+<b>Conference papers:</b><br>
+    Z. Shi, and C. McGhan, “An Affordable Approach for Space Robotics Simulation and Testing using Virtual Reality,” <i>AIAA Space 2018 Conference</i>, AIAA, Orlando, FL, Sept. 17-19 2018. (AIAA-2018-5229)
+    <br><br>
+<b>Symposium presentations:</b><br>
+    Z. Shi and C. McGhan, “A Comparison on Different Affordable Approaches for Robotics Simulation and Testing using Virtual Reality,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
+    <br><br>
+    Z. Shi and C. McGhan, “An Affordable Approach for Robotics Simulation and Testing using Virtual Reality,” <i>43rd DCASS</i>, Dayton, OH, Feb. 27, 2018.
+    <br><br>
 $PROJECTS$
-Projects:<br>
+<b>Projects:</b><br>
 -- <a href="../research/vrplusgazebo.html">VR + ROS Gazebo</a>
 -- <!--a href="../research/simplex_uav.html"-->Simplex for Dynamic UAV Environments<!--/a-->

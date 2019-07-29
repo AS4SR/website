@@ -1,2 +1,15 @@
 <h1>About</h1>
-    <p>Coming soon! :)</p>
+    <p>
+    This is the main website for the <b>Autonomous Systems for S.P.A.C.E. R.O.B.O.T.I.C.S. Lab</b>!
+    (a.k.a., Prof. Catharine ("Cat") McGhan's research lab @UC.)
+    <br><br>
+    ...Why yes, that is a super-long acronym up there. The full lab name is: <b>A</b>utonomous <b>S</b>ystems for <b>S</b>afe, <b>P</b>rovably <b>A</b>ccurate, <b>C</b>ross-disciplinary <b>E</b>ngineering <b>R</b>esearch <b>O</b>n <b>BO</b>unded, <b>T</b>rustworthy <b>I</b>ntelligence, and <b>C</b>onditions for <b>S</b>tability... Lab.
+    <br><br>
+    (You know you're in trouble when your acronym needs an acronym, no? ;)
+    </p>
+    <p>
+    We do a lot of work on intelligent autonomous systems for both space and Earth robotics, using modular architectures that will hopefully make people's lives easier when it comes to research and coding. We also generally <a href="https://github.com/AS4SR/">open-source our code</a> for others to use, generally with BSD 3-clause licenses.
+    </p>
+    <p>
+    Come on in, and have a look around! :)
+    </p>

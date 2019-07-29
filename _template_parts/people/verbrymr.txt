@@ -11,11 +11,19 @@ $MAINCONTACT$
                 <a href="https://github.com/MatthewVerbryke/">github page</a>,
                 <!--a href="http://homepages.uc.edu/~verbrymr/"-->personal website<!--/a-->
 $PUBLICATIONS$
-Journal papers:<br>
+<b>Journal papers:</b><br>
 -- Coming soon! :)<br>
 <br>
-Conference papers:<br>
--- Coming soon! :)
+<b>Conference papers:</b><br>
+    M. Verbryke, and C. McGhan, “Dual-Arm Manipulation with a Humanoid Robot Using a Modular Control Architecture,” <i>AIAA Space 2018 Conference</i>, AIAA, Orlando, FL, Sept. 17-19 2018. (AIAA-2018-5209)
+    <br><br>
+<b>Symposium presentations:</b><br>
+    M. Verbryke, C. McGhan, and O. Ma, “An Affordable Helmholtz Cage Design for 1U and 3U CubeSat Testing,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
+    <br><br>
+    M. Verbryke and C. McGhan, “Automatic Generation of No-Fly Zones from Area Characteristics for Autonomous UAV Operations,” <i>43rd DCASS</i>, Dayton, OH, Feb. 27, 2018.
+    <br><br>
+    M. Verbryke and C. McGhan, “Dual-Arm Manipulation Methods in a Humanoid Robot,” <i>42nd DCASS</i>, Dayton, OH, Mar. 1, 2017.
+    <br><br>
 $PROJECTS$
-Projects:<br>
+<b>Projects:</b><br>
 -- <a href="../research/dualarm_inmoov.html">Dual-arm Manipulation</a>

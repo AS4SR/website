@@ -11,11 +11,20 @@ $MAINCONTACT$
                 <a href="https://github.com/medhijk/">github page</a>,
                 <!--a href="http://homepages.uc.edu/~medhijk/"-->personal website<!--/a-->
 $PUBLICATIONS$
-Journal papers:<br>
+<b>Journal papers:</b><br>
 -- Coming soon! :)<br>
 <br>
-Conference papers:<br>
--- Coming soon! :)
+<b>Conference papers:</b><br>
+    J. Medhi, and C. McGhan, “Towards a Modular Architecture for Intelligent Aerial Manipulator Systems,” <i>AIAA SciTech 2018 Conference</i>, AIAA, Kissimmee, FL, Jan. 8-12 2018. (AIAA-2018-1631)
+    <br><br>
+<b>Symposium presentations:</b><br>
+    J. Medhi and C. McGhan, “Modular System Architecture for an Aerial Manipulator,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
+    <br><br>
+    J. Medhi and C. McGhan, “Autonomous Waypoint Navigation System for Quadrotors Using UxAS and a ROS-based Autopilot,” <i>43rd DCASS</i>, Dayton, OH, Feb. 27, 2018.
+    <br><br>
+    J. Medhi and C. McGhan, “Small Robotic Manipulator Integration with UAV,” <i>42nd DCASS</i>, Dayton, OH, Mar. 1, 2017.
+    <br><br>
 $PROJECTS$
-Projects:<br>
+<b>Projects:</b><br>
 -- <a href="../research/aerialmanip.html">Aerial Manipulator</a>
+

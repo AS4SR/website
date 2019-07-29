@@ -16,12 +16,10 @@ $MAINCONTACT$
                 <a href="https://github.com/cmcghan/">github page</a>,
                 <a href="http://homepages.uc.edu/~mcghancl/">personal website</a>
 $PUBLICATIONS$
-Journal papers:<br>
--- Coming soon! :)<br>
-<br>
-Conference papers:<br>
--- Coming soon! :)
+<b>Journal papers, Conference papers, Symposium presentations:</b><br>
+-- see <a href="../publications.html">the Publications page</a>
+    <br><br>
 $PROJECTS$
-Projects:<br>
+<b>Projects:</b><br>
 -- <a href="../research/rse_cont.html">Resilient Spacecraft Executive</a><br>
 -- <a href="../research/tss_cont.html">Total System Stability</a>
