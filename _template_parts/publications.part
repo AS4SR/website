@@ -2,16 +2,23 @@
     <h2>Journal Papers:</h2>
         <ul>
             <li>Shi, Z. and McGhan, C., "An Affordable Virtual Reality Setup for Educational Aerospace Robotics Simulation and Testing," <i>Journal of Aerospace Information Systems</i>, AIAA (not yet published).</li></br>
+            <li>Richard A. Johansen, Richard Beck, Richard Stumpf, John Lekki, Roger Tokars, Carol Tolbert, Catharine McGhan, Thomas Black, Ou Ma, Min Xu, Hongxing Liu, Molly Reif & Erich Emery (2019) “HABSat-1: assessing the feasibility of using CubeSats for the detection of cyanobacterial harmful algal blooms in inland lakes and reservoirs,” <i>Lake and Reservoir Management</i>, 35:2, 193-207, DOI: 10.1080/10402381.2019.1609146</li></br>
         </ul>
     <h2>Conference Papers:</h2>
         <ul>
             <li>Shi, Z. and McGhan, C., "An Affordable Approach for Space Robotics Simulation and Testing using Virtual Reality", <i>AIAA SPACE Forum 2018</i>, AIAA, Orlando, FL, Sept. 17-19, 2018. (AIAA-2018-5229)</li></br>
             <li>Verbryke, M. and McGhan, C., "Dual-Arm Manipulation with a Humanoid Robot using a Modular Control Architecture", <i>AIAA SPACE Forum 2018</i>, AIAA, Orlando, FL, Sept. 17-19, 2018. (AIAA-2018-5209)</li></br>
+            <li>Beck, R., Liu, H., Johansen, R., Xu, M., McGhan, C., Black, G., Ma, O., UC CubeCats, Reif, M., Emery, E., Stumpf, R., Emerick, G., and Nelson, R. 2018 “Adapting Low-Cost Drone Technology to CubeSats for Environmental Monitoring and Management: Harmful Algal Bloom Satellite-1 (HABsat-1),” <i>32nd Annual AIAA/USU Conference on Small Satellites</i>, Instruments/Science I, SSC18-WKIV-01, https://digitalcommons.usu.edu/smallsat/2018/all2018/486/</li></br>
             <li>Medhi, J. and McGhan, C., "Towards a Modular Architecture for Intelligent Aerial Manipulator Systems", <i>AIAA SciTech Forum 2018</i>, AIAA, Kissimmee, FL, Jan. 8-12, 2018. (AIAA-2018-1631)</li></br>
+            <li>S. Farahani, I. Papusha, C. McGhan, and R. Murray, “Constrained Autonomous Satellite Docking via Differential Flatness and Model Predictive Control,” in <i>55th IEEE Conference on Decision and Control (CDC)</i>, IEEE, Las Vegas, NV, Dec. 12-14 2016, pp. 3306-3311. </li><br>
+            <li>McGhan, C., Wang, Y., Colledanchise, M., Vaquero, T., Murray, R., Williams, B., and Ögren, P.,“Towards Architecture-wide Analysis, Verification, and Validation for Total System Stability During Goal-Seeking Space Robotics Operations,” <i>AIAA SPACE Forum 2016</i>, AIAA, Long Beach, CA, Sept. 13-16 2016. (AIAA-2016-5607)</li></br>
+            <li>McGhan, C., Vaquero, T., Subrahmanya, A. R., Arslan, O., Murray, R., Ingham, M., Ono, M., Estlin, T., Williams, B., and Elaasar, M., “The Resilient Spacecraft Executive: An Architecture for Risk-Aware Operations in Uncertain Environments,” <i>AIAA SPACE Forum 2016</i>, AIAA, Long Beach, CA, Sept. 13-16 2016. (AIAA-2016-5541)</li></br>
+            <li>Santana, P., Vaquero, T., McGhan, C., Toledo, C., Timmons, E., Williams, B., and Murray, R., “Risk-aware Planning in Hybrid Domains: An Application to Autonomous Planetary Rovers,” <i>AIAA SPACE Forum 2016</i>, AIAA, Long Beach, CA, Sept.13-16 2016. (AIAA-2016-5537)</li></br>
         </ul>
     <h2>Presentations:</h2>
         <ul>
             <li>Karra, S. and McGhan, C. , "Steps Towards Automatic Test Generation for Testing Autonomous Operations of a Mars-Rover Using ROS", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+            <li>Verbryke, M., McGhan, C., and Ma, O. “An Affordable Helmholtz Cage Design for 1U and 3U CubeSat Testing,” <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
             <li>Muthaiah, P. and McGhan, C. , "Steps Towards Automatic Evaluation of UAV Delivery Operations Using ROS and Gazebo", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
             <li>Medhi, J. and McGhan, C., "Modular System Architecture for an Aerial Manipulator", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
             <li>Korte, C. and McGhan, C., "Recurrent Neural Networks Applied to Surgical Path Planning for Semi-Autonomous Robotic Survery in Remote Environments", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
