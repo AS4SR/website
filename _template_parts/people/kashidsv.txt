@@ -1,24 +1,25 @@
 $PIC$
-<!--../images/REPLACETHIS.jpg-->
+../images/kashid.jpg
 $MAINCONTACT$
 <b>Sujeet Kashid</b><br>
-                M.S. Student<br>
-                Mechanical Engineering<br>
+                M.S. Student, CEAS-MECH<br>
+                Graduate Student, AS4SR Lab<br>
                 436 ERC<br>
-                P.O. Box 210070<br>
-                Cincinnati, OH 45221<br><br>
-                <a href="mailto:kashidsv@mail.uc.edu">kashidsv@mail.uc.edu</a><br>
-                <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
-                <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
-                <a href="https://www.linkedin.com/in/sujeet-kashid-5b824998/">LinkedIn Profile</a><br>
-                <!--a href="$GITHUB_URL$">GitHub</a><br-->
-                <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
+                Email: <a href="mailto:kashidsv@mail.uc.edu">kashidsv@mail.uc.edu</a><br>
+                Website: <a href="https://www.linkedin.com/in/sujeet-kashid-5b824998/">LinkedIn profile</a><br>
+                <b><a href="../people/kashid.html">local page (AS4SR)</a></b>,
+                <a href="https://github.com/kashidsv/">github page</a>,
+                <!--a href="http://homepages.uc.edu/~kashidsv/"-->personal website<!--/a-->
 $PUBLICATIONS$
-Journal papers:<br>
+<b>Journal papers:</b><br>
 -- Coming soon! :)<br>
 <br>
-Conference papers:<br>
--- Coming soon! :)
+<b>Conference papers:</b><br>
+-- Coming soon! :)<br>
+<br>
+<b>Symposium presentations:</b><br>
+-- Coming soon! :)<br>
+<br>
 $PROJECTS$
-Projects:<br>
+<b>Projects:</b><br>
 -- Coming soon! :)

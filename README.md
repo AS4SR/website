@@ -29,12 +29,12 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 ### To update what's on the AS4SR webserver
 1. Log in to the webserver
 1. Copy the newest version of the `pulldown_instructions.sh` file to `/home/spacerobotics` properly, via:  
-`cd /home/spacerobotics`  
+`cd /home/wwwase/spacerobotics`  
 `rm pulldown_instructions.sh`  
 `wget https://github.com/AS4SR/website/raw/master/pulldown_instructions.sh`  
 `chmod +x pulldown_instructions.sh`
 1. Run at the prompt:  
-`cd /home/spacerobotics && ./pulldown_instructions.sh`
+`cd /home/wwwase/spacerobotics && ./pulldown_instructions.sh`
 1. If you see no errors, everything should have copied just fine!
 1. Check the website at http://www.ase.uc.edu/~spacerobotics/ to make sure everything looks right.
 
@@ -51,8 +51,16 @@ Follow the below, replacing `MYCONTENT` with the base name of the page that you 
 1. Check the website at file:///home/$USER/test_website/html_here/ to make sure everything looks right, via:  
 `firefox "file:///home/$USER/test_website/html_here/" &`
 
-## Copyright
-Copyright for webpage content: University of Cincinnati, 2017-2018
+#### Alternate example:
+`mkdir -p /home/$USER/github_pulls && cd /home/$USER/github_pulls`  
+`git clone https://github.com/AS4SR/website.git website_AS4SR`  
+`cd website_AS4SR`  
+`rm -rf /home/$USER/test_website/html_here/`  
+`./create_html.py local /home/$USER/github_pulls/website_AS4SR/ /home/$USER/test_website/html_here/`  
+`firefox "file:///home/$USER/test_website/html_here/" &`
 
-Copyright for code: BSD 3-clause license, University of Cincinnati, 2017-2018  
+## Copyright
+Copyright for webpage content: University of Cincinnati, 2017-2019
+
+Copyright for code: BSD 3-clause license, University of Cincinnati, 2017-2019  
 (The code is used to generate the full html webpages from the files in the `./_templates` and `./_template_parts` directories.)

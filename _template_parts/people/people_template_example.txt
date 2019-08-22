@@ -14,11 +14,15 @@ $MAINCONTACT$
                 <a href="https://github.com/REPLACETHIS/">github page</a>,
                 <a href="http://homepages.uc.edu/~REPLACETHIS/">personal website</a>
 $PUBLICATIONS$
-Journal papers:<br>
+<b>Journal papers:</b><br>
 -- Coming soon! :)<br>
 <br>
-Conference papers:<br>
--- Coming soon! :)
+<b>Conference papers:</b><br>
+-- Coming soon! :)<br>
+<br>
+<b>Symposium presentations:</b><br>
+-- Coming soon! :)<br>
+<br>
 $PROJECTS$
-Projects:<br>
+<b>Projects:</b><br>
 -- Coming soon! :)

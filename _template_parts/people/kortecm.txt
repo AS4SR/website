@@ -13,12 +13,17 @@ $MAINCONTACT$
                 <a href="https://www.linkedin.com/in/christopher-korte-8400a636/">LinkedIn Profile</a><br>
                 <!--a href="$GITHUB_URL$">GitHub</a><br-->
                 <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
+
 $PUBLICATIONS$
-Journal papers:<br>
+<b>Journal papers:<br></b>
 -- Coming soon! :)<br>
 <br>
-Conference papers:<br>
--- Coming soon! :)
+<b>Conference papers:</b><br>
+-- Coming soon! :)<br>
+<br>
+<b>Symposium presentations:</b><br>
+    C. Korte and C. McGhan, “Recurrent Neural Networks Applied to Surgical Path Planning for Semi-Autonomous Robotic Survery in Remote Environments,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
+    <br><br>
 $PROJECTS$
-Projects:<br>
--- Coming soon! :)
+<b>Projects:</b><br>
+-- <a href="../research/medicalmanip.html">Medical Manipulator</a>

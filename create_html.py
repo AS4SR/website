@@ -335,6 +335,9 @@ if __name__ == '__main__':
      ['','','people/','medhi.html','_template_parts/people/medhijk.txt','Jishu Medhi'],
      ['','','people/','shi.html','_template_parts/people/shizu.txt','Zhenyu Shi'],
      ['','','people/','korte.html','_template_parts/people/kortecm.txt','Chris Korte'],
+     ['','','people/','muthaiah.html','_template_parts/people/muthaipd.txt','Ponaravind Muthaiah'],
+     ['','','people/','karra.html','_template_parts/people/karrasa.txt','Sailendra Karra'],
+     ['','','people/','kashid.html','_template_parts/people/kashidsv.txt','Sujeet Kashid'],
 
      ['level1','research','','research.html','_template_parts/research.part','Research'],
      ['level2','dualarm_inmoov','research/','dualarm_inmoov.html','_template_parts/research/dualarm_inmoov.part','Dual-arm Manipulation'],
@@ -351,12 +354,11 @@ if __name__ == '__main__':
      #['level2','related','','related.html','_template_parts/related_labs.part','Related Labs'],
 
      ['level1','robots','','robots.html','_template_parts/robots.part','Robots'],
-     #['','','robots/','turtlebots.html','_template_parts/robots/turtlebots.part','Turtlebots'],
-     #['','','robots/','widowx.html','_template_parts/robots/widowx.part','WidowX'],
-     #['','','robots/','inmoov.html','_template_parts/robots/inmoov.part','InMoov'],
-     #['','','robots/','pa10.html','_template_parts/robots/pa-10.part','PA-10 Arm'],
-     #['','','robots/','uavs.html','_template_parts/robots/uavs.part','UAVs'],
-
+     #['level2','','robots/','rovers.html','_template_parts/robots/rovers.part','Rovers'],
+     #['level2','','robots/','uavs.html','_template_parts/robots/uavs.part','UAVs'],
+     #['level2','','robots/','arms.html','_template_parts/robots/arms.part','Manipulators'],
+     #['level2','','robots/','misc.html','_template_parts/robots/misc.part','Misc. Robots'],
+     
      ['level1','archived','','archived.html','_template_parts/archived.part','Archived Work'],
      #['level2','archived_projects','archived_projects/','projects.html','_template_parts/archived_projects.part','Archived Projects'],
      #['level2','archived_robots','archived_robots/','robots.html','_template_parts/archived_robots.part','Archived Robots']]
