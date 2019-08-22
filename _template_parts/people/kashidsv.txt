@@ -1,16 +1,16 @@
 $PIC$
-../images/korte.jpg
+<!--../images/REPLACETHIS.jpg-->
 $MAINCONTACT$
-<b>Chris Korte</b><br>
-                Ph.D. Student<br>
-                Aerospace Engineering and Engineering Mechanics<br>
-                695A Rhodes Hall<br>
+<b>Sujeet Kashid</b><br>
+                M.S. Student<br>
+                Mechanical Engineering<br>
+                436 ERC<br>
                 P.O. Box 210070<br>
                 Cincinnati, OH 45221<br><br>
-                <a href="mailto:kortecm@mail.uc.edu">kortecm@mail.uc.edu</a><br>
+                <a href="mailto:kashidsv@mail.uc.edu">kashidsv@mail.uc.edu</a><br>
                 <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
                 <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
-                <a href="https://www.linkedin.com/in/christopher-korte-8400a636/">LinkedIn Profile</a><br>
+                <a href="https://www.linkedin.com/in/sujeet-kashid-5b824998/">LinkedIn Profile</a><br>
                 <!--a href="$GITHUB_URL$">GitHub</a><br-->
                 <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
 $PUBLICATIONS$

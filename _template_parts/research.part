@@ -1,82 +1,98 @@
 <h1>Research</h1>
-    <table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
+    <table width="100%" align="left" style="font-size:14px;">
         <tr>
-            <td width="25%"> <!-- 25% of 715px is approx. 178px, try for 175 wide -->
-                <img src="images/verbryke_DCASS2017_Slide12pic.jpg" width="100%" style="vertical-align:middle;">
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">Dual-arm Manipulation</h2>
             </td>
-            <td width="75%">
-                <b>Dual-arm Manipulation Project</b><br>
-                Contact: Matthew Verbryke<br>
-                Email: <a href="mailto:verbrymr@mail.uc.edu">medhijk@mail.uc.edu</a><br>
-                Project Website: <a href="research/dualarm_inmoov.html">local page (AS4SR)</a>
+            <td width="2%"></td>
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">Aerial Manipulator</h2>
             </td>
         </tr>
         <tr>
-            <td width="25%">
-                <img src="images/medhi_SciTech2018_Slide15pic.jpg" width="100%" style="vertical-align:middle;">
+            <td width="49%">
+                <a href="research/dualarm_inmoov.html">
+                    <img src="images/DAM_thumbnail.jpg" width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
             </td>
-            <td width="75%">
-                <b>Aerial Manipulator Project</b><br>
-                Contact: Jishu Medhi<br>
-                Email: <a href="mailto:medhijk@mail.uc.edu">medhijk@mail.uc.edu</a><br>
-                Project Website: <a href="research/aerialmanip.html">local page (AS4SR)</a>
-            </td>
-        </tr>
-        <tr>
-            <td width="25%">
-                <img src="images/shi_Space2018_abstract_Figure_1.png" width="100%" style="vertical-align:middle;">
-            </td>
-            <td width="75%">
-                <b>Commercial VR + ROS Gazebo for Robotics Education and Research</b><br>
-                Contact: Zhenyu ("Nathan") Shi<br>
-                Email: <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br>
-                Project Website: <a href="research/vrplusgazebo.html">local page (AS4SR)</a>
+            <td width="2%"></td>
+            <td width="49%">
+                <a href="research/aerialmanip.html">
+                    <img src="images/aerialmanip_thumbnail.jpg" width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
             </td>
         </tr>
         <tr>
-            <td width="25%">
-                <img src="images/pa10_manipulator.jpg" width="100%" style="vertical-align:middle;">
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">Medical Manipulator</h2>
             </td>
-            <td width="75%">
-                <b>Medical Manipulator Project</b><br>
-                Contact: Chris Korte<br>
-                Email: <a href="mailto:kortecm@mail.uc.edu">kortecm@mail.uc.edu</a><br>
-                Project Website: <a href="research/medicalmanip.html">local page (AS4SR)</a>
+            <td width="2%"></td>
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">VR + ROS/Gazebo for Robotics Education and Research</h2>
             </td>
         </tr>
         <tr>
-            <td width="25%">
-                <img src="images/2016RTD_archslideonly2.png" width="100%" style="vertical-align:middle;">
+            <td width="49%">
+                <a href="research/medicalmanip.html">
+                    <img src="images/medicalmanip_thumbnail.jpg" width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
             </td>
-            <td width="75%">
-                <b>Resilient Spacecraft Executive, version 2.0+</b><br>
-                Contact: Catharine ("Cat") McGhan<br>
-                Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
-                Project Website: <a href="research/rse_cont.html">local page (AS4SR)</a>
+            <td width="2%"></td>
+            <td width="49%">
+                <a href="research/vrplusgazebo.html">
+                    <img src="images/vr_thumbnail.png" width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
             </td>
         </tr>
         <tr>
-            <td width="25%">
-                <img src="images/mcghan_Space2016_Fig4b_plus_Fig8b.jpg" width="100%" style="vertical-align:middle;">
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">Resilient Spacecraft Executive, v.2.0+</h2>
             </td>
-            <td width="75%">
-                <b>Total System Stability for Architecture-Wide Analysis and V&amp;V</b><br>
-                Contact: Catharine ("Cat") McGhan<br>
-                Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
-                Project Website: <a href="research/tss_cont.html">local page (AS4SR)</a>
+            <td width="2%"></td>
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">Total System Stability for Architecture-Wide Analysis and V&amp;V</h2>
             </td>
         </tr>
-<!-- TEMPLATE FOR ADDITIONAL / NEW PROJECTS
         <tr>
-            <td width="25%">
-                <img src="images/REPLACETHIS.jpg" width="100%" style="vertical-align:middle;">
+            <td width="49%">
+                <a href="research/rse_cont.html">
+                    <img src="images/RSE_thumbnail.png" width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
             </td>
-            <td width="75%">
-                <b>NAME OF PROJECT</b><br>
-                Contact: FIRSTNAME LASTNAME<br>
-                Email: <a href="mailto:REPLACETHIS@mail.uc.edu">REPLACETHIS@mail.uc.edu</a><br>
-                Project Website: <a href="research/REPLACETHIS.html">local page (AS4SR)</a>
+            <td width="2%"></td>
+            <td width="49%">
+                <a href="research/tss_cont.html">
+                    <img src="images/TSS_thumbnail.jpg"  width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
             </td>
         </tr>
--->
-    </table>
+        
+        <!-- TEMPLATE FOR NEW LINE/PROJECTS>
+        <NOTE: if only one project needs to be added, just leave the second column blank, with the option to add a new project later
+        
+        <tr>
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">PROJECT TITLE 1 </h2>
+            </td>
+            <td width="2%"></td>
+            <td width="49%">
+                <h2 align="center" style="margin-bottom:0;">PROJECT TITLE 2 </h2>
+            </td>
+        </tr>
+        <tr>
+            <td width="49%">
+                <a href="NEW HTML 1">
+                    <img src="IMAGE LINK FOR PROJECT 1" width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
+            </td>
+            <td width="2%"></td>
+            <td width="49%">
+                <a href="NEW HTML 2">
+                    <img src="IMAGE LINK FOR PROJECT 1" width="100%" style="vertical-align:middle;border:1px solid black;">
+                </a>
+            </td>
+        </tr>
+        
+        -->
+        
+    </table><br>

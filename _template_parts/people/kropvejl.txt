@@ -1,0 +1,20 @@
+$PIC$
+../images/kropveld.jpg
+$MAINCONTACT$
+<b>Jessica Kropveld</b><br>
+                Undergraduate Co-op Student<br>
+                Summer Semester 2018<br><br>
+                <a href="mailto:kropvejl@mail.uc.edu">kropvejl@mail.uc.edu</a><br>
+                <a href="https://www.linkedin.com/in/jessica-kropveld/">LinkedIn Profile</a><br>
+                <a href="people/kropveld.html">Local Page</a><br>
+                <!--a href="$GITHUB_URL$">GitHub</a><br-->
+                <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
+$PUBLICATIONS$
+Journal papers:<br>
+-- Coming soon! :)<br>
+<br>
+Conference papers:<br>
+-- Coming soon! :)
+$PROJECTS$
+Projects:<br>
+-- Coming soon! :)

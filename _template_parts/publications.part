@@ -1,5 +1,24 @@
 <h1>Publications</h1>
-<h2>Papers:</h2>
-    <p>Coming soon!</p>
-<h2>Presentations:</h2>
-    <p>Coming soon!</p>
+    <h2>Journal Papers:</h2>
+        <ul>
+            <li>Shi, Z. and McGhan, C., "An Affordable Virtual Reality Setup for Educational Aerospace Robotics Simulation and Testing," <i>Journal of Aerospace Information Systems</i>, AIAA (not yet published).</li></br>
+        </ul>
+    <h2>Conference Papers:</h2>
+        <ul>
+            <li>Shi, Z. and McGhan, C., "An Affordable Approach for Space Robotics Simulation and Testing using Virtual Reality", <i>AIAA SPACE Forum 2018</i>, AIAA, Orlando, FL, Sept. 17-19, 2018. (AIAA-2018-5229)</li></br>
+            <li>Verbryke, M. and McGhan, C., "Dual-Arm Manipulation with a Humanoid Robot using a Modular Control Architecture", <i>AIAA SPACE Forum 2018</i>, AIAA, Orlando, FL, Sept. 17-19, 2018. (AIAA-2018-5209)</li></br>
+            <li>Medhi, J. and McGhan, C., "Towards a Modular Architecture for Intelligent Aerial Manipulator Systems", <i>AIAA SciTech Forum 2018</i>, AIAA, Kissimmee, FL, Jan. 8-12, 2018. (AIAA-2018-1631)</li></br>
+        </ul>
+    <h2>Presentations:</h2>
+        <ul>
+            <li>Karra, S. and McGhan, C. , "Steps Towards Automatic Test Generation for Testing Autonomous Operations of a Mars-Rover Using ROS", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+            <li>Muthaiah, P. and McGhan, C. , "Steps Towards Automatic Evaluation of UAV Delivery Operations Using ROS and Gazebo", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+            <li>Medhi, J. and McGhan, C., "Modular System Architecture for an Aerial Manipulator", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+            <li>Korte, C. and McGhan, C., "Recurrent Neural Networks Applied to Surgical Path Planning for Semi-Autonomous Robotic Survery in Remote Environments", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+            <li>Shi, Z. and McGhan, C., "A Comparison on Different Affordable Approaches for Robotics Simulation and Testing using Virtual Reality", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+            <li>Verbryke, M. and McGhan, C., "Automatic Generation of No-Fly Zones from Area Characteristics for Autonomous UAV Operations", <i>43rd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Feb. 27, 2018.</li></br>
+            <li>Medhi, J. and McGhan, C., "Autonomous Waypoint Navigation System for Quadrotors Using UxAS and a ROS-based Autopilot", <i>43rd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Feb. 27, 2018.</li></br>
+            <li>Shi, Z. and McGhan, C., "An Affordable Approach for Robotics Simulation and Testing using Virtual Reality", <i>43rd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Feb. 27, 2018.</li></br>
+            <li>Medhi, J. and McGhan, C., "Small Robotic Manipulator Integration with UAV", <i>42nd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 1, 2017.</li></br>
+            <li>Verbryke, M. and McGhan, C., "Dual-Arm Manipulation Methods in a Humanoid Robot", <i>42nd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 1, 2017.</li></br>
+        <ul>

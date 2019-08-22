@@ -1,5 +1,36 @@
 <h1>Links</h1>
-<h2>Resources at UC:</h2>
-    <p>Links are coming soon!</p>
-<h2>Related Labs:</h2>
-    <p>Links are coming soon!</p>
+    <h2>Lab Links</h2>
+        <ul>
+            <li><b>GitHub Repository</b></li>
+            <a href='https://github.com/AS4SR'>External Link</a><br><br>
+                        
+            <li><b>Youtube</b></li>
+            <!--a href=''-->Coming soon!<!--/a--><br><br>
+        </ul>
+    <h2>Related Labs</h2>
+        <ul>
+            <li><b>Robust Intelligent Sensing and Control (RISC) Lab</b></li>
+            Director: Dr. Rajnikant Sharma<br>
+            <!--a href=''></a><br--><br>
+
+            <li><b>Robotics and Intelligent Autonomous Systems (RIAS) Lab</b></li>
+            Director: Dr. Ou Ma<br>
+            <!--a href=''></a><br--><br>
+
+            <li><b>UAV Master Lab</b></li>
+            Directors: Dr. Kelly Cohen, Dr. Manish Kumar<br>
+            <a href='https://ceas.uc.edu/research/centers-labs/uav-master-lab.html'>External Link</a><br><br>
+
+            <li><b>Center for Cognition, Action & Perception (CAP)</b></li>
+            Director: Dr. Micheal Riley<br>
+            <a href='https://www.artsci.uc.edu/cap.html'>External Link</a><br><br>
+        
+        </ul>
+    <h2>Related Student Organizations</h2>
+        <ul>
+            <li><b>UC CubeCats</b></li>
+            <a href='https://uccubecats.github.io/'>External Link</a><br><br>
+
+            <li><b>UC Robotics Team</b></li>
+            <a href='https://ucrobotics.gitlab.io/'>External Link</a><br><br>
+        </ul>

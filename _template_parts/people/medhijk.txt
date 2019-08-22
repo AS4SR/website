@@ -2,17 +2,17 @@ $PIC$
 ../images/medhi.jpg
 $MAINCONTACT$
 <b>Jishu Medhi</b><br>
-                M.S. Student, CEAS-AEEM<br>
-                Graduate Assistant, AS4SR Lab<br>
+                M.S. Student<br>
+                Aerospace Engineering and Engineering Mechanics<br>
                 436 ERC<br>
                 P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
-                Email: <a href="mailto:medhijk@mail.uc.edu">medhijk@mail.uc.edu</a><br>
-                Website: <a href="https://www.linkedin.com/in/jishu-kinkar-medhi-9093aa9b/">LinkedIn profile</a><br>
-                <b><a href="../people/medhi.html">local page (AS4SR)</a></b>,
-                <a href="https://github.com/medhijk/">github page</a>,
-                <!--a href="http://homepages.uc.edu/~medhijk/"-->personal website<!--/a-->
+                Cincinnati, OH 45221<br><br>
+                <a href="mailto:medhijk@mail.uc.edu">medhijk@mail.uc.edu</a><br>
+                <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
+                <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
+                <a href="https://www.linkedin.com/in/jishu-kinkar-medhi-9093aa9b/">LinkedIn Profile</a><br>
+                <a href="https://github.com/medhijk/">Github Page</a>
+                <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
 $PUBLICATIONS$
 Journal papers:<br>
 -- Coming soon! :)<br>

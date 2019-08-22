@@ -1,20 +1,19 @@
 $PIC$
 ../images/mcghan.jpg
 $MAINCONTACT$
-<b>Catharine ("Cat") McGhan</b><br>
-                Professor, CEAS-AEEM<br>
+<b>Catharine "Cat" McGhan</b><br>
+                Professor, Department of Aerospace Engineering and Engineering Mechanics
                 Director, AS4SR Lab<br>
                 724 Rhodes Hall<br>
                 P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: 513-556-3032<br>
-                Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
-                Website: <a href="http://ceas.uc.edu/aerospace/people/people_fac-staff/fac-staff/fac/cat-mcghan.html">AEEM profile</a>,
-                <a href="http://www.ceas3.uc.edu/profiles/mcghancl">CEAS profile</a>,
-                <a href="https://www.linkedin.com/in/catharine-mcghan-a8253a90/">LinkedIn profile</a><br>
-                <b><a href="../people/mcghan.html">local page (AS4SR)</a></b>,
-                <a href="https://github.com/cmcghan/">github page</a>,
-                <a href="http://homepages.uc.edu/~mcghancl/">personal website</a>
+                Cincinnati, OH 45221<br><br>
+                513-556-3032<br>
+                <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
+                <a href="http://ceas.uc.edu/aerospace/people/people_fac-staff/fac-staff/fac/cat-mcghan.html">AEEM Profile</a><br>
+                <a href="http://www.ceas3.uc.edu/profiles/mcghancl">CEAS Profile</a><br>
+                <a href="https://www.linkedin.com/in/catharine-mcghan-a8253a90/">LinkedIn Profile</a><br>
+                <a href="https://github.com/cmcghan/">GitHub</a><br>
+                <a href="http://homepages.uc.edu/~mcghancl/">Personal Website</a>
 $PUBLICATIONS$
 Journal papers:<br>
 -- Coming soon! :)<br>

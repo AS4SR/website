@@ -1,131 +1,170 @@
 <h1>Robots</h1>
-    <table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
-        <tr>
-            <td width="25%"> <!-- 25% of 715px is approx. 178px, try for 175 wide -->
-                <img src="images/turtlebot2.jpg" width="100%" style="vertical-align:middle;">
-            </td>
-            <td width="75%">
-                <b>Turtlebot2</b><br>
-                Type of Robot: indoor rover<br>
-                Version of Robot: Turtlebot 2 Complete<br>
-                Number Available: 2<br>
-                Status: 2 available for use<br>
-                Additional Information: <a href="http://www.turtlebot.com/turtlebot2/">main project page</a><br>
-                Manufacturer: Clearpath Robotics<br>
-                Manufacturer's Website: <a href="https://store.clearpathrobotics.com/collections/robotics-kit/products/turtlebot-2">main product page</a> (external page)
-            </td>
-        </tr>
-        <tr>
-            <td width="25%">
-                <img src="images/turtlebot3burger_from_www.turtlebot.com-backslash-learn.png" width="100%" style="vertical-align:middle;"><br>
-                Original image is from: <a href="http://www.turtlebot.com/learn/">http://www.turtlebot.com/learn/</a>
-            </td>
-            <td width="75%">
-                <b>TurtleBot3 (Burger)</b><br>
-                Type of Robot: indoor rover<br>
-                Version of Robot: TurtleBot 3 "Burger"<br>
-                Number Available: 4<br>
-                Status: 1 assembled and tested-working, 1 under-assembly (both "on loan" to UC Robotics Team for education of new members); 2 awaiting assembly (currently unassigned, available for educational and collaborative projects)<br>
-                Additional Information: open-source hardware and software platform, available from multiple manufacturers, see <a href="http://www.turtlebot.com/">main project page</a> and <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/">manual page</a><br>
-                Distributor: Robotis<br>
-                Distributor's Website: <a href="http://www.robotis.us/turtlebot-3-burger-us/">main product page</a> (external page)
-            </td>
-        </tr>
-        <tr>
-            <td width="25%">
-                <img src="images/turtlebot3waffle_from_www.turtlebot.com-backslash-learn.png" width="100%" style="vertical-align:middle;"><br>
-                Original image is from: <a href="http://www.turtlebot.com/learn/">http://www.turtlebot.com/learn/</a>
-            </td>
-            <td width="75%">
-                <b>TurtleBot3 (Waffle)</b><br>
-                Type of Robot: indoor rover<br>
-                Version of Robot: TurtleBot 3 "Waffle"<br>
-                Number Available: 2<br>
-                Status: 2 awaiting assembly (currently unassigned, available for educational and collaborative projects)<br>
-                Additional Information: open-source hardware and software platform, available from multiple manufacturers, see <a href="http://www.turtlebot.com/">main project page</a> and <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/">manual page</a><br>
-                Distributor: Robotis<br>
-                Distributor's Website: <a href="http://www.robotis.us/turtlebot-3-waffle-us/">main product page</a> (external page)
-            </td>
-        </tr>
-        <tr>
-            <td width="25%">
-                <img src="images/KIT-WIDOWX-ARM-COMP-a.jpg" width="100%" style="vertical-align:middle;"><br>
-                Image is from: <a href="https://web.archive.org/web/20130821100059/http://www.trossenrobotics.com/widowxrobotarm">Wayback machine copy of Trossen Robotics website</a>
-            </td>
-            <td width="75%">
-                <b>WidowX Arm (Mark I)</b><br>
-                Type of Robot: manipulator arm<br>
-                Version of Robot: Mark I<br>
-                Number Available: 1
-                Status: functional, reassembly in-progress<br>
-                Additional Information: <a href="http://www.trossenrobotics.com/productdocs/assemblyguides/widowx-robot-arm.html">old assembly guide</a>, <a href="http://learn.trossenrobotics.com/interbotix/robot-arms/widowx-arm">general "getting started" guide</a><br>
-                Manufacturer: Interbotix Labs<br>
-                Manufacturer's Website: <a href="https://web.archive.org/web/20130821100059/http://www.trossenrobotics.com/widowxrobotarm">Wayback Machine archival copy of main product page (2013-Aug-21)</a> (external page)
-            </td>
-        </tr>
-        <tr>
-            <td width="25%">
-                <img src="images/widowx-a.jpg" width="100%" style="vertical-align:middle;"><br>
-                Image is from: <a href="http://www.trossenrobotics.com/widowxrobotarm">Trossen Robotics website</a>
-            </td>
-            <td width="75%">
-                <b>WidowX Arm (Mark II)</b><br>
-                Type of Robot: manipulator arm<br>
-                Version of Robot: Mark II<br>
-                Number Available: 4<br>
-                Status: 1 assembled and tested-working, 1 under-assembly, 2 awaiting assembly<br>
-                Additional Information: <a href="http://www.trossenrobotics.com/productdocs/assemblyguides/widowx-robot-arm-mk2.html">assembly guide</a>,<a href="http://learn.trossenrobotics.com/interbotix/robot-arms/widowx-arm">general "getting started" guide</a><br>
-                Manufacturer: Interbotix Labs<br>
-                Manufacturer's Website: <a href="http://www.trossenrobotics.com/widowxrobotarm">main product page</a> (external page), <a href="http://www.trossenrobotics.com/WidowxRobotArmMK2">original product page</a> (external page)
-            </td>
-        </tr>
-        <tr>
-            <td width="25%">
-                <img src="images/inmoov_from_www.inmoov.fr-slash-gallery-v2.jpg" width="100%" style="vertical-align:middle;"><br>
-                Image is from: <a href="http://inmoov.fr/gallery-v2/">http://inmoov.fr/gallery-v2/</a>
-            </td>
-            <td width="75%">
-                <b>InMoov</b><br>
-                Type of Robot: humanoid system<br>
-                Version of Robot: "plain vanilla" version (built to-spec from open-source documents)<br>
-                Number Available: 1<br>
-                Status: under-construction (all electronics acquired, ABS parts currently being 3D-printed and assembled)<br>
-                Additional Information: open-source software and open-source 3D-printer files available, electronics boards are available from designer (helps fund his project)<br>
-                Original Designer: Gail Langevin<br>
-                Designer's Website: <a href="http://inmoov.fr">project landing page</a> at the designer's website (external page)
-            </td>
-        </tr>
-        <tr>
-            <td width="25%">
-                <img src="images/pa10_manipulator.jpg" width="100%" style="vertical-align:middle;">
-            </td>
-            <td width="75%">
-                <b>Portable General-purpose Intelligent Arm PA10</b><br>
-                Type of Robot: manipulator arm<br>
-                Version of Robot: Mitsubishi Heavy Electric PA10-7CE-ARM<br>
-                Version of Robot Controller: PA10-7CE-CNT<br>
-                Number Available: 1<br>
-                Status: 1 in-use, currently located at UC Medical Campus<br>
-                Additional Information: ...<br>
-                Manufacturer: Mitsubishi Heavy Industries, LTD.<br>
-                Manufacturer's Website: <a href="https://www.mhi.com/company/technology/review/pdf/e405/e405298.pdf">pdf file discussing use-cases for product</a> (external page)
-            </td>
-        </tr>
-<!-- TEMPLATE FOR ADDITIONAL / NEW ROBOTS
-        <tr>
-            <td width="25%">
-                <img src="images/REPLACETHIS.jpg" width="100%" style="vertical-align:middle;">
-            </td>
-            <td width="75%">
-                <b>NAME OF ROBOTIC SYSTEM</b><br>
-                Type of Robot: [[indoor rover,outdoor rover,underwater vehicle,fixed-wing (UAV),quadrotor (UAV),rotorcraft (UAV),manipulator arm,humanoid system]]<br>
-                Version of Robot: REPLACETHIS<br>
-                Status: [[# available for use, # in-use, # assembled and tested-working, # under-assembly, # awaiting assembly, # under-construction, # requiring repair, "# functional, requiring reassembly"]]<br>
-                Number Available: REPLACETHIS<br>
-                Additional Information: REPLACETHIS<br>
-                Manufacturer: REPLACETHIS<br>
-                [[Manufacturer's,Designer's]] Website: <a href="https://REPLACETHIS">main product page</a> (external page)
-            </td>
-        </tr>
--->
-    </table>
+    <h2>Rovers</h2>
+        <table width="100%" align="left" style="font-size:14px;"> <!-- should be 715px -->
+            <tr>
+                <td width="35%"> 
+                    <img src="images/turtlebot2.jpg" width="100%" style="vertical-align:middle;border:1px solid black;">
+                    <sub><center> - </center></sub>
+                </td>
+                <td width="65%">
+                    <b>TurtleBot 2</b><br>
+                    <i><u>Manufacturer:</u></i> Clearpath Robotics<br>
+                    <i><u>Number:</u></i> 2<br>
+                    <i><u>Status:</u></i> 2 working<br>
+                    <a href="http://www.turtlebot.com/turtlebot2/">Product Page</a><br><br>
+                    A low-cost, open-source, differential-drive rover platform (Second version)
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <img src="images/turtlebot3burger_from_www.turtlebot.com-backslash-learn.png" width="100%" style="vertical-align:middle;border:1px solid black;"><br>
+                    <sub><center><a href="http://www.turtlebot.com/learn/">image source</a></center></sub>
+                </td>
+                <td width="65%">
+                    <b>TurtleBot 3 (Burger)</b><br>
+                    <i><u>Distributor:</u></i> Robotis<br>
+                    <i><u>Number:</u></i> 4 <br>
+                    <i><u>Status:</u></i> 1 assembled and tested/working, 1 on-loan to UC Robotics Team, 2 awaiting assembly<br>
+                    <a href="http://www.robotis.us/turtlebot-3-burger-us/">Product Page</a><br><br>
+                    An open-source, differential-drive rover platform (hardware and software), available from multiple manufacturers.<br>
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <img src="images/turtlebot3waffle_from_www.turtlebot.com-backslash-learn.png" width="100%" style="vertical-align:middle;border:1px solid black;"><br>
+                    <sub><center><a href="http://www.turtlebot.com/learn/">image source</a></center></sub>
+                </td>
+                <td width="65%">
+                    <b>TurtleBot 3 (Waffle)</b><br>
+                    <i><u>Distributor:</u></i> Robotis<br>
+                    <i><u>Number:</u></i> 2<br>
+                    <i><u>Status:</u></i> 2 awaiting assembly<br>
+                    <a href="http://www.robotis.us/turtlebot-3-waffle-us/">Product Page</a><br><br>
+                    An open-source, differential-drive rover platform (hardware and software), available from multiple manufacturers.<br>
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <br>
+                </td>
+                <td width="65%">
+                    <br>
+                </td>
+            </tr>
+        </table>
+    <h2>Manipulator Arms</h2>
+        <table width="100%" align="left" style="font-size:14px;">
+            <tr>
+                <td width="35%">
+                    <img src="images/KIT-WIDOWX-ARM-COMP-a.jpg" width="100%" style="vertical-align:middle;border:1px solid black;"><br>
+                    <sub><center><a href="https://web.archive.org/web/20130821100059/http://www.trossenrobotics.com/widowxrobotarm">image source</a></center></sub>
+                </td>
+                <td width="65%">
+                    <b>WidowX Arm (Mark I)</b><br>
+                    <i><u>Manufacturer:</u></i> Interbotix Labs<br>
+                    <i><u>Number:</u></i> 1<br>
+                    <i><u>Status:</u></i> Currently disassembled; Reassembly in-progress<br>
+                    <a href="https://web.archive.org/web/20130821100059/http://www.trossenrobotics.com/widowxrobotarm">Product Page (Archived)</a>,
+                    <a href="http://www.trossenrobotics.com/productdocs/assemblyguides/widowx-robot-arm.html">Assembly Guide</a>,
+                    <a href="http://learn.trossenrobotics.com/interbotix/robot-arms/widowx-arm">"Getting Started" Guide</a><br><br>
+                    An entry level, 5-DOF manipulator arm using Robotis Dynamixel servos. (No longer sold)
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <img src="images/widowx-a.jpg" width="100%" style="vertical-align:middle;border:1px solid black;"><br>
+                    <sub><center><a href="http://www.trossenrobotics.com/widowxrobotarm">image source</a></center></sub>
+                </td>
+                <td width="65%">
+                    <b>WidowX Arm (Mark II)</b><br>
+                    <i><u>Manufacturer:</u></i> Interbotix Labs<br>
+                    <i><u>Number:</u></i> 5<br>
+                    <i><u>Status:</u></i> 3 assembled and working, 2 awaiting assembly, 2 in-use<br>
+                    <a href="http://www.trossenrobotics.com/WidowxRobotArmMK2">Product Page</a>,
+                    <a href="http://www.trossenrobotics.com/productdocs/assemblyguides/widowx-robot-arm-mk2.html">Assembly Guide</a>,
+                    <a href="http://learn.trossenrobotics.com/interbotix/robot-arms/widowx-arm">"Getting Started" Guide</a><br><br>
+                    An upgraded version of the WidowX Mark I arm, with more capable Dynamixel servos in certain joints, an updated microcontroller, and a redesigned structure.
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <img src="images/pa10_manipulator.jpg" width="100%" style="vertical-align:middle;border:1px solid black;">
+                    <sub><center>-</center></sub>
+                </td>
+                <td width="65%">
+                    <b>Portable General-Purpose Intelligent Arm PA10 (PA10-7CE-ARM)</b><br>
+                    <i><u>Manufacturer:</u></i> Mitsubishi Heavy Industries, LTD.<br>
+                    <i><u>Controller:</u></i> PA10-7CE-CNT<br>
+                    <i><u>Number:</u></i> 1<br>
+                    <i><u>Status:</u></i> In-use, currently located on UC Medical Campus<br>
+                    <a href="https://www.mhi.com/company/technology/review/pdf/e405/e405298.pdf">Use Case Document (PDF)</a><br><br>
+                    A 7-DOF manipulator arm for research into industrial robotic processes.
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <br>
+                </td>
+                <td width="65%">
+                     <br>
+                </td>
+            </tr>
+        </table><br>
+    <h2>Humanoid</h2>
+        <table width="100%" align="left" style="font-size:14px;">
+            <tr>
+                <td width="35%">
+                    <img src="images/inmoov_from_www.inmoov.fr-slash-gallery-v2.jpg" width="100%" style="vertical-align:middle;border:1px solid black;"><br>
+                    <sub><center><a href="http://inmoov.fr/gallery-v2/">image source</a></center></sub>
+                </td>
+                <td width="65%">
+                    <b>InMoov</b><br>
+                    <i><u>Designer:</u></i> Gail Langevin<br>
+                    <i><u>Status:</u></i> Under-construction (all electronics acquired, ABS parts currently being 3D-printed and assembled)<br>
+                    <a href="http://inmoov.fr">Main Project Page</a><br><br>
+                    An open-source, roughly life-size, humanoid robot, made largely from 3D-printed components and off-the-shelf electronics.
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <img src="images/boxbot.jpg" width="100%" style="vertical-align:middle;border:1px solid black;"><br>
+                    <sub><center>-</a></center></sub>
+                </td>
+                <td width="65%">
+                    <b>Boxbot</b><br>
+                    <i><u>Distributor:</u></i> N/A ("In-house" design)<br>
+                    <i><u>Number:</u></i> 1 <br>
+                    <i><u>Status:</u></i> Version 1 built, improved second version being designed<br>
+                    <a href="https://github.com/MatthewVerbryke/boxbot_ros">Project Page</a><br><br>
+                    A simple low-cost humaniod robot, built using two WidowX Mark II manipulator arms.
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <br>
+                </td>
+                <td width="65%">
+                    <br>
+                </td>
+            </tr>
+        </table>
+    <h2>Quadrotors</h2>
+        <table width="100%" align="left" style="font-size:14px;">
+        </table><br>
+    
+        <!-- TEMPLATE FOR ADDITIONAL / NEW ROBOTS
+            <tr>
+                <td width="35%">
+                    <img src="images/$IMAGE_NAME$" width="100%" style="vertical-align:middle;border:1px solid black;"><br>
+                    <sub><center><a href="$IMAGE_SOURCE_URL$">image source</a></center></sub>
+                </td>
+                <td width="65%">
+                    <b>$ROBOT_NAME$</b><br>
+                    <i><u>Distributor:</u></i> $ROBOT_MAKER$<br>
+                    <i><u>Number:</u></i> $ROBOT_NUM$ <br>
+                    <i><u>Status:</u></i> $ROBOT_STATUS<br>
+                    <i><u>Additional Information:</u></i> $ROBOT_INFO$<br>
+                    <i><u>External Link:</u></i> <a href="ROBOT_PROJECT_URL">Main Project Page</a>
+                </td>
+            </tr>
+        -->

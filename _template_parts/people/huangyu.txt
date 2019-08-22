@@ -1,0 +1,19 @@
+$PIC$
+../images/huang.jpg
+$MAINCONTACT$
+<b>Yu-Hsuan "Sharon" Huang</b><br>
+                M.Eng. Aerospace Engineering<br>
+                Fall 2018<br><br>
+                <a href="mailto:sharon89633@gmail.com">sharon89633@gmail.com</a><br>
+                <a href="https://www.linkedin.com/in/yu-hsuan-huang-39790a143/">LinkedIn Profile</a><br>
+                <a href="https://github.com/sharon50270">GitHub</a><br>
+                <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
+$PUBLICATIONS$
+Journal papers:<br>
+-- Coming soon! :)<br>
+<br>
+Conference papers:<br>
+-- Coming soon! :)
+$PROJECTS$
+Projects:<br>
+-- Coming soon! :)

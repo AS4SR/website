@@ -1,18 +1,18 @@
 $PIC$
 ../images/shi.jpg
 $MAINCONTACT$
-<b>Zhenyu ("Nathan") Shi</b><br>
-                Ph.D. Student, CEAS-AEEM<br>
-                Graduate Assistant, AS4SR Lab<br>
-                436 ERC<br>
+<b>Zhenyu "Nathan" Shi</b><br>
+                Ph.D. Student<br>
+                Aerospace Engineering and Engineering Mechanics<br>
+                695A Rhodes Hall<br>
                 P.O. Box 210070<br>
-                Cincinnati, OH 45221<br>
-                Phone: --<br>
-                Email: <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br>
-                Website: <a href="https://www.linkedin.com/in/zhenyu-shi-b95535119/">LinkedIn profile</a><br>
-                <b><a href="../people/shi.html">local page (AS4SR)</a></b>,
-                <a href="https://github.com/zhenyushi/">github page</a>,
-                <!--a href="http://homepages.uc.edu/~shizu/"-->personal website<!--/a-->
+                Cincinnati, OH 45221<br><br>
+                <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br>
+                <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
+                <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
+                <a href="https://www.linkedin.com/in/zhenyu-shi-b95535119/">LinkedIn Profile</a><br>
+                <a href="https://github.com/zhenyushi/">GitHub</a>
+                <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
 $PUBLICATIONS$
 Journal papers:<br>
 -- Coming soon! :)<br>
