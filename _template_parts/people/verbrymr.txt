@@ -11,22 +11,27 @@ $MAINCONTACT$
                 <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
                 <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
                 <a href="https://www.linkedin.com/in/matthewverbryke">LinkedIn Profile</a><br>
-                <a href="https://github.com/MatthewVerbryke/">GitHub Repository</a>
+                <a href="https://github.com/MatthewVerbryke/">GitHub Page</a>
                 <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
 $PUBLICATIONS$
-<b>Journal papers:</b><br>
--- Coming soon! :)<br>
-<br>
-<b>Conference papers:</b><br>
-    M. Verbryke, and C. McGhan, “Dual-Arm Manipulation with a Humanoid Robot Using a Modular Control Architecture,” <i>AIAA Space 2018 Conference</i>, AIAA, Orlando, FL, Sept. 17-19 2018. (AIAA-2018-5209)
-    <br><br>
-<b>Symposium presentations:</b><br>
-    M. Verbryke, C. McGhan, and O. Ma, “An Affordable Helmholtz Cage Design for 1U and 3U CubeSat Testing,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
-    <br><br>
-    M. Verbryke and C. McGhan, “Automatic Generation of No-Fly Zones from Area Characteristics for Autonomous UAV Operations,” <i>43rd DCASS</i>, Dayton, OH, Feb. 27, 2018.
-    <br><br>
-    M. Verbryke and C. McGhan, “Dual-Arm Manipulation Methods in a Humanoid Robot,” <i>42nd DCASS</i>, Dayton, OH, Mar. 1, 2017.
-    <br><br>
+<b>Journal Papers</b><br>
+    <ul>
+        <li>Coming soon! :)</li><br>
+    </ul>
+
+<b>Conference Papers</b><br>
+    <ul>
+        <li><b>Verbryke, M.</b> and McGhan, C., "Dual-Arm Manipulation with a Humanoid Robot using a Modular Control Architecture", <i>AIAA SPACE Forum 2018</i>, AIAA, Orlando, FL, Sept. 17-19, 2018. (AIAA-2018-5209)</li></br>
+    </ul>
+
+<b>Symposium Presentations</b><br>
+    <ul>
+        <li><b>Verbryke, M.</b>, McGhan, C., and Ma, O. “An Affordable Helmholtz Cage Design for 1U and 3U CubeSat Testing,” <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+        <li><b>Verbryke, M.</b> and McGhan, C., "Automatic Generation of No-Fly Zones from Area Characteristics for Autonomous UAV Operations", <i>43rd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Feb. 27, 2018.</li></br>
+        <li><b>Verbryke, M.</b> and McGhan, C., "Dual-Arm Manipulation Methods in a Humanoid Robot", <i>42nd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 1, 2017.</li></br>
+    </ul>
+    
 $PROJECTS$
-<b>Projects:</b><br>
--- <a href="../research/dualarm_inmoov.html">Dual-arm Manipulation</a>
+    <ul>
+        <a href="../research/dualarm_inmoov.html">Dual-Arm Manipulation</a><br>
+    </ul>

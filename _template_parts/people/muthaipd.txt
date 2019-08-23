@@ -2,25 +2,36 @@ $PIC$
 ../images/muthaiah.jpg
 $MAINCONTACT$
 <b>Ponaravind Muthaiah</b><br>
-                M.S. Student, CEAS-AEEM<br>
-                Graduate Student, AS4SR Lab<br>
+                M.S. Student<br>
+                Aerospace Engineering and Engineering Mechanics<br>
                 436 ERC<br>
-                Email: <a href="mailto:muthaipd@mail.uc.edu">muthaipd@mail.uc.edu</a><br>
-                Website: <a href="https://www.linkedin.com/in/ponaravind-muthaiah-50b17356/">LinkedIn profile</a><br>
-                <b><a href="../people/muthaiah.html">local page (AS4SR)</a></b>,
-                <a href="https://github.com/muthaipd/">github page</a>,
-                <!--a href="http://homepages.uc.edu/~muthaipd/"-->personal website<!--/a-->
+                P.O. Box 210070<br>
+                Cincinnati, OH 45221<br><br>
+                <a href="mailto:muthaipd@mail.uc.edu">muthaipd@mail.uc.edu</a><br>
+                <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
+                <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
+                <a href="https://www.linkedin.com/in/ponaravind-muthaiah-50b17356/">LinkedIn Profile</a><br>
+                <a href="https://github.com/muthaipd/">GitHub Page</a><br>
+                <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
+                
 $PUBLICATIONS$
-<b>Journal papers:</b><br>
--- Coming soon! :)<br>
-<br>
-<b>Conference papers:</b><br>
--- Coming soon! :)<br>
-<br>
-<b>Symposium presentations:</b><br>
-    P. Muthaiah and C. McGhan, “Steps Towards Automatic Evaluation of UAV Delivery Operations Using ROS and Gazebo,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
-    <br><br>
+<b>Journal Papers</b><br>
+    <ul>
+        <li>Coming soon! :)</li><br>
+    </ul>
+    
+<b>Conference Papers</b><br>
+    <ul>
+        <li>Coming soon! :)</li><br>
+    </ul>
+    
+<b>Symposium Presentations</b><br>
+    <ul>
+        <li><b>Muthaiah, P.</b> and McGhan, C. , "Steps Towards Automatic Evaluation of UAV Delivery Operations Using ROS and Gazebo", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+    </ul>
+    
 $PROJECTS$
-<b>Projects:</b><br>
--- Coming soon! :)
+    <ul>
+        Coming soon! :)<br>
+    </ul>
 

@@ -11,21 +11,28 @@ $MAINCONTACT$
                 <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
                 <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
                 <a href="https://www.linkedin.com/in/zhenyu-shi-b95535119/">LinkedIn Profile</a><br>
-                <a href="https://github.com/zhenyushi/">GitHub</a>
+                <a href="https://github.com/zhenyushi/">GitHub Page</a>
                 <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
+                
 $PUBLICATIONS$
-<b>Journal papers:</b><br>
-    Z. Shi and C. McGhan, “An Affordable Virtual Reality Setup for Educational Aerospace Robotics Simulation and Testing,” <i>Journal of Aerospace Information Systems</i>, AIAA (accepted as of 2019-03-15, minor revisions pending).
-    <br><br>
-<b>Conference papers:</b><br>
-    Z. Shi, and C. McGhan, “An Affordable Approach for Space Robotics Simulation and Testing using Virtual Reality,” <i>AIAA Space 2018 Conference</i>, AIAA, Orlando, FL, Sept. 17-19 2018. (AIAA-2018-5229)
-    <br><br>
-<b>Symposium presentations:</b><br>
-    Z. Shi and C. McGhan, “A Comparison on Different Affordable Approaches for Robotics Simulation and Testing using Virtual Reality,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
-    <br><br>
-    Z. Shi and C. McGhan, “An Affordable Approach for Robotics Simulation and Testing using Virtual Reality,” <i>43rd DCASS</i>, Dayton, OH, Feb. 27, 2018.
-    <br><br>
+<b>Journal Papers</b><br>
+    <ul>
+        <li><b>Shi, Z.</b> and McGhan, C., "An Affordable Virtual Reality Setup for Educational Aerospace Robotics Simulation and Testing," <i>Journal of Aerospace Information Systems</i>, AIAA (not yet published).</li></br>
+    </ul>
+    
+<b>Conference Papers</b><br>
+    <ul>
+        <li><b>Shi, Z.</b> and McGhan, C., "An Affordable Approach for Space Robotics Simulation and Testing using Virtual Reality", <i>AIAA SPACE Forum 2018</i>, AIAA, Orlando, FL, Sept. 17-19, 2018. (AIAA-2018-5229)</li></br>
+    </ul>
+    
+<b>Symposium Presentations</b><br>
+    <ul>
+        <li><b>Shi, Z.</b> and McGhan, C., "A Comparison on Different Affordable Approaches for Robotics Simulation and Testing using Virtual Reality", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+        <li><b>Shi, Z.</b> and McGhan, C., "An Affordable Approach for Robotics Simulation and Testing using Virtual Reality", <i>43rd Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Feb. 27, 2018.</li></br>
+    </ul>
+    
 $PROJECTS$
-<b>Projects:</b><br>
--- <a href="../research/vrplusgazebo.html">VR + ROS Gazebo</a>
--- <!--a href="../research/simplex_uav.html"-->Simplex for Dynamic UAV Environments<!--/a-->
+    <ul>
+        <a href="../research/vrplusgazebo.html">VR + ROS Gazebo</a><br>
+        <!--li><a href="../research/simplex_uav.html">Simplex for Dynamic UAV Environments</a></li><br-->
+    </ul>

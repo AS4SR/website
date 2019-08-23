@@ -16,25 +16,24 @@
                 </td>
             </tr>
         </table>
-    <p><b>___________________</b><br></p>
-        
+        <b>_________________________________________________________________________________</b>
+
     <h2>Ph.D. Students</h2>
         <table width="100%" align="left" style="font-size:14px;">
             <tr>
                 <td width="20%">
                     <img src="images/verbryke.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Matthew Verbryke</b><br>
                     <a href="people/verbryke.html">Local Page</a><br>
                     <a href="mailto:verbrymr@mail.uc.edu">verbrymr@mail.uc.edu</a><br><br>
                 </td>
-            </tr>
-            <tr>
+                
                 <td width="20%">
                     <img src="images/shi.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Zhenyu ("Nathan") Shi</b><br>
                     <a href="people/shi.html">Local Page</a><br>
                     <a href="mailto:shizu@mail.uc.edu">shizu@mail.uc.edu</a><br><br>
@@ -44,14 +43,21 @@
                 <td width="20%">
                     <img src="images/korte.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Chris Korte</b><br>
                     <a href="people/korte.html">Local Page</a><br>
                     <a href="mailto:kortecm@mail.uc.edu">kortecm@mail.uc.edu</a><br><br>
                 </td>
+                
+                <td width="20%>
+                    <!--add next PhD student picture here-->
+                </td>
+                <td width="30%>
+                    <!--add next PhD student info here-->
+                </td>
             </tr>
         </table>
-    <p><b>___________________</b><br></p>
+        <b>_________________________________________________________________________________</b>
       
     <h2>M.S. Students</h2>
         <table width="100%" align="left" style="font-size:14px;">
@@ -59,17 +65,16 @@
                 <td width="20%">
                     <img src="images/medhi.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Jishu Medhi</b><br>
                     <a href="people/medhi.html">Local Page</a><br>
                     <a href="mailto:medhijk@mail.uc.edu">medhijk@mail.uc.edu</a><br><br>
                 </td>
-            </tr>
-            <tr>
+
                 <td width="20%">
                     <img src="images/karra.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Sailendra Karra</b><br>
                     <a href="people/karra.html">Local Page</a><br>
                     <a href="mailto:karrasa@mail.uc.edu">karrasa@mail.uc.edu</a><br><br>
@@ -79,32 +84,32 @@
                 <td width="20%">
                     <img src="images/muthaiah.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>PonAravind Muthaiah</b><br>
                     <a href="people/muthaiah.html">Local Page</a><br>
                     <a href="mailto:muthaipd@mail.uc.edu">muthaipd@mail.uc.edu</a><br><br>
                 </td>
-            </tr>
-            <tr>
+
                 <td width="20%">
                     <img src="images/kashid.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Sujeet Kashid</b><br>
                     <a href="people/kashid.html">Local Page</a><br>
                     <a href="mailto:kashidsv@mail.uc.edu">kashidsv@mail.uc.edu</a><br><br>
                 </td>
             </tr>
+            <!-- Next MS student starts a new row -->
         </table>
-    <p><b>___________________</b><br></p>
+        <b>_________________________________________________________________________________</b>
    
     <h2>M.Eng. Students</h2>
-            <h4>None Currently</h4><br>
-    <p><b>___________________</b><br></p>
+            <h4>None Currently</h4>
+        <b>_________________________________________________________________________________</b>
      
     <h2>Undergraduate Students</h2>
-            <h4>None Currently</h4><br>
-    <p><b>___________________</b><br></p>
+            <h4>None Currently</h4>
+        <b>_________________________________________________________________________________</b>
    
     <h2>Lab Alumni</h2>
         <table width="100%" align="left" style="font-size:14px;">
@@ -112,20 +117,21 @@
                 <td width="20%">
                     <img src="images/kropveld.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Jessica Kropveld</b><br>
                     <a href="people/kropveld.html">Local Page</a><br>
                     <a href="mailto:kropvejl@mail.uc.edu">kropvejl@mail.uc.edu</a><br><br>
                 </td>
-            </tr>
-            <tr>
+
                 <td width="20%">
                     <img src="images/huang.jpg" width="100%" style="vertical-align:middle;">
                 </td>
-                <td width="80%">
+                <td width="30%">
                     <b>Yu-Hsuan "Sharon" Huang</b><br>
                     <a href="people/huang.html">Local Page</a><br>
                     <a href="mailto:sharon89633@gmail.com">sharon89633@gmail.com</a><br><br>
                 </td>
             </tr>
+            <!-- Next alumni goes here -->
         </table>
+    

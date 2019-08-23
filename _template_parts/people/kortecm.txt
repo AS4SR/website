@@ -11,19 +11,26 @@ $MAINCONTACT$
                 <!--a href="$AEEM_PROFILE_URL$">AEEM Profile</a><br-->
                 <!--a href="$CEAS_PROFILE_URL$">CEAS Profile</a><br-->
                 <a href="https://www.linkedin.com/in/christopher-korte-8400a636/">LinkedIn Profile</a><br>
-                <!--a href="$GITHUB_URL$">GitHub</a><br-->
+                <!--a href="$GITHUB_URL$">GitHub Page</a><br-->
                 <!--a href="$PERSONAL_WEB_URL$">Personal Website</a-->
-
+                
 $PUBLICATIONS$
-<b>Journal papers:<br></b>
--- Coming soon! :)<br>
-<br>
-<b>Conference papers:</b><br>
--- Coming soon! :)<br>
-<br>
-<b>Symposium presentations:</b><br>
-    C. Korte and C. McGhan, “Recurrent Neural Networks Applied to Surgical Path Planning for Semi-Autonomous Robotic Survery in Remote Environments,” <i>44th DCASS</i>, Dayton, OH, Mar. 5, 2019.
-    <br><br>
+<b>Journal Papers</b><br>
+    <ul>
+        <li>Coming soon! :)</li><br>
+    </ul>
+    
+<b>Conference Papers</b><br>
+    <ul>
+        <li>Coming soon! :)</li><br>
+    </ul>
+    
+<b>Symposium Presentations</b><br>
+    <ul>
+        <li><b>Korte, C.</b> and McGhan, C., "Recurrent Neural Networks Applied to Surgical Path Planning for Semi-Autonomous Robotic Survery in Remote Environments", <i>44th Dayton-Cincinnati Aerospace Sciences Symposium</i>, Dayton, OH, Mar. 5, 2019.</li></br>
+    </ul>
+    
 $PROJECTS$
-<b>Projects:</b><br>
--- <a href="../research/medicalmanip.html">Medical Manipulator</a>
+    <ul>
+        <a href="../research/medicalmanip.html">Medical Manipulator</a>
+    </ul>

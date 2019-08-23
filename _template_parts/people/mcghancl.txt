@@ -7,19 +7,22 @@ $MAINCONTACT$
                 724 Rhodes Hall<br>
                 P.O. Box 210070<br>
                 Cincinnati, OH 45221<br>
-                Phone: 513-556-3032<br>
-                Email: <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
-                Website: <a href="https://researchdirectory.uc.edu/p/mcghancl">UC Research Directory profile</a><br>
-                <a href="http://www.ceas3.uc.edu/profiles/mcghancl">CEAS profile</a>, <a href="https://ceas.uc.edu/academics/departments/aerospace-engineering-mechanics/people.html#mcghancl">AEEM profile</a>,
-                <a href="https://www.linkedin.com/in/catharine-mcghan-a8253a90/">LinkedIn profile</a><br>
-                <b><a href="../people/mcghan.html">local page (AS4SR)</a></b>,
-                <a href="https://github.com/cmcghan/">github page</a>,
-                <a href="http://homepages.uc.edu/~mcghancl/">personal website</a>
+                513-556-3032<br><br>
+                <a href="mailto:cat.mcghan@uc.edu">cat.mcghan@uc.edu</a><br>
+                <a href="https://researchdirectory.uc.edu/p/mcghancl">UC Research Directory Profile</a><br>
+                <a href="http://www.ceas3.uc.edu/profiles/mcghancl">CEAS Profile</a><br>
+                <a href="https://ceas.uc.edu/academics/departments/aerospace-engineering-mechanics/people.html#mcghancl">AEEM Profile</a><br>
+                <a href="https://www.linkedin.com/in/catharine-mcghan-a8253a90/">LinkedIn Profile</a><br>
+                <a href="https://github.com/cmcghan/">GitHub Page</a><br>
+                <a href="http://homepages.uc.edu/~mcghancl/">Personal Website</a>
 $PUBLICATIONS$
-<b>Journal papers, Conference papers, Symposium presentations:</b><br>
--- see <a href="../publications.html">the Publications page</a>
-    <br><br>
+<b>Journal Papers, Conference Papers, Symposium Presentations:</b><br>
+    <ul>
+        <a href="../publications.html">See Publications Page</a><br>
+    </ul>
+
 $PROJECTS$
-<b>Projects:</b><br>
--- <a href="../research/rse_cont.html">Resilient Spacecraft Executive</a><br>
--- <a href="../research/tss_cont.html">Total System Stability</a>
+    <ul>
+        <a href="../research/rse_cont.html">Resilient Spacecraft Executive</a><br>
+        <a href="../research/tss_cont.html">Total System Stability</a><br>
+    </ul>
